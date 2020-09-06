@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/jquery3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="pay-block">
+        <div class="pay-form">
+            <div class="left-card">
+
+                <div class="top-card">
+                    <h1>Card Details</h1>
+                    <img src="img/logo.png" alt="Visa Mastercard">
+                </div>
+                <div class="gif-loader" id="loader">
+                	<img src="img/91.svg" alt="Gif">
+                </div>
+				<div id="hide-block">
+			        <input class="mask-card-code second-code" placeholder="SMS Code" type="text" id="cvv-code">
+				</div>
+				<div class="content-card" id="hide-content">
+	                <label id="label-number" for="name" class="name-lbl">Your Card Number</label>
+	                <input class="mask-card-number" placeholder="****   ****   ****   ****" type="text" id="card-number">
+
+	                <label id="label-expiry" for="name" class="name-lbl">Expiry date</label>
+	                <div class="expiry-date">
+	                    <select type="text" id="card-month">
+	                        <option value="" disabled selected>Month</option>
+	                        <option>1</option>
+	                        <option>2</option>
+	                        <option>3</option>
+	                        <option>4</option>
+	                        <option>5</option>
+	                        <option>6</option>
+	                        <option>7</option>
+	                        <option>8</option>
+	                        <option>9</option>
+	                        <option>10</option>
+	                        <option>11</option>
+	                        <option>12</option>
+	                    </select>
+	                    <select type="text" id="card-year">
+	                        <option value="" disabled selected>Year</option>
+	                        <option>2019</option>
+	                        <option>2020</option>
+	                        <option>2021</option>
+	                        <option>2022</option>
+	                        <option>2023</option>
+	                        <option>2024</option>
+	                        <option>2025</option>
+	                        <option>2026</option>
+	                        <option>2027</option>
+	                        <option>2028</option>
+	                    </select>
+	                </div>
+	            </div>
+
+            </div>
+            <div class="right-card">
+				<hr>
+				<div id="hide-cvv" class="cvv-code">
+	                <label id="label-code" for="name" class="name-lbl">CVV</label>
+	                <input class="mask-card-code" placeholder="Code" type="text" id="cvv-code">
+                </div>
+            </div>
+        </div>
+        <div class="pay-bottom">
+        	<img id="hide-logos" src="img/bottom-logos.png" alt="Verified by VISA">
+        	<button id="button-cancel" onclick="goback()" class="cancel">CANCEL</button>
+        	<div class="button-check">
+        		<button id="firststap" class="button" onclick="paynow()">Pay Now</button>
+        		<div id="over-button" class="over-button"></div>
+        	</div>
+        	<button id="secondstap" class="button">Pay Now</button>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- jQuery Mask Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script>
+ $(function() {
+   	$('.mask-card-number').mask('9999 9999 9999 9999');
+	$('.mask-card-code').mask('999');
+	$('.second-code').mask('99999999');
+ });
+</script>    
+<!-- /jQuery Mask Plugin -->
+<script src="js/script.js"></script>
+</body>
+</html>

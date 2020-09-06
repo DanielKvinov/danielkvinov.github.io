@@ -1,0 +1,1106 @@
+$var1: #666666
+$var2: #333333
+$var3: #191919
+$var4: #F9F0DA
+$var5: #e8e8e8
+$var6: #ffffff
+$var7: #999999
+$var8: #f24841
+$var9: #bababa
+$var10: #e31e24
+$var11: #000000
+$var12: #eb4141
+$var13: #06881c
+$var14: #0a0a0a
+
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	font-family: "Ubuntu Regular"
+	&::-webkit-input-placeholder
+		color: $var1
+		opacity: 1
+	&:-moz-placeholder
+		color: $var1
+		opacity: 1
+	&::-moz-placeholder
+		color: $var1
+		opacity: 1
+	&:-ms-input-placeholder
+		color: $var1
+		opacity: 1
+
+.hidden
+	visibility: hidden
+button
+	outline: 0
+
+.mobile
+	display: none !important
+a
+	text-decoration: none
+	&.header-top__like
+		margin-right: 17px
+		width: 22px
+		height: 19px
+		background-image: url("../img/heart.svg")
+		background-repeat: no-repeat
+	&.vk
+		i
+			color: white
+			font-size: 29px
+	&.twitter
+		i
+			color: white
+			font-size: 29px
+	&.fb
+		i
+			color: white
+			font-size: 29px
+li
+	list-style: none
+body
+	display: none
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	overflow-x: hidden
+	color: $var2
+	background-color: white
+
+.mobile
+	display: none
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 10px
+
+.main
+	.slick-prev
+		right: auto
+		left: 370px
+		top: 50%
+	.slick-next
+		left: auto
+		right: 370px
+		top: 50%
+
+.header-top__line
+	background-color: $var3
+	a
+		color: white
+	.container
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
+		justify-content: space-between
+		padding: 0px 10px
+		font-size: 12px
+		font-weight: 400
+header
+	.container
+
+.header-top__login
+    display: flex
+    justify-content: center
+    align-items: center
+.header-top__login a.authorization::after
+	content: "/"
+	padding: 0 5px
+
+.header-top__line .hamburger
+	display: none
+
+.header-top__anchors
+	a
+		margin-right: 30px
+		font-size: 12px
+	&:last-child
+		margin: 0
+	nav ul
+		display: flex
+	.dropdown-content
+		top: 60px
+
+.header-top__bar .container
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
+	justify-content: space-between
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	margin-top: 17px
+
+.header-top__bar img
+	width: 137px
+	height: 82px
+form.header-top__search
+	position: relative
+	max-width: 360px
+	width: 100%
+	height: 46px
+	input.search-field
+		background: $var4
+		padding-left: 11px
+		width: inherit
+		height: inherit
+		border: 1px solid $var5
+		background-color: $var6
+		&::-webkit-input-placeholder
+			color: $var7
+		&:-ms-input-placeholder
+			color: $var7
+		&::-ms-input-placeholder
+			color: $var7
+		&::placeholder
+			color: $var7
+	input.search-button
+		height: 13px
+		width: 13px
+		position: absolute
+		top: 17px
+		right: 12px
+		cursor: pointer
+		border: 0
+		text-indent: -1000em
+		background-color: transparent
+		background-image: url("../img/search-icon.png")
+		&:hover
+			opacity: 0.3
+	button, input
+		border: none
+		outline: none
+.header-top__bar-first
+	display: flex
+	align-items: center
+	justify-content: space-around
+	width: 80%
+	flex-wrap:wrap
+
+.header-top__bar-second
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 20%
+	flex-wrap:wrap
+
+.header-top__contacts
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
+	flex-direction: column
+	.header-top__email
+		position: relative
+		padding-left: 20px
+		&::before
+			background-size: cover
+			left: 0
+			top: 3px
+			position: absolute
+			content: url("../img/mail-icon.svg")
+			width: 15px
+			height: 15px
+
+.header-top__contacts
+	font-size: 16px
+
+.header-top__number
+	font-size: 16px
+	line-height: 10px
+	font-weight: bolder
+	padding-left: 20px
+	position: relative
+	color: #333
+	&::before
+		top: -3px
+		left: 0
+		background-size: cover
+		width: 15px
+		height: 15px
+		position: absolute
+		content: url("../img/call-icon.svg")
+		background-repeat: no-repeat
+	&-subtitle
+		font-size: 11px
+		font-weight: bolder
+
+.header-top__email
+	font-size: 14px
+	font-weight: bolder
+	color: #333
+
+.header-top__call-gager
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 14px
+	width: 186px
+	height: 44px
+	border-radius: 3px
+	color: white
+	background-color: $var8
+	border: 0
+	position: relative
+	padding-left: 10px
+	&::before
+		top: 12px
+		width: 18px
+		height: 13px
+		position: absolute
+    	top: 14px
+		left: 10px
+		background-size: cover
+		margin-right: 8px
+		content: url("../img/ruler.svg")
+
+.header-top__bin
+	margin-left: 10px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: flex
+	flex-direction: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	line-height: 17px
+	&-button
+		width: 25px
+		height: 23px
+		background-size: cover
+		background-image: url("../img/bin-icon.svg")
+		margin-right: 11px
+	&-text
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
+		flex-direction: column
+
+.header-top__menu
+	margin-top: 14px
+	-webkit-box-shadow: 9px 16px 24px rgba(21, 21, 21, 0.19)
+	box-shadow: 9px 16px 24px rgba(21, 21, 21, 0.19)
+	border-top: 1px solid $var9
+	nav ul
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		justify-content: space-around
+		align-items: center
+		// padding: 10px 0
+		li
+			width: 100%
+			text-align: center
+			position: relative
+  			display: inline-block
+			&::after
+				content: ""
+				background-color: #333
+				height: 39px
+				width: 1px
+				position: absolute
+				right: 0
+				top: 0
+				bottom: 0
+				margin: auto
+			&:last-child
+				&::after
+					background-color: transparent
+		.dropdown-content
+			top: 58px
+	a
+		color: #333
+		font-size: 14px
+		position: relative
+		width: 100%
+		text-align: center
+		padding: 10px 0
+		&:last-child
+			border: 0
+			&::after
+		&:hover
+			color: $var10
+
+.dropdown-content
+	a
+		&:hover
+			color: $var10 !important
+
+.dropbtn
+	padding: 7px
+	color: white
+	padding: 20px 10px !important
+	font-size: 16px
+	border: none
+	text-decoration: none
+
+.dropdown
+	position: relative
+	a
+		display: block
+		width: 100%
+
+.dropdown-content
+	display: none
+	position: absolute
+	background-color: white
+	z-index: 1
+	max-width: 192px
+	width: 100%	
+    top: 70px
+	a
+		border: 1px solid #e8e8e8
+		color: black
+		padding: 12px 16px
+		text-decoration: none
+		display: block
+
+.dropdown:hover .dropdown-content
+	display: block
+
+.main-slider
+	width: 100%
+	height: 500px
+	&__slide
+		width: 100%
+		height: 500px
+		background-image: url("../img/main-slider1.png")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+
+.slick-dotted.slick-slider
+	margin-bottom: 0px
+
+.store
+    padding: 0 10px
+
+.store-slide__image1
+	background-image: url("../img/store-slider1.png")
+
+.store-slide__image2
+	background-image: url("../img/store-slider2.png")
+
+.store-slide__image3
+	background-image: url("../img/store-slider3.png")
+
+.slick-prev, .slick-next
+	z-index: 2
+	width: 50px
+	height: 50px
+
+.slick-prev
+	&:before
+		content: url("../img/main-slider_left.png")
+.slick-next
+	&:before
+		content: url("../img/main-slider_right.png")
+
+.store-catalog__second
+	.slick-prev
+		right: 45px
+		left: auto
+		top: -10%
+		&:before
+			opacity: 1
+			content: url("../img/store-slider-arrowLeft.png")
+		&:hover:before
+			content: url("../img/store-slider-arlActive.png")
+	.slick-next
+		right: 0
+		top: -10%
+		&:before
+			opacity: 1
+			content: url("../img/store-slider-arrowRight.png")
+		&:hover:before
+				content: url("../img/store-slider-arrActive.png")
+
+.slick-dots
+	z-index: 2
+	bottom: 35px
+	li
+		margin: 0 0px
+		button:before
+			opacity: 1
+			font-size: 0px
+			width: 10px
+			height: 10px
+			content: url("../img/main-slider_dot.png")
+		&.slick-active button:before
+			opacity: 1
+			content: url("../img/main-slider_dot-active.png")
+
+.store .container
+	display: flex
+	padding-top: 32px
+
+.store-menu__content
+    position: absolute
+    opacity: 1
+    z-index: 2
+    top: 53px
+    left: 0
+    max-width: 262px
+    width: 100%
+
+.store .dropdown:hover .dropdown-content
+    display: block
+    max-width: 262px
+    width: 100%
+
+.store .dropdown-content
+	position: static
+	background-color: transparent
+	box-shadow: none
+	a
+		border: 1px solid #e8e8e8
+		color: #999999
+		font-size: 14px
+		&::before
+			content: "- "
+
+.store .dropbtn
+	color: #333
+	border: 1px solid #e8e8e8
+	position: relative
+	&:after
+		content: url("../img/dropdown.png")
+		position: absolute
+		right: 14px
+
+.store-menu__hamburger
+	position: relative
+	margin-right: 32px
+	display: flex
+	align-items: center
+	width: 262px
+	height: 54px
+	border-radius: 3px 3px 0 0
+	background-color: $var10
+	&-title
+		color: white
+		text-transform: uppercase
+
+.store-menu__hamburger-opener
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 20
+	cursor: pointer
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	width: 22px
+	height: 3px
+
+.hamburger
+	line-height: 0
+	&-height
+		height: 20px !important
+	&-box
+		width: 22px
+		height: 15px
+	&-inner::before
+		top: -5px
+	&--collapse .hamburger-inner::after
+		top: -11px
+	&-inner, &-inner::before, &-inner::after
+		background-color: white
+	&.is-active .hamburger-inner, &.is-active .hamburger-inner::before, &.is-active .hamburger-inner::after
+		background-color: white
+
+.menu-visible
+    position: absolute
+    opacity: 1
+    z-index: 5
+    top: 53px
+
+.store-catalog
+	width: 100%
+	&__directory
+		margin-top: 7px
+		&__bunch
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			width: 100%
+			&-card
+				z-index: 2
+				width: 31%
+				margin-bottom: 15px
+				display: flex
+				flex-direction: column
+				align-items: center
+				position: relative
+				border-radius: 0 0 3px 3px
+				transition: 0.4s
+				-webkit-transition: 0.4s
+				-moz-transition: 0.4s
+				-ms-transition: 0.4s
+				-o-transition: 0.4s
+				&:hover
+					box-shadow: 9px 16px 18px rgba(21, 21, 21, 0.2)
+					opacity: 0.8
+		.title
+			margin-top: 0
+			margin-bottom: 10px
+	.slick-prev
+		left: 810px
+		top: -5%
+		&:before
+			content: url("../img/store-slider-arrowLeft.png")
+		&:hover::before
+			content: url("../img/store-slider-arlActive.png")
+	.slick-next
+		right: 3px
+		top: -5%
+		&:before
+			content: url("../img/store-slider-arrowRight.png")
+		&:hover::before
+			content: url("../img/store-slider-arrActive.png")
+.store-catalog__second
+    width: 100%
+
+.bunch-card__image
+	width: 100%
+	height: 230px
+	border-radius: 3px
+	border: 1px solid $var5
+	background-color: $var6
+	position: relative
+	background-repeat: no-repeat
+	background-size: auto
+	background-position: 50% 30%
+
+.bunch1
+	background-image: url("../img/bunch1.png")
+
+.bunch2
+	background-image: url("../img/bunch2.png")
+
+.bunch3
+	background-image: url("../img/bunch3.png")
+
+.bunch4
+	background-image: url("../img/bunch4.png")
+
+.bunch5
+	background-image: url("../img/bunch5.png")
+
+.bunch6
+	background-image: url("../img/bunch6.png")
+
+.bunch7
+	background-image: url("../img/bunch7.png")
+
+.bunch8
+	background-image: url("../img/bunch8.png")
+
+.bunch-card__name
+	border-radius: 0 0 3px 3px
+	left: 0
+	position: absolute
+	bottom: 0
+	font-size: 14px
+	text-transform: uppercase
+	color: white
+	background-color: $var3
+	width: 100%
+	text-align: center
+	line-height: 40px
+
+.title
+	font-weight: 700
+	font-size: 24px
+	margin-top: 58px
+	margin-bottom: 34px
+	display: block
+
+.store-slider
+	height: 100%
+	.store-slide
+		margin-left: 10px
+		margin-right: 18px
+		padding: 0 13px
+		position: relative
+		width: 95% !important
+		display: flex !important
+		justify-content: space-between
+		flex-direction: column
+		align-items: center
+		border-radius: 3px
+		border: 1px solid $var5
+		transition: 0.2s
+		-webkit-transition: 0.2s
+		-moz-transition: 0.2s
+		-ms-transition: 0.2s
+		-o-transition: 0.2s
+		.store-slide__bottom
+			display: flex
+			flex-direction: column
+			align-items: center
+		&:hover
+			box-shadow: 5px 9px 18px rgba(21, 21, 21, 0.2)
+		&__title
+			margin-bottom: 20px
+			font-size: 14px
+			color: $var1
+			line-height: 18px
+			text-align: center
+			max-width: 190px
+		&__prices
+			margin-bottom: 27px
+			display: flex
+			justify-content: space-between
+			max-width: 154px
+			width: 100%
+		&__price
+			font-size: 18px
+			color: $var11
+			font-weight: 900
+			text-align: center
+			width: 100%
+		&__prev-price
+			color: $var7
+			text-decoration: line-through
+		&__buttons
+			display: flex
+			justify-content: space-between
+			margin-bottom: 15px
+		&__button
+			cursor: pointer
+			border-radius: 3px
+			background-color: $var10
+			font-size: 14px
+			color: $var6
+			line-height: 18px
+			height: 38px
+			border: 0
+			transition: 0.1s
+			-webkit-transition: 0.1s
+			-moz-transition: 0.1s
+			-ms-transition: 0.1s
+			-o-transition: 0.1s
+			&:hover
+				background-color: $var12
+			&-buy
+				width: 97px
+				margin-right: 8px
+			&-oneclick
+				width: 137px
+			&-like
+				top: 11px
+				right: 11px
+				position: absolute
+				width: 20px
+				height: 18px
+				color: black
+				// background-image: url("../img/heart.svg")
+				background-color: 	transparent
+				background-repeat: no-repeat
+				background-size: 100%
+				border: 0
+				cursor: pointer
+				&::before
+					font-size: 19px
+					font-family: "FontAwesome"
+					content: "\f08a"
+		&__image
+			width: 270px
+			height: 266px
+			background-repeat: no-repeat
+			background-size: auto
+			background-position: center
+		&1
+			background-image: url("../img/store-slider1.png")
+		&2
+			background-image: url("../img/store-slider2.png")
+		&3
+			background-image: url("../img/store-slider3.png")
+		&__filters
+			position: absolute
+			left: -9px
+			top: 10px
+		&__filter
+			border: 0
+			width: 59px
+			height: 24px
+			border-radius: 10px
+			background-color: $var3
+			font-size: 12px
+			font-weight: 700
+			line-height: 24px
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: 3px
+			color: white
+			cursor: pointer
+			&-hit
+				background-color: $var3
+			&-new
+				background-color: $var13
+			&-discount
+				background-color: $var12
+
+.makers .container
+	position: relative
+
+.makers .title
+	text-align: center
+
+.makers-slider
+	position: static
+	display: flex
+	justify-content: center
+	align-items: flex-end
+	max-width: 935px
+	margin: 0 auto
+	cursor: pointer
+
+.makers-slide
+	display: flex !important
+	justify-content: center
+	align-items: center
+	height: 100px
+
+.makers .slick-prev
+	left: 0
+	top: 65%
+	&:before
+		content: url("../img/makers-arrowL.png")
+
+.makers .slick-next
+	right: 0
+	top: 65%
+	&:before
+		content: url("../img/makers-arrowR.png")
+
+.makers .slick-list.draggable
+    height: 100px
+    width: 100%
+
+.maker1 img
+	width: 156px
+	height: 77px
+
+.maker2 img
+	width: 117px
+	height: 76px
+
+.maker3 img
+	width: 155px
+	height: 63px
+
+.maker4 img
+	width: 197px
+	height: 102px
+
+.news-wrapper
+	display: flex
+	justify-content: space-between
+	overflow: hidden
+
+.news-block
+	height: auto
+	max-width: 374px
+	width: 100%
+	margin-right: 8px
+	transition: 0.4s
+	&:hover
+	    opacity: 0.8
+	&__img
+		width: 374px
+		height: 286px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		&:last-child
+			margin-right: 0
+	&__date
+		font-size: 12px
+	&__text
+		font-size: 14px
+	&__link
+		text-decoration: underline
+		font-size: 12px
+		color: white
+	&__content
+		color: white
+		border-radius: 0 0 3px 3px
+		background-color: $var3
+		display: flex
+		flex-direction: column
+		padding: 11px
+		height: 100%
+
+.news .title
+	text-align: center
+
+.news__image1
+	background-image: url("../img/news1.png")
+
+.news__image2
+	background-image: url("../img/news2.png")
+
+.news__image3
+	background-image: url("../img/news3.png")
+
+.news-link_all
+	margin-top: 15px
+	font-size: 14px
+	color: $var10
+	display: flex
+	justify-content: flex-end
+	align-items: cente
+	transition: 0.4s
+	&:hover
+		opacity: 0.4
+	&::after
+		content: url("../img/news-link_all.png")
+		margin-left: 9px
+
+.advantages
+	margin-top: 40px
+	background-color: $var5
+
+.advantage-block
+	display: flex
+	justify-content: space-between
+
+.advantage
+	padding: 51px 0
+	display: flex
+	align-items: center
+	&-text
+		margin-left: 6px
+		display: block
+		max-width: 178px
+		width: 100%
+		font-size: 16px
+		color: $var1
+		line-height: 18px
+	img
+		width: 70px
+		height: 70px
+	&-bold
+		font-family: "Ubuntu Bold"
+		font-weight: 700
+footer
+	background-color: $var14
+	color: $var7
+	padding: 25px 0
+	.container
+		display: flex
+		justify-content: space-between
+
+	.footer-copyright__block
+		padding-right: 10px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: auto
+		img
+			width: 165px
+			height: 97px
+		.footer-text
+			font-size: 12px
+			display: flex
+			flex-direction: column
+
+	.footer-links
+		flex-wrap: wrap
+		display: flex
+		justify-content: space-around
+		width: 50%
+		padding: 0 10px
+		ul
+			font-size: 16px
+			line-height: 25px
+			padding: 0 10px
+		li a
+			font-size: 14px
+			color: $var7
+			&:hover
+				opacity: 0.8
+
+	.footer-ul
+		display: block
+		margin-bottom: 10px
+
+	.footer-icons
+		display: flex
+		justify-content: space-around
+		max-width: 177px
+		width: 100%
+		a
+			background-size: 100%
+			i
+				&:hover
+					opacity: 0.8
+
+	.footer-contacts
+		padding-left: 10px
+		display: flex
+		flex-direction: column
+		max-width: 177px
+		width: auto
+		a
+			color: $var7
+			display: block
+			&:hover
+				opacity: 0.8
+		.footer-number::before
+			font-family: FontAwesome
+			content: "\f095"
+			display: inline-block
+			padding-right: 5px
+			vertical-align: middle
+			color: white
+		.footer-email::before
+			font-family: FontAwesome
+			content: "\f0e0"
+			display: inline-block
+			padding-right: 5px
+			vertical-align: middle
+			color: white
+
+	.address-block__title
+		font-size: 16px
+		margin-bottom: 5px
+
+	.address-block
+		margin-top: 30px
+		margin-bottom: 42px
+		font-size: 14px
+		display: flex
+		flex-direction: column
+		width: 100%
+
+// FANCYBOX
+
+.fancybox-ruler
+	display: none
+
+.fancybox-active.compensate-for-scrollbar
+    overflow-x: hidden
+    overflow-y: auto
+.fancybox-iosfix
+    position: relative
+.fancybox-stage .fancybox-content
+    padding: 30px
+    max-height: 100%
+    overflow: auto
+    width: 450px
+
+.fancybox-container h3
+    text-align: center
+    font-size: 24px
+    line-height: 1
+    color: #333333
+    margin-bottom: 20px
+    font-weight: 500
+
+.fancybox-container input:not([type="submit"]):not([type="button"]):not([type="hidden"]), .fancybox-container textarea
+    border: 1px solid #e8e8e8
+    background: #fff
+.fancybox-container input:not([type="submit"]):not([type="button"]):not([type="hidden"]), .fancybox-container textarea
+    width: 100%
+    height: 34px
+    margin-bottom: 20px
+    border: 1px solid #d2d2d2
+    background: #fff
+    padding-left: 10px
+    font-size: 13px
+.fancybox-container .infofield
+    float: left
+    font-size: 14px
+    line-height: 30px
+    color: #1c1c1c
+    display: none
+.btn
+    font-size: 13px
+    background: #f24841
+    text-transform: uppercase
+    color: #fff
+    font-weight: 600
+    border: 0
+    padding: 10px 20px
+    display: inline-block
+
+.fancybox-container
+	textarea
+		height: 90px
+		padding-top: 10px
+		resize: none
+	.button_privacy
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		.privacy_field
+			font-size: 12px
+			font-weight: 400
+			margin-left: 20px
+			margin-top: 0
+	a
+		font-size: 12px
+		font-weight: 400
+		text-decoration: underline
+		color: #d03e3e
+	.required_field
+		display: none
+
+// FANCYBOX LOGIN
+.fancybox-login
+	display: none
+	.blocha_vh
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	#form_login .block__title
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 15px
+	.rega
+		margin-top: -10px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	a.registration-link
+		line-height: 25px !important
+	.moda
+		a.arrow-link.black
+			color: #222222
+			font-size: 14px
+			display: inline-block
+			margin-left: 10px
+			font-weight: 500
+			float: right
+			line-height: 1em
+		h4
+			margin: 0
+			color: #222222
+			font-size: 14px
+			font-weight: 500
+			display: inline-block
