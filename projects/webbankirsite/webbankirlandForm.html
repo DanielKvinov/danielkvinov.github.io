@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Сайт от Квинова</title>
+
+  <meta name="description" content="Краткое описание страницы">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  
+</head>
+<body>
+
+
+  <!-- HTML -->
+  <div class="webbankir-form">
+    <div class="webbankir-form__container">
+      <span class="webbankir-form__span">Продолжение формы заявки</span>
+      <style>
+        .webbankir-form__container {
+          text-align: center;
+        }
+      .webbankir-form__span {
+        display: inline-block;
+        padding: 20px 0;
+        color: #323C47;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+      }  
+      </style>
+
+      <form action="#">
+        <input placeholder="Желаемая сумма кредита" type="text" id="wouldCreditSum">
+        <input placeholder="Срок кредита" type="text">
+        <select>
+          <option value="3m">3 мес</option>
+          <option value="6m">6 мес</option>
+          <option value="1y">1 год</option>
+          <option value="1.5y">1.5 года</option>
+          <option value="2y">2 года</option>
+          <option value="3y">3 года</option>
+          <option value="4y">4 года</option>
+          <option value="5y">5 лет</option>
+          <option value="10y">10 лет</option>
+          <option value="15y">11 лет</option>
+        </select>
+        <input placeholder="Ваше ФИО" type="text">
+        <input placeholder="Дата рождения" type="text">
+        <input placeholder="Город проживания" type="text">
+        <select>
+          <option>Алтайский край</option>
+          <option>Амурская область</option>
+          <option>Архангельская область</option>
+        </select>
+        <input placeholder="Мобильный телефон" type="number">
+        <input placeholder="Электронная почта" type="email">
+        <button>Получить деньги</button>
+      </form>
+    </div>
+  </div>                 
+
+  <style>
+.webbankir-form {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webbankir-form input,
+.webbankir-form button,
+.webbankir-form select {
+    background: none;
+    width: 300px;
+    height: 40px; 
+    padding: 6px 25px;
+    background-color: #f8f8f8;
+    border: 1px solid #e9eff4;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #323c47;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.webbankir-form button {
+      background-color: #f74455 !important;
+      font-weight: bold;
+      color: white;
+}
+    .webbankir-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .webbankir-form__container {
+      width: 400px;
+      height: auto;
+  }
+  </style>   
+  
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="js/interactive.js"></script>
+
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('#wouldCreditSum').attr("value", creditSum);
+      alert(creditSum);
+    });
+  </script>
+
+</body>
+</html>
