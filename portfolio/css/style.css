@@ -74,6 +74,9 @@ header .container {
 	display: flex;
 	flex-direction: column;
 }
+.header__info__text h3 {
+	color: red;
+}
 
 .header__info a {
     max-width: 55px;
@@ -106,13 +109,13 @@ button {
 }
 
 .header__info__text {
-    margin-left: 15px;
+    /*margin-left: 15px;*/
 }
 
 .header__social a {
     display: inline-block;
-    width: 37px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     /*border: 1px solid white;*/
     margin-right: 15px;
     /*border-radius: 10px*/
@@ -145,6 +148,11 @@ button {
     cursor: pointer;
     font-size: 21px;
     border-radius: 10px;
+    transition: 0.5s;
+}
+.button__red:hover {
+    background: white;
+    color: black;
 }
 .welcome .button__red {
 	padding: 15px 20px;
@@ -336,7 +344,9 @@ button {
 	margin-bottom: 50px;
 }
 .feedback-block {
-    display: flex;
+    display: flex !important;
+}
+.feedback-slider {
     margin-bottom: 40px;
 }
 .feedback-info {
@@ -438,7 +448,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 10px 15px;
-    max-width: 320px;
+    max-width: 340px;
     border-radius: 1px;
     width: 100%;
 }
@@ -462,7 +472,7 @@ button {
 .contacts-form form textarea {
     border: 0;
     max-width: 100%;
-    min-width: 290px;
+    min-width: 310px;
     max-height: 150px;
     color: white;
     background: #3b3a3d;
@@ -527,18 +537,46 @@ button {
 .projects-list__cell__container:hover:before {
 	opacity: 1;
 }
-.telegram-link {
-	background: url("../img/socMedia/telegram.png") no-repeat 100% 100%/100%;
+.telegram-link a {
+	background: url("../img/socMedia/telegram.svg") no-repeat 100% 100%/100%;
 }
-.vk-link {
-	background: url("../img/socMedia/vk.png") no-repeat 100% 100%/100%;
+.vk-link a {
+	background: url("../img/socMedia/vk.svg") no-repeat 100% 100%/100%;
 }
-.instagram-link {
-	background: url("../img/socMedia/instagram.png") no-repeat 100% 100%/100%;
+.instagram-link a {
+	background: url("../img/socMedia/instagram.svg") no-repeat 100% 100%/100%;
 }
-.instagram-link:hover {
-	/*background: url("../img/socMedia/instagram2.png") no-repeat 100% 100%/100%;*/
+.telegram-link:hover a {
+	background: url("../img/socMedia/telegram2.svg") no-repeat 100% 100%/100%;
 }
-.header__social a:hover {
-	transform: rotate(360deg);
+.instagram-link:hover a {
+	background: url("../img/socMedia/instagram2.svg") no-repeat 100% 100%/100%;
+}
+.vk-link:hover a {
+	background: url("../img/socMedia/vk2.svg") no-repeat 100% 100%/100%;
+}
+.header__social span:hover a {
+    transform: scale(-1.2) rotate(180deg);
+}
+.header__social span {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white !important;
+}
+.slick-dots li button:before {
+    color: white !important;
+}
+.slick-slider {
+    margin-bottom: 140px !important;
+}
+.slick-dots li button:before {
+    font-family: slick !important;
+    font-size: 14px !important;
+    transition: 0.4s;
+}
+.slick-dots {
+    bottom: -50px !important;
 }

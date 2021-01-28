@@ -17,7 +17,9 @@
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
 </head>
 <body>
 	<!-- HTML -->
@@ -26,16 +28,16 @@
 		<div class="container">
 			
 			<div class="header__info">
-				<a href="#" class="logo"><img src="img/dklogo.jpg" alt="Картинка"></a>
+				<!-- <a href="#" class="logo"><img src="img/DK.png" alt="Картинка"></a> -->
 				<div class="header__info__text">
 					<h1>Даниил Квинов</h1>
-					<h3>Разработка сайтов</h3>
+					<h3>Разработчик сайтов</h3>
 				</div>
 			</div>
 			<div class="header__social">
-				<a class="telegram-link" href="#"></a>
-				<a class="vk-link" href="#"></a>
-				<a class="instagram-link" href="#"></a>
+				<span class="telegram-link"><a href="#"></a></span>
+				<span class="vk-link"><a href="#"></a></span>
+				<span class="instagram-link"><a href="#"></a></span>
 			</div>
 
 		</div>
@@ -117,7 +119,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="projects-cell">
+				<!-- <div class="projects-cell">
 					<div class="projects-cell__button-close"></div>
 					<div class="projects-cell__images">
 						<a class="projects-cell__images__main" href="#"><img src="#" alt="Картинка"></a>
@@ -147,7 +149,7 @@
 							<button class="button__red">Хочу такой сайт</button>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -160,18 +162,90 @@
 					<a class="feedback-image"><img src="img/photoClients/semyonVoznesensky.jpg" alt="Картинка"></a>
 					<div class="feedback-info">
 						<span class="title">Семён Вознесенский</span>
-						<a href="https://vk.com/id115579433" class="link">vk.com/id115579433</a>
+						<a href="https://vk.com/id115579433" class="link" target="_blank">Профиль заказчика</a>
 						<span class="feedback-info__description">По проекту kalyan.moscow - все было сделано хорошо, в срок, точно по времени. Все замечания и разногласия были устранены сразу после того, как их озвучили. Благодарю за проделанную работу - не всегда получается слаженно работать с верстальщиками, а Вы с первого раза поняли, что нам нужно. Спасибо!</span>
-						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link">Посмотреть этот отзыв в группе Вк</a>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/michailSokolov.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Михаил Соколов</span>
+						<a href="https://www.weblancer.net/users/tritosha/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Данил, проявил настоящий профессионализм, показав хороший результат своей работы. Буду дальше сотрудничать!)</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/egorNedbailo.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Егор Недбайло</span>
+						<a href="https://www.weblancer.net/users/Negoro/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">1. Отличный специалист, все сделал как надо. Задача была сложная по верстке, но Данил справился на 100% <br><br> 2. Повторно обратился к специалисту и он меня не подвел. Советую всем!</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/dmitryBobkov.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Дмитрий Бобков</span>
+						<a href="https://www.weblancer.net/users/bobkovdi/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Друзья! Такому исполнителю можно доверить любую работу. Делает быстро, аккуратно и самое главное качественно! Доверяйте ему свои проекты и не пожалеете.</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
 					</div>
 				</div>
 				<div class="feedback-block">
 					<a class="feedback-image nophoto-client"><img src="img/photoClients/client.png" alt="Картинка"></a>
 					<div class="feedback-info">
 						<span class="title">Алексей Елисов</span>
-						<a href="https://www.weblancer.net/users/Allockye" class="link">weblancer.net/Allockye</a>
-						<span class="feedback-info__description">По проекту kalyan.moscow - все было сделано хорошо, в срок, точно по времени. Все замечания и разногласия были устранены сразу после того, как их озвучили. Благодарю за проделанную работу - не всегда получается слаженно работать с верстальщиками, а Вы с первого раза поняли, что нам нужно. Спасибо!</span>
-						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link">Посмотреть этот отзыв в группе Вк</a>
+						<a href="https://www.weblancer.net/users/Allockye" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Рекомендую как хорошего специалиста в своей области, все было сделано в срок!</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/arcadiyZverev.png" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Аркадий Зверев</span>
+						<a href="https://freelancehunt.com/employer/radiy77.html" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Работа выполнена в соответствии с техническим заданием. Спасибо!</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/egorNedbailo.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Тимур Васильев</span>
+						<a href="https://www.weblancer.net/users/TimurVasiliev/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">1) Молодец! Вытерпел все мои нудные правки, однозначно рекомендую! <br><br> 2) С задачей справился, более того сделал приятную скидку, спасибо Данилу! Однозначно рекомендую!</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/egorNedbailo.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Максим Истляев</span>
+						<a href="https://www.weblancer.net/users/FladeX/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Данил сверстал лендинг с макета, дополнительно ещё подготовил скрипт для отправки заявок со всех форм на почту. Вёрстка аккуратная, семантическая, адаптивная. Все мелочи учтены, к тому же Данил постоянно был на связи и вносил правки по необходимости. Спасибо!</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/evgeniyPoletaev.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Евгений Полетаев</span>
+						<a href="https://www.weblancer.net/users/aguru_studio/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Отличная работа для такого сложного макета! Адаптивность сайта - полная, на всех устройствах. Код очень годный и системный. Уже сделал у Данила заказ следующего сайта. Рекомендуем!</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
+					</div>
+				</div>
+				<div class="feedback-block">
+					<a class="feedback-image nophoto-client"><img src="img/photoClients/egorNedbailo.jpg" alt="Картинка"></a>
+					<div class="feedback-info">
+						<span class="title">Максим Клубов</span>
+						<a href="https://www.weblancer.net/users/banderoz/" class="link" target="_blank">Профиль заказчика</a>
+						<span class="feedback-info__description">Если Данил оставил заявку на Ваш проект и Вы читаете этот отзыв, чтобы определится, поручать работу ему или нет. То исходя из моего личного опыта работы с ним, скажу - СМЕЛО поручайте. При грамотном ТЗ - он справится на 1000%.</span>
+						<a href="https://vk.com/topic-183505693_40585275?z=photo-183505693_457239038%2Fpost-183505693_20" class="link" target="_blank">Посмотреть этот отзыв в группе Вк</a>
 					</div>
 				</div>
 			</div>
@@ -186,12 +260,12 @@
 		<div class="container">
 			<div class="contacts-info">
 				<span class="title__big">Как со мной связаться</span>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+				<p class="subtitle">Вы можете заполнить форму рядом и отправить ваши данные мне. После чего я с вами свяжусь. Так же вы можете написать мне прямо в соц.сетях или телеграмме. Эти данные я расположил снизу </p>
 			</div>
 			<div class="contacts-form">
 				<form action="#">
 					<label for="#"><input type="text" placeholder="Ваше имя"></label>
-					<label for="#"><input type="text" placeholder="Ваш email (или телеграм)"></label>
+					<label for="#"><input type="text" placeholder="Как с вами связаться? Cоц.сеть, мессенджер?"></label>
 					<label for="#"><textarea type="text" placeholder="Какой у вас проект? Какая у вас задача? Какой сайт вам нужно сделать?"></textarea></label>
 					<button class="button__red" type="submit">Отправить</button>
 				</form>
@@ -205,8 +279,8 @@
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
 	<script src="js/interactive.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
