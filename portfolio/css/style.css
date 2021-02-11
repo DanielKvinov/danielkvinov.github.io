@@ -123,6 +123,9 @@ button {
 }
 
 /*Welcome*/
+.welcome {
+    margin-bottom: 80px;
+}
 .welcome h2 {
 	margin-top: 150px;
     font-size: 39px;
@@ -171,7 +174,7 @@ button {
 	line-height: 1.1;
 }
 .welcome-kit .title {
-	margin-top: 130px;
+	margin-top: 50px;
 	margin-bottom: 10px;
 }
 .welcome-kit .subtitle {
