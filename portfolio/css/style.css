@@ -35,8 +35,9 @@ body {
     position: relative;
     line-height: 1.2em;
     overflow-x: hidden;
-    color: #e8e7ea;
-    color: /*#59575a*/;
+    color: white;
+    /*color: #e8e7ea;*/
+    /*color: #59575a;*/
     font-family: Arial;
     /*background: #363636;*/
 }
@@ -74,9 +75,6 @@ header .container {
 	display: flex;
 	flex-direction: column;
 }
-.header__info__text h3 {
-	color: red;
-}
 
 .header__info a {
     max-width: 55px;
@@ -88,7 +86,7 @@ header .container {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 34px;
 }
 
 h3 {
