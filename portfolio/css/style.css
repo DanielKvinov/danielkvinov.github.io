@@ -11,7 +11,29 @@ body{
 }
 html, body{ 
 	height: 100%; 
+    scroll-behavior: smooth;
 }
+
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 5px; /* высота для горизонтального скролла */
+    background-color: transparent;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    /*box-shadow: inset 1px 1px 10px white;*/
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+
 img {
 	color: white;
 }
@@ -81,7 +103,7 @@ header .container {
     height: 55px;
 }
 
-.header__social {
+.social-media__box {
 	display: flex;
 }
 
@@ -497,10 +519,6 @@ button {
 }
 
 /*NEXT STYLES*/
-#mCSB_1_dragger_vertical {
-    height: 50px !important;
-}
-
 .nophoto-client img {
     padding: 40px;
 }
