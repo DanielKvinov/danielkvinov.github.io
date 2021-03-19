@@ -388,7 +388,6 @@ button {
 .feedback-image {
 	width: 300px;
 	height: 230px;
-	border: 1px solid white;
 	border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -399,6 +398,7 @@ button {
 .feedback-image img {
     width: auto;
     height: inherit;
+    border-radius: 10px;
 }
 
 .feedback-info .title {
@@ -470,12 +470,13 @@ button {
 	background: transparent;
     display: flex;
     flex-direction: column;
-    padding: 10px 15px;
+    padding: 10px 0 10px 15px;
     max-width: 340px;
     border-radius: 1px;
     width: 100%;
 }
 .contacts-form form label {
+	border-radius: 10px;
 	margin-bottom: 10px;
 }
 .contacts-form form input {
@@ -500,6 +501,7 @@ button {
     color: white;
     background: #3b3a3d;
     font-size: 15px;
+    border-radius: 10px;
 }
 .contacts-form form textarea {
     min-height: 50px;
@@ -553,6 +555,9 @@ button {
 .masterkanal {
 	background: url("../img/sitePhotos/masterkanal.png") no-repeat 100% 0%/100%;
 }
+.crysisLanding {
+	background: url("../img/sitePhotos/crysisLanding.png") no-repeat 100% 0%/100%;
+}
 .projects-list__cell__container:hover:before {
 	opacity: 1;
 }
@@ -598,4 +603,31 @@ button {
 }
 .slick-dots {
     bottom: -50px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	display: none;
+}
+.slick-prev, .slick-prev:hover, .slick-prev:focus {
+    background: url("../img/sliderArrowLeft.png") no-repeat 100% 100%/100% !important;
+}
+.slick-next, .slick-next:hover, .slick-next:focus {
+    background: url("../img/sliderArrowRight.png") no-repeat 100% 100%/100% !important;
+}
+.slick-prev {
+    left: -45px !important;
+}
+.slick-next {
+    right: -45px !important;
+}
+
+.social-media__box .telegram-link {
+	padding-left: 0;
+}
+.social-media__box {
+	padding-top: 10px;
+}
+.copyright-section {
+	padding: 20px 0;
 }
