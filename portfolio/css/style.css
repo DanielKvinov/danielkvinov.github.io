@@ -503,13 +503,10 @@ button {
 }
 .contacts-form form textarea {
     min-height: 50px;
+	height: 51px;
 }
 .contacts-form form input:focus {
 	border: 1px solid white;
-
-}
-.contacts-form form textarea {
-	height: 51px;
 }
 .contacts-form form button {
 	text-shadow: 1px 1px 0px rgb(150 150 150);

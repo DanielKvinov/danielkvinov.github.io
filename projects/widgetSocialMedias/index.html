@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Сайт от Квинова</title>
+	<meta name="description" content="Виджет социальные медиа">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<style>
+		.page {
+		    width: 100%;
+		    height: 100%;
+		    min-height: 100vh;
+		}
+	</style>
+	<div class="page">
+		
+		<!-- HTML Виджета -->
+		<div class="widget__social-media__container">
+			<div class="widget__social-media__buttons">
+
+				<div class="widget__social-media__link widget__social-media__link__whatsapp">
+					<a href="#"></a>
+					<span>WhatsApp</span>
+				</div>
+
+				<div class="widget__social-media__link widget__social-media__link__instagram">
+					<a href="#"></a>
+					<span>Instagram</span>
+				</div>
+
+				<div class="widget__social-media__link widget__social-media__link__facebook">
+					<a href="#"></a>
+					<span>Facebook</span>
+				</div>
+
+				<div class="widget__social-media__link widget__social-media__link__vk">
+					<a href="#"></a>
+					<span>VK</span>
+				</div>
+
+				<div class="widget__social-media__link widget__social-media__link__viber">
+					<a href="#"></a>
+					<span>Viber</span>
+				</div>
+
+				<div class="widget__social-media__link widget__social-media__link__callback">
+					<a href="#"></a>
+					<span>Обратная связь</span>
+				</div>
+
+			</div>
+			<button class="widget__social-media"></button>
+		</div>
+		<div class="widget__social-media__background"></div>
+		<!-- HTML Конец виджета -->
+
+	</div>
+	<style>
+
+		/*CSS Начало виджета*/
+		.widget__social-media__background {
+		    position: fixed;
+		    background: rgba(33,33,33,.3);
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    left: 0;
+		    z-index: -1;
+		    opacity: 0;
+		    transition: 0.4s;
+		}
+		.widget__social-media__container {
+			font-family: Arial, sans-serif;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    flex-wrap: wrap;
+		    position: fixed;
+		    bottom: 50px;
+		    right: 50px;
+		    z-index: 10101;
+		}
+		.widget__social-media__link span {
+		    position: absolute;
+		    right: 60px;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    background: white;
+		    color: black;
+	        padding: 5px 10px;
+		    border-radius: 10px;
+		    white-space: nowrap;
+		    max-width: 310px;
+		    transition: 0.4s;
+		    opacity: 0;
+		}
+		.widget__social-media__link:hover span {
+		    opacity: 1;
+		}
+		.widget__social-media, .widget__social-media__link {
+		    width: 46px;
+		    height: 46px;
+		    display: inline-block;
+		    border-radius: 50%;
+		    cursor: pointer;
+		    margin: 5px;
+		    transition: 0.4s;
+		    position: relative;
+		}
+		.widget__social-media:focus {
+			outline: 0;
+		}
+		.widget__social-media__close {
+			background: url("./DKbuttonClose.svg") no-repeat 50% 50%/50% !important;
+			background-color: #d6d6d6 !important;
+			width: 46px !important;
+			height: 46px !important;
+		}
+		.widget__social-media:after {
+		    content: ' ';
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    border-radius: 50%;
+		    height: 66px;
+		    width: 66px;
+		    background: #00AEEF;
+		    z-index: -1;
+		    opacity: 0.3;
+		}
+		.widget__social-media__close-after:after {
+		    background: #d6d6d6;
+		    height: 56px;
+		    width: 56px;
+		}
+		.widget__social-media__link:hover {
+		    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 16%), 0 6px 12px rgb(0 0 0 / 32%);
+		    box-shadow: 0 0 6px rgb(0 0 0 / 16%), 0 6px 12px rgb(0 0 0 / 32%);
+		    -webkit-transition: box-shadow .17s cubic-bezier(0,0,.2,1);
+		    transition: box-shadow .17s cubic-bezier(0,0,.2,1);
+		}
+		.widget__social-media {
+			background: url("./DKbuttonCall.svg") no-repeat 50% 50%/50%;
+			background-color: rgb(0, 174, 239);
+			border: none;
+			-webkit-animation: socialRotate .4s;
+	    	animation: socialRotate .4s;
+	    	width: 56px;
+	    	height: 56px;
+		}
+		.widget__social-media__buttons {
+		    flex-direction: column;
+		    align-items: center;
+		    display: none;
+		}
+		.widget__social-media__visible {
+		    z-index: 10100;
+		    opacity: 1;
+		}
+		.widget__social-media__flex {
+		    display: flex;
+		    align-content: flex-start;
+		    -ms-flex-wrap: wrap-reverse;
+		    flex-wrap: wrap-reverse;
+		    flex-direction: column-reverse;
+		}
+		.widget__social-media__link__whatsapp {
+			background: url("./DKwhatsapp.svg") no-repeat 100% 100%/100%;
+		}
+		.widget__social-media__link__instagram {
+			background: url("./DKinstagram.svg") no-repeat 100% 100%/100%;
+			background-color: #e85998;
+		}
+		.widget__social-media__link__facebook {
+			background: url("./DKfacebook.svg") no-repeat 100% 100%/100%;
+			background-color: #38659f;
+		}
+		.widget__social-media__link__vk {
+			background: url("./DKvk.svg") no-repeat 100% 100%/100%;
+			background-color: #3871ba;
+		}
+		.widget__social-media__link__viber {
+			background: url("./DKviber.svg") no-repeat 100% 100%/100%;
+			background-color: #995aca;
+		}
+		.widget__social-media__link__callback {
+			background: url("./DKbuttonCall.svg") no-repeat 50% 50%/50%;
+			background-color: rgb(0, 174, 239);
+		}
+
+		@media (max-height: 475px){
+			.widget__social-media__flex {
+			    max-height: 300px;
+			}
+		}
+		@media (max-height: 400px){
+			.widget__social-media__flex {
+			    max-height: 230px;
+			}
+			.widget__social-media__container {
+			    bottom: 20px;
+			    right: 20px;
+			}
+		}
+		@media (max-height: 320px){
+			.widget__social-media__flex {
+			    max-height: 170px;
+			}
+		}
+		/*CSS Конец виджета*/
+	</style>
+
+	<!-- Подключение jQuery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Начало jQuery скрипта виджета -->
+	<script>
+		$(".widget__social-media").click(function(){
+			$(".widget__social-media__buttons").toggleClass("widget__social-media__flex");
+			$(".widget__social-media__background").toggleClass("widget__social-media__visible");
+			$(".widget__social-media").toggleClass("widget__social-media__close");
+			$(".widget__social-media").toggleClass("widget__social-media__close-after");
+
+		});
+		$(".widget__social-media__background").click(function(){
+			$(".widget__social-media__buttons").toggleClass("widget__social-media__flex");
+			$(".widget__social-media__background").toggleClass("widget__social-media__visible");
+			$(".widget__social-media").toggleClass("widget__social-media__close");
+			$(".widget__social-media").toggleClass("widget__social-media__close-after");
+		});
+	</script>
+	<!-- Конец jQuery скрипта виджета -->
+
+</body>
+</html>
