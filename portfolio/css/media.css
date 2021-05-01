@@ -31,9 +31,6 @@
 	.projects-list__cell:nth-child(3n) {
 		margin-right: 20px;
 	}
-	.projects-list__cell:nth-child(2n) {
-		margin-right: 0px;
-	}
 	.projects-list__cell {
 	    margin-bottom: 20px;
 	    margin-right: 20px;
@@ -79,18 +76,33 @@
 		display: none;
 	}
 	.feedback-image__mobile {
-		display: block;
+		display: block !important;
 	}
 	.feedback-block {
 	    padding: 0 10px;
 	}
-	.contacts-info .title__big {
+	.contacts-info .title {
     margin-bottom: 20px;
 }
 
 }
 
 @media (max-width: 700px){
+	.welcome h2 {
+	    margin-top: 60px;
+	    font-size: 31px;
+	    line-height: 34px;
+	}
+	.title {
+	    font-size: 24px;
+	}
+	.welcome-kit .subtitle {
+    margin-bottom: 30px;
+}
+.feedback h2.title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 	header .container {
 	    flex-direction: column;
 	}
@@ -116,6 +128,15 @@
 }
 
 @media (max-width: 450px){
+	h2.title {
+	    max-width: 230px;
+	    margin: 0 auto;
+	    line-height: 27px;
+	    text-align: center;
+	}
+	.subtitle {
+	    max-width: 230px;
+	}
 	.projects-list__cell {
 	    margin-right: 0;
 	    width: 235px;

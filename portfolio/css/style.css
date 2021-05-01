@@ -453,17 +453,12 @@ button {
 .contacts .container {
 	display: flex;
 }
-.title__big {
-	font-size: 29px;
-	font-weight: bold;
-    line-height: 27px;
+.contacts-info .title {
+	margin-bottom: 20px;	
+	display: inline-block;
 }
 .contacts-info {
     max-width: 440px;
-}
-.contacts-info .title__big {
-	margin-bottom: 30px;	
-	display: inline-block;
 }
 .contacts-form {
     width: 100%;
