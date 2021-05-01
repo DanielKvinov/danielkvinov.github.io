@@ -22,32 +22,32 @@
 
 				<div class="widget__social-media__link widget__social-media__link__whatsapp">
 					<a href="#"></a>
-					<span>WhatsApp</span>
+					<span><a href="#">WhatsApp</a></span>
 				</div>
 
 				<div class="widget__social-media__link widget__social-media__link__instagram">
-					<a href="#"></a>
-					<span>Instagram</span>
+					<a href="#" target="_blank"></a>
+					<span><a href="#" target="_blank">Instagram</a></span>
 				</div>
 
 				<div class="widget__social-media__link widget__social-media__link__facebook">
-					<a href="#"></a>
-					<span>Facebook</span>
+					<a href="#" target="_blank"></a>
+					<span><a href="#" target="_blank">Facebook</a></span>
 				</div>
 
 				<div class="widget__social-media__link widget__social-media__link__vk">
-					<a href="#"></a>
-					<span>VK</span>
+					<a href="#" target="_blank"></a>
+					<span><a href="#" target="_blank">VK</a></span>
 				</div>
 
 				<div class="widget__social-media__link widget__social-media__link__viber">
 					<a href="#"></a>
-					<span>Viber</span>
+					<span><a href="#">Viber</a></span>
 				</div>
 
 				<div class="widget__social-media__link widget__social-media__link__callback">
 					<a href="#"></a>
-					<span>Обратная связь</span>
+					<span><a href="#">Обратная связь</a></span>
 				</div>
 
 			</div>
@@ -58,9 +58,18 @@
 
 	</div>
 	<style>
-
 		/*CSS Начало виджета*/
-		.widget__social-media__background {
+		body .widget__social-media__link a {
+		    color: black !important;
+		    text-decoration: none !important;
+		    width: 100%;
+		    height: 100%;
+		    display: block;
+		}
+		body .widget__social-media__container button {
+			padding: 0 !important;
+		}
+		body .widget__social-media__background {
 		    position: fixed;
 		    background: rgba(33,33,33,.3);
 		    width: 100%;
@@ -71,7 +80,7 @@
 		    opacity: 0;
 		    transition: 0.4s;
 		}
-		.widget__social-media__container {
+		body .widget__social-media__container {
 			font-family: Arial, sans-serif;
 		    display: flex;
 		    flex-direction: column;
@@ -82,24 +91,30 @@
 		    right: 50px;
 		    z-index: 10101;
 		}
-		.widget__social-media__link span {
+		body .widget__social-media__link span {
+		    z-index: 1;
 		    position: absolute;
-		    right: 60px;
+		    right: 0;
 		    top: 50%;
 		    transform: translateY(-50%);
 		    background: white;
 		    color: black;
-	        padding: 5px 10px;
 		    border-radius: 10px;
 		    white-space: nowrap;
-		    max-width: 310px;
 		    transition: 0.4s;
+		    max-width: 0;
 		    opacity: 0;
+		    padding: 0;
+		    overflow: hidden;
 		}
-		.widget__social-media__link:hover span {
+		body .widget__social-media__link:hover span {
 		    opacity: 1;
+		    max-width: 310px;
+	        padding: 5px 10px;
+		    right: 60px;
+		    overflow: visible;
 		}
-		.widget__social-media, .widget__social-media__link {
+		body .widget__social-media, .widget__social-media__link {
 		    width: 46px;
 		    height: 46px;
 		    display: inline-block;
@@ -109,16 +124,16 @@
 		    transition: 0.4s;
 		    position: relative;
 		}
-		.widget__social-media:focus {
+		body .widget__social-media:focus {
 			outline: 0;
 		}
-		.widget__social-media__close {
+		body .widget__social-media__close {
 			background: url("./DKbuttonClose.svg") no-repeat 50% 50%/50% !important;
 			background-color: #d6d6d6 !important;
 			width: 46px !important;
 			height: 46px !important;
 		}
-		.widget__social-media:after {
+		body .widget__social-media:after {
 		    content: ' ';
 		    position: absolute;
 		    top: 50%;
@@ -131,18 +146,18 @@
 		    z-index: -1;
 		    opacity: 0.3;
 		}
-		.widget__social-media__close-after:after {
+		body .widget__social-media__close-after:after {
 		    background: #d6d6d6;
 		    height: 56px;
 		    width: 56px;
 		}
-		.widget__social-media__link:hover {
+		body .widget__social-media__link:hover {
 		    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 16%), 0 6px 12px rgb(0 0 0 / 32%);
 		    box-shadow: 0 0 6px rgb(0 0 0 / 16%), 0 6px 12px rgb(0 0 0 / 32%);
 		    -webkit-transition: box-shadow .17s cubic-bezier(0,0,.2,1);
 		    transition: box-shadow .17s cubic-bezier(0,0,.2,1);
 		}
-		.widget__social-media {
+		body .widget__social-media {
 			background: url("./DKbuttonCall.svg") no-repeat 50% 50%/50%;
 			background-color: rgb(0, 174, 239);
 			border: none;
@@ -151,92 +166,94 @@
 	    	width: 56px;
 	    	height: 56px;
 		}
-		.widget__social-media__buttons {
+		body .widget__social-media__buttons {
 		    flex-direction: column;
 		    align-items: center;
 		    display: none;
 		}
-		.widget__social-media__visible {
+		body .widget__social-media__visible {
 		    z-index: 10100;
 		    opacity: 1;
 		}
-		.widget__social-media__flex {
+		body .widget__social-media__flex {
 		    display: flex;
 		    align-content: flex-start;
 		    -ms-flex-wrap: wrap-reverse;
 		    flex-wrap: wrap-reverse;
 		    flex-direction: column-reverse;
 		}
-		.widget__social-media__link__whatsapp {
+		body .widget__social-media__link__whatsapp {
 			background: url("./DKwhatsapp.svg") no-repeat 100% 100%/100%;
 		}
-		.widget__social-media__link__instagram {
+		body .widget__social-media__link__instagram {
 			background: url("./DKinstagram.svg") no-repeat 100% 100%/100%;
 			background-color: #e85998;
 		}
-		.widget__social-media__link__facebook {
+		body .widget__social-media__link__facebook {
 			background: url("./DKfacebook.svg") no-repeat 100% 100%/100%;
 			background-color: #38659f;
 		}
-		.widget__social-media__link__vk {
+		body .widget__social-media__link__vk {
 			background: url("./DKvk.svg") no-repeat 100% 100%/100%;
 			background-color: #3871ba;
 		}
-		.widget__social-media__link__viber {
+		body .widget__social-media__link__viber {
 			background: url("./DKviber.svg") no-repeat 100% 100%/100%;
 			background-color: #995aca;
 		}
-		.widget__social-media__link__callback {
+		body .widget__social-media__link__callback {
 			background: url("./DKbuttonCall.svg") no-repeat 50% 50%/50%;
 			background-color: rgb(0, 174, 239);
 		}
 
 		@media (max-height: 475px){
-			.widget__social-media__flex {
+			body .widget__social-media__flex {
 			    max-height: 300px;
 			}
 		}
 		@media (max-height: 400px){
-			.widget__social-media__flex {
+			body .widget__social-media__flex {
 			    max-height: 230px;
 			}
-			.widget__social-media__container {
+			body .widget__social-media__container {
 			    bottom: 20px;
 			    right: 20px;
 			}
 		}
 		@media (max-height: 320px){
-			.widget__social-media__flex {
+			body .widget__social-media__flex {
 			    max-height: 170px;
 			}
 		}
 		/*CSS Конец виджета*/
 	</style>
 
-	<!-- Подключение jQuery -->
+	<!-- Подключение jQuery (если на сайте нету) -->
+	<!-- Проверить можно так -> В консоли написать jQuery.fn.jquery -->
+	<!-- Если ничего не выдало, то jQuery нету -->
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous">
 	</script>
 
-	<!-- Начало jQuery скрипта виджета -->
+	<!-- Начало jQuery-скрипта виджета -->
 	<script>
-		$(".widget__social-media").click(function(){
-			$(".widget__social-media__buttons").toggleClass("widget__social-media__flex");
-			$(".widget__social-media__background").toggleClass("widget__social-media__visible");
-			$(".widget__social-media").toggleClass("widget__social-media__close");
-			$(".widget__social-media").toggleClass("widget__social-media__close-after");
+		jQuery(".widget__social-media").click(function(){
+			jQuery(".widget__social-media__buttons").toggleClass("widget__social-media__flex");
+			jQuery(".widget__social-media__background").toggleClass("widget__social-media__visible");
+			jQuery(".widget__social-media").toggleClass("widget__social-media__close");
+			jQuery(".widget__social-media").toggleClass("widget__social-media__close-after");
 
 		});
-		$(".widget__social-media__background").click(function(){
-			$(".widget__social-media__buttons").toggleClass("widget__social-media__flex");
-			$(".widget__social-media__background").toggleClass("widget__social-media__visible");
-			$(".widget__social-media").toggleClass("widget__social-media__close");
-			$(".widget__social-media").toggleClass("widget__social-media__close-after");
+		jQuery(".widget__social-media__background").click(function(){
+			jQuery(".widget__social-media__buttons").toggleClass("widget__social-media__flex");
+			jQuery(".widget__social-media__background").toggleClass("widget__social-media__visible");
+			jQuery(".widget__social-media").toggleClass("widget__social-media__close");
+			jQuery(".widget__social-media").toggleClass("widget__social-media__close-after");
 		});
 	</script>
-	<!-- Конец jQuery скрипта виджета -->
+	<!-- Конец jQuery-скрипта виджета -->
 
 </body>
 </html>
