@@ -88,6 +88,18 @@
 }
 
 @media (max-width: 700px){
+	.welcome {
+	    margin-bottom: 0px;
+	}
+	.feedback {
+	    padding-bottom: 0;
+	}
+	.slick-slider {
+	    margin-bottom: 130px !important;
+	}
+	h2.title {
+	    margin-top: 70px !important;
+	}
 	.welcome h2 {
 	    margin-top: 60px;
 	    font-size: 31px;
@@ -128,6 +140,23 @@
 }
 
 @media (max-width: 450px){
+	.slick-dots li {
+	    width: 15px !important;
+	    height: 15px !important;
+	}
+	.slick-dots {
+	    bottom: -30px !important;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: 90% !important;
+	    border-top: 2px solid white;
+	}
+	.feedback-info__top-text .title {
+	    font-size: 21px;
+	}
+	.feedback-info .title {
+	    margin: 10px 0 0px 0;
+	}
 	h2.title {
 	    max-width: 230px;
 	    margin: 0 auto;
