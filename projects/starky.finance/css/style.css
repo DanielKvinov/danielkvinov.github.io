@@ -1,0 +1,539 @@
+/*DEFAULT SETTINGS*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito", sans-serif;
+}
+button {
+	cursor: pointer;
+	background: transparent;
+	display: inline-block;
+	border: 0;
+}
+input:focus, button:focus, a:focus {
+	outline: 0;
+	border: 0;
+}
+body {
+	border-right: 1px solid white;
+	font-size: 18px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.2em;
+	overflow-x: hidden;
+	color: #fffefe;
+	background-color: #202342;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.4s;
+}
+.container {
+    max-width: 1138px;
+    width: 100%;
+    margin: 0 auto;    
+}
+ul {
+    list-style: none;
+}
+.starky-button {
+	border-radius: 0px 50px 50px 50px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 400;
+}
+h1 {
+	font-size: 85px;
+	font-weight: 900;
+	line-height: 72px;
+}
+h2 {
+	font-size: 65px;
+	font-weight: 700;
+	line-height: 55px;
+}
+.starky-info-element {
+	width: 100%;
+	background-color: #464a70;
+	border-radius: 20px;
+}
+.list-arrow-icon:after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+    right: -10px;
+	width: 6px;
+	height: 3px;
+	background: url("../img/list-arrow-icon.png") no-repeat 100% 100%/100%;
+}
+/*STYLES END*/
+
+/*HEADER*/
+header {
+	padding-top: 22px;
+}
+#header-background {
+	width: 1116px;
+	height: auto;
+	position: absolute;
+	top: -10px;
+	right: -50px;
+	z-index: -1;
+}
+header .container {
+	display: flex;
+	align-items: center;
+}
+.logo {
+    margin-right: 33px;
+}
+.logo img {
+	margin-right: 7px;
+	margin-bottom: 11px;
+}
+.logo a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #9ca9b8;
+	font-size: 25px;
+	font-weight: 800;
+}
+.text__blue {
+	color: #1ac4ff !important;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    max-width: 597px;
+	width: 100%;
+    margin-right: 89px;
+}
+.menu a {
+	font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.menu a:hover {
+	color: #7ac143;
+}
+.balance {
+	margin-right: 15px;
+}
+.balance-number {
+	color: #7ac143;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+}
+.balance-number:before {
+	content: " ";
+	background: url("../img/balanceIcon.png") no-repeat 100% 100%/100%;
+	position: absolute;
+	left: -31px;
+	top: 0;
+	width: 22px;
+	height: 22px;
+}
+.connect-button {
+	font-size: 14px;
+	margin-right: 20px;
+	width: 125px;
+	height: 48px;
+	line-height: 48px;
+	background-color: #1ac4ff;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.language-select * {
+	font-size: 14px;
+	font-weight: 500;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+}
+.language-select {
+	padding-left: 28px;
+	position: relative;
+}
+.language-select__selected {
+	position: relative;
+}
+.language-select__selected:before {
+	content: ' ';
+	position: absolute;
+	top: 0px;
+	left: -28px;
+	width: 20px;
+	height: 20px;
+	background-color: #7ac143;
+	background: url("../img/language-icon.png") no-repeat 100% 100%/100%;
+}
+.language-select__list {
+    position: absolute;
+	top: 33px;
+    left: 8px;
+    display: none;
+}
+.language-select__list li {
+    padding: 11px 20px;
+    background: #464a70;
+    border-bottom: 1px solid black;
+}
+.language-select__list li:first-child {
+    border-radius: 15px 15px 0 0;
+}
+.language-select__list li:last-child {
+    border-radius: 0 0 15px 15px;
+    border-bottom: none;
+}
+/*HEADER END*/
+
+/*STARKY SWAP*/
+.starky-swap {
+    padding-top: 110px;
+	padding-bottom: 39px;
+}
+#sky-blue {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	width: 975px;
+	height: auto;
+}
+#kitty-blue {
+	position: absolute;
+	top: 168px;
+	right: 321px;
+	z-index: -1;
+	width: 665px;
+	height: auto;
+}
+.starky-swap .container {
+	display: flex;
+	flex-direction: column;
+}
+.starky-swap h1 {
+    padding-bottom: 16px;
+}
+.starky-swap p {
+	font-size: 22px;
+	font-weight: 700;
+    padding-bottom: 43px;
+}
+.starky-swap h3 {
+    font-size: 32px;
+	font-weight: 900;
+	padding-bottom: 24px;
+}
+.farms-staking__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	width: 490px;
+}
+.farms-staking__element {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 115px;
+	margin-bottom: 10px;
+	padding: 15px 31px 15px 21px;
+}
+.farms-staking__element:last-child {
+	margin-bottom: 0px;
+}
+.farms-staking__element img {
+	margin-right: 24px;
+}
+#starky-to-harvest img {
+	width: 79px;
+	height: auto;
+}
+#starky-in-wallet img {
+	width: 81px;
+	height: auto;
+}
+.farms-staking__element__title {
+	font-size: 22px;
+	font-weight: 700;
+	font-family: "Nunito Sans", sans-serif;
+}
+.farms-staking__element__species {
+    display: flex;
+    align-items: center;
+}
+.farms-staking__element__balance {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-left: 10px;
+	padding-top: 18px;
+}
+.farms-staking__element__balance__number {
+	color: #7ac143;
+	font-size: 26px;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+}
+.farms-staking__element__balance__status {
+	font-size: 16px;
+    padding-top: 4px;
+}
+.farms-staking__button {
+	width: 285px;
+	height: 69px;
+	background-color: #7ac143;
+	font-size: 18px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+/*STARKY SWAP END*/
+
+/*STARKY STATS*/
+.starky-stats {
+	padding-bottom: 15px;
+}
+.starky-stats h2 {
+    padding-bottom: 55px;
+}
+.starky-stats__block {
+	display: flex;
+	align-items: center;
+}
+.starky-stats__element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	max-width: 200px;
+}
+.starky-stats__element img {
+    margin-bottom: 16px;
+}
+.starky-stats__element__title {
+	font-family: "Nunito Sans", sans-serif;
+	color: #1ac4ff;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.starky-stats__element__number {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+#market-cap {
+    margin-left: 60px;
+}
+#total-minted {
+    margin-left: 111px;
+}
+#total-burned {
+    margin-left: 101px;
+}
+#circulating-supply {
+    margin-left: 83px;
+}
+#new-starky-block {
+    margin-left: 62px;
+}
+#market-cap:before {
+	content: ' ';
+	position: absolute;
+    left: -23px;
+    top: -15px;
+	width: 149px;
+	height: 121px;
+	z-index: -1;
+	background-color: #464a70;
+	background: url("../img/market-capBackground.png") no-repeat 100% 100%/100%;
+}
+#total-minted:before {
+	content: ' ';
+	position: absolute;
+	left: -15px;
+	top: -15px;
+	width: 149px;
+	height: 133px;
+	z-index: -1;
+	background-color: #464a70;
+	background: url("../img/total-mintedBackground.png") no-repeat 100% 100%/100%;
+}
+#total-burned:before {
+	content: ' ';
+	position: absolute;
+	left: -6px;
+	top: -17px;
+	width: 129px;
+	height: 159px;
+	z-index: -1;
+	background-color: #464a70;
+	background: url("../img/total-burnedBackground.png") no-repeat 100% 100%/100%;
+}
+#circulating-supply:before {
+	content: ' ';
+	position: absolute;
+	left: 0px;
+	top: -9px;
+	width: 170px;
+	height: 132px;
+	z-index: -1;
+	background-color: #464a70;
+	background: url("../img/circulating-supplyBackground.png") no-repeat 100% 100%/100%;
+}
+#new-starky-block:before {
+	content: ' ';
+	position: absolute;
+	left: 16px;
+	top: -15px;
+	width: 175px;
+	height: 138px;
+	z-index: -1;
+	background-color: #464a70;
+	background: url("../img/new-starky-blockBackground.png") no-repeat 100% 100%/100%;
+}
+/*STARKY STATS END*/
+
+/*TOTAL VALUE*/
+.total-value {
+	position: relative;
+	padding-top: 153px;
+    padding-bottom: 183px;
+}
+.total-value__block {
+    padding-right: 67px;
+}
+#sky-yellow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	width: 913px;
+	height: auto;
+}
+#kitty-yellow {
+	position: absolute;
+	top: 79px;
+	left: 379px;
+	z-index: -1;
+	width: 479px;
+	height: auto;
+}
+.total-value .container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.total-value h2 {
+	padding-right: 118px;
+	padding-bottom: 10px;
+}
+.total-value .subtitle {
+	display: block;
+	font-size: 65px;
+	font-weight: 700;
+	line-height: 75px;
+	padding-bottom: 20px;
+}
+.total-value__element {
+	width: 490px;
+	height: 145px;
+	border-radius: 20px;
+	background-color: #464a70;
+	padding: 16px 40px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.total-value__element:before {
+	content: " ";
+	background:  url("../img/total-value-element.png") no-repeat 100% 100%/100%;
+	position: absolute;
+	top: 64px;
+	right: -45px;
+	width: 180px;
+	height: 164px;
+}
+.total-value__element__number {
+	font-size: 60px;
+	color: #7ac143;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 900;
+	line-height: 75px;
+}
+.total-value__element__text {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+}
+/*TOTAL VALUE END*/
+
+/*ANNOUNCEMENTS*/
+.announcements {
+	padding-top: 75px;
+	position: relative;
+    padding-bottom: 128px;
+}
+#sky-green {
+	position: absolute;
+	top: -120px;
+	right: 0;
+	z-index: -2;
+	width: 962px;
+	height: auto;
+}
+#kitty-green {
+	position: absolute;
+	top: 146px;
+	right: 285px;
+	z-index: -1;
+	width: 705px;
+	height: auto;
+}
+.announcements h2 {
+	padding-bottom: 21px;
+}
+.announcements-twitter {
+    width: 485px;
+	height: 408px;
+	border-radius: 20px;
+	background-color: #464a70;
+	padding: 20px;
+}
+.announcements-twitter__app {
+	border-radius: 20px;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+/*ANNOUNCEMENTS END*/
+
+/*SOCIAL MEDIA*/
+.contacts {
+	padding-bottom: 138px;
+}
+.social-media {
+	display: flex;
+    justify-content: center;
+	margin: 0 auto;
+}
+.social-media__element {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	background-color: #7ac143;
+	border-radius: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media__element:last-child {
+	margin-right: 0px;
+}
+/*SOCIAL MEDIA END*/

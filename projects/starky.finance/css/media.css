@@ -1,0 +1,763 @@
+@media (max-width: 1920px){
+	#header-background {
+		right: auto;
+		left: 855px;
+	}
+	#sky-blue {
+		right: auto;
+		left: 965px;
+	}
+	#kitty-blue {
+		right: auto;
+		left: 955px;
+	}
+	#sky-yellow {
+		left: auto;
+		right: 1040px;
+	}
+	#kitty-yellow {
+		left: auto;
+		right: 1094px;
+	}
+	#sky-green {
+		left: 950px;
+		right: auto;
+	}
+	#kitty-green {
+		right: auto;
+		left: 922px;
+	}
+}
+
+@media (max-width: 1650px){
+	#header-background {
+		left: 725px;
+	}
+	#sky-blue {
+		left: 845px;
+	}
+	#kitty-blue {
+		left: 835px;
+	}
+	#sky-yellow {
+		right: 890px;
+	}
+	#kitty-yellow {
+		right: 944px;
+	}
+	#sky-green {
+		left: 850px;
+	}
+	#kitty-green {
+		left: 822px;
+	}
+}
+
+@media (max-width: 1550px){
+	#header-background {
+		left: 675px;
+	}
+	#sky-blue {
+		left: 775px;
+	}
+	#kitty-blue {
+		left: 765px;
+	}
+	#sky-yellow {
+		right: 830px;
+	}
+	#kitty-yellow {
+		right: 884px;
+	}
+	#sky-green {
+		left: 780px;
+	}
+	#kitty-green {
+		left: 752px;
+	}
+}
+
+@media (max-width: 1470px){
+	.contacts {
+		padding-bottom: 78px;
+	}
+	#header-background {
+		left: 575px;
+	}
+	#sky-blue {
+		left: 666px;
+		width: 865px;
+	}
+	#kitty-blue {
+		left: 664px;
+		width: 535px;
+		top: 198px;
+	}
+	#sky-yellow {
+		right: 720px;
+	}
+	#kitty-yellow {
+		right: 814px;
+		width: 360px;
+		top: 109px;
+	}
+	#sky-green {
+		left: 730px;
+	}
+	#kitty-green {
+		left: 685px;
+		width: 575px;
+		top: 176px;
+	}
+
+	.logo a {
+		font-size: 22px;
+	}
+	.menu a {
+		font-size: 14px;
+	}
+	.menu {
+		max-width: 507px;
+	}
+	.balance-number {
+		font-size: 16px;
+	}
+	.balance-number:before {
+		left: -25px;
+		width: 19px;
+		height: 19px;
+	}
+	.connect-button {
+		font-size: 14px;
+		width: 111px;
+		height: 43px;
+		line-height: 43px;
+		margin-right: 10px;
+	}
+	.language-select * {
+		font-size: 12px;
+	}
+	.language-select__selected:before {
+		left: -22px;
+		width: 17px;
+		height: 17px;
+	}
+	.farms-staking__element {
+		height: 95px;
+	}
+	.farms-staking__block {
+		width: 420px;
+	}
+	.farms-staking__button {
+		width: 265px;
+		height: 59px;
+		font-size: 16px;
+	}
+	.farms-staking__element__title {
+		font-size: 18px;
+	}
+	.farms-staking__element__balance__number {
+		font-size: 20px;
+	}
+	.farms-staking__element__balance__status {
+		font-size: 13px;
+		padding-top: 0;
+	}
+	#starky-to-harvest img {
+		width: 69px;
+	}
+	#starky-in-wallet img {
+		width: 71px;
+	}
+	h1 {
+		font-size: 65px;
+	}
+	.starky-swap p {
+		font-size: 17px;
+	}
+	.starky-swap h3 {
+		font-size: 25px;
+	}
+
+	h2 {
+		font-size: 55px;
+	}
+
+	.starky-stats__element__title {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.starky-stats__element__number {
+		font-size: 18px;
+	}
+	.starky-stats__element img {
+		margin-bottom: 11px;
+	}
+	#total-minted:before {
+		left: -23px;
+	}
+	#total-burned:before {
+		left: -18px;
+	}
+	#circulating-supply:before {
+		left: -9px;
+		top: -5px;
+	}
+	#new-starky-block:before {
+		left: 0px;
+		top: -19px;
+	}
+	.total-value .subtitle {
+		font-size: 55px;
+	}
+	.total-value__element {
+		width: 450px;
+		height: 125px;
+	}
+	.total-value__element__number {
+		font-size: 47px;
+		line-height: 65px;
+	}
+	.total-value__element__text {
+		font-size: 20px;
+	}
+	.total-value__element:before {
+		top: 54px;
+		width: 150px;
+		height: 140px;
+	}
+	.social-media__element {
+		width: 40px;
+		height: 40px;
+	}
+	#twitter img {
+		width: 19px;
+		height: 16px;
+	}
+	#telegram img {
+		width: 20px;
+		height: 16px;
+	}
+	#reddit img {
+		width: 23px;
+		height: 18px;
+	}
+}
+
+
+@media (max-width: 1280px){
+	.container {
+		padding: 0 10px;
+	}
+	.menu a {
+		font-size: 12px;
+	}
+	.menu {
+		max-width: 407px;
+	}
+	.starky-swap {
+		padding-top: 60px;
+	}
+	.starky-swap h1 {
+		padding-bottom: 0px;
+	}
+	.starky-swap p {
+		padding-bottom: 33px;
+	}
+	.farms-staking__block {
+		width: 390px;
+	}
+	#starky-to-harvest img {
+		width: 59px;
+	}
+	#starky-in-wallet img {
+		width: 61px;
+	}
+	.farms-staking__element__title {
+		font-size: 16px;
+	}
+	.farms-staking__element__balance__number {
+		font-size: 18px;
+	}
+	.farms-staking__element__balance__status {
+		font-size: 11px;
+	}
+	.farms-staking__button {
+		width: 235px;
+		font-size: 14px;
+	}
+	.starky-stats__element__title {
+		font-size: 12px;
+		margin-bottom: 3px;
+	}
+	.starky-stats__element__number {
+		font-size: 16px;
+	}
+	#market-cap:before {
+		width: 139px;
+		height: 114px;
+	}
+	#total-minted:before {
+		width: 129px;
+		height: 115px;
+	}
+	#total-burned:before {
+		width: 109px;
+		height: 139px;
+		left: -11px;
+	}
+	#circulating-supply:before {
+		width: 160px;
+		height: 125px;
+		top: -10px;
+	}
+	#new-starky-block:before {
+		width: 165px;
+		height: 131px;
+	}
+	#market-cap {
+		margin-left: 40px;
+	}
+	#total-minted {
+		margin-left: 91px;
+	}
+	#total-burned {
+		margin-left: 81px;
+	}
+	#circulating-supply {
+		margin-left: 63px;
+	}
+	#new-starky-block {
+		margin-left: 52px;
+	}
+	.total-value__block {
+		padding-right: 50px;
+	}
+	h2 {
+		line-height: 45px;
+	}
+	.total-value .subtitle {
+		line-height: 55px;
+	}
+	.total-value__element {
+		width: 410px;
+		height: 115px;
+	}
+	.total-value__element__number {
+		font-size: 41px;
+		line-height: 51px;
+	}
+	.total-value__element {
+		padding: 16px 30px;
+	}
+	.total-value__element:before {
+		width: 120px;
+		height: 114px;
+		right: -25px;
+	}
+	.announcements-twitter {
+		width: 385px;
+		height: 308px;
+	}
+
+	#header-background {
+		left: 440px;
+	}
+	#kitty-blue {
+		left: 524px;
+		width: 485px;
+		top: 168px;
+	}
+	#sky-blue {
+		left: 536px;
+		width: 835px;
+	}
+	#sky-yellow {
+		right: 600px;
+	}
+	#kitty-yellow {
+		right: 664px;
+		width: 310px;
+		top: 149px;
+	}
+	#sky-green {
+		left: 540px;
+		width: 802px;
+	}
+	#kitty-green {
+		left: 515px;
+		width: 505px;
+		top: 146px;
+	}
+}
+
+@media (max-width: 1028px){
+	#header-background {
+		left: 360px;
+		width: 716px;
+	}
+	#sky-blue {
+		left: 446px;
+		width: 845px;
+	}
+	#kitty-blue {
+		left: 434px;
+		width: 455px;
+		top: 188px;
+	}
+	#sky-yellow {
+		right: 520px;
+	}
+	#kitty-yellow {
+		right: 614px;
+		width: 280px;
+		top: 149px;
+	}
+	#sky-green {
+		left: 460px;
+	}
+	#kitty-green {
+		left: 435px;
+		width: 505px;
+		top: 146px;
+	}
+}
+
+@media (max-width: 968px){
+
+	#header-background {
+		display: none;
+	}
+	#sky-blue {
+		left: 436px;
+		width: 725px;
+		top: 30px;
+	}
+	#kitty-blue {
+		left: 444px;
+		width: 395px;
+		top: 238px;
+	}
+	#sky-yellow {
+		right: 510px;
+	}
+	#kitty-yellow {
+		right: 554px;
+		width: 250px;
+		top: 139px;
+	}
+	#sky-yellow {
+		right: 510px;
+		width: 763px;
+		top: 7px;
+	}
+	#sky-green {
+		left: 460px;
+		width: 712px;
+		top: -80px;
+	}
+	#kitty-green {
+		left: 425px;
+		width: 455px;
+		top: 146px;
+	}
+	.announcements {
+		padding-top: 55px;
+		padding-bottom: 78px;
+	}
+	.contacts {
+		padding-bottom: 48px;
+	}
+	.total-value {
+		padding-top: 123px;
+		padding-bottom: 123px;
+	}
+
+}
+
+@media (max-width: 895px){
+
+	#sky-blue {
+		left: 436px;
+		width: 575px;
+		top: 120px;
+	}
+	#kitty-blue {
+		left: 434px;
+		width: 315px;
+		top: 288px;
+	}
+	#kitty-green {
+		left: 425px;
+		width: 335px;
+		top: 186px;
+	}
+	#sky-green {
+		width: 462px;
+		top: 60px;
+	}
+	#sky-yellow {
+		right: 500px;
+		width: 673px;
+		top: 27px;
+	}
+	#kitty-yellow {
+		right: 534px;
+		width: 210px;
+		top: 149px;
+	}
+	.farms-staking__element {
+		height: 85px;
+		padding: 15px 21px 15px 11px;
+	}
+	.farms-staking__block {
+		width: 350px;
+	}
+	.farms-staking__element__title {
+		font-size: 14px;
+	}
+
+	.starky-stats__block {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.starky-stats__element {
+		margin-left: 0 !important;
+		width: 200px;
+		margin-bottom: 50px;
+	}
+	#market-cap:before {
+		left: 30px;
+		top: -15px;
+		width: 149px;
+		height: 124px;
+	}
+	#total-minted:before {
+		left: 31px;
+		top: -11px;
+		width: 139px;
+		height: 125px;
+	}
+	#total-burned:before {
+		left: 32px;
+		top: -17px;
+		width: 119px;
+		height: 149px;
+	}
+	#circulating-supply:before {
+		top: -10px;
+		left: 11px;
+		width: 170px;
+		height: 135px;
+	}
+	#new-starky-block:before {
+		left: 30px;
+		top: -19px;
+		width: 175px;
+		height: 141px;
+	}
+
+}
+
+@media (max-width: 768px){
+	.starky-swap__decoration,
+	.total-value__decoration,
+	.announcements__decoration {
+		display: none;
+	}
+	.container {
+		padding: 0 30px;
+	}
+	h1 {
+		font-size: 70px;
+		line-height: 82px;
+	}
+	.starky-swap p {
+		font-size: 19px;
+		text-align: center;
+	}
+	.starky-swap h3 {
+		font-size: 30px;
+	}
+	.starky-swap .container {
+		align-items: center;
+	}
+	.farms-staking__block {
+		width: 420px;
+	}
+	.farms-staking {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.farms-staking__button {
+		margin-top: 0;
+		border-radius: 0px 0px 20px 20px;
+	}
+	.farms-staking__element__title {
+		font-size: 16px;
+	}
+	.starky-stats .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.starky-stats .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.total-value__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-right: 0;
+	}
+	.total-value h2 {
+		padding-right: 0;
+	}
+	.announcements .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.total-value {
+		padding-top: 63px;
+	}
+
+}
+
+@media (max-width: 500px){
+
+	h1 {
+		font-size: 50px;
+		line-height: 72px;
+	}
+	.starky-swap h3 {
+		font-size: 26px;
+		padding-bottom: 14px;
+	}
+	.farms-staking__block {
+		max-width: 420px;
+		width: 100%;
+	}
+	.farms-staking__element__balance {
+		padding-left: 30px;
+	}
+	h2 {
+		font-size: 45px;
+		line-height: 35px;
+	}
+	.total-value .subtitle {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.total-value__element {
+		max-width: 410px;
+		width: 100%;
+		width: 410px;
+		height: 95px;
+		font-size: 18px;
+	}
+	.total-value .container {
+		align-items: center;
+	}
+	.total-value__element__number {
+		font-size: 35px;
+		line-height: 41px;
+	}
+	.total-value__element:before {
+		width: 100px;
+		height: 94px;
+		right: -15px;
+		top: 34px;
+	}
+
+}
+
+@media (max-width: 420px){
+	.starky-swap {
+		padding-top: 40px;
+	}
+	h1 {
+		font-size: 40px;
+		line-height: 62px;
+	}
+	.starky-swap p {
+		font-size: 14px;
+		text-align: center;
+	}
+	.starky-swap h3 {
+		font-size: 21px;
+	}
+	#starky-to-harvest img {
+		width: 39px;
+	}
+	#starky-in-wallet img {
+		width: 41px;
+	}
+	.farms-staking__element__title {
+		font-size: 12px;
+	}
+	.farms-staking__element__balance {
+		padding-left: 10px;
+		padding-top: 8px;
+	}
+	.farms-staking__element__balance__number {
+		font-size: 14px;
+	}
+	.farms-staking__element__balance__status {
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.farms-staking__element img {
+		margin-right: 11px;
+	}
+	.farms-staking__element {
+		height: 85px;
+		padding: 10px 11px 10px 11px;
+		height: 65px;
+	}
+	.farms-staking__button {
+		width: 175px;
+		font-size: 12px;
+		height: 45px;
+	}
+
+	.container {
+		padding: 0 10px;
+	}
+	.total-value__element {
+		width: 300px;
+	}
+	.total-value__element__number {
+		font-size: 31px;
+		line-height: 41px;
+	}
+	.total-value__element__text {
+		font-size: 15px;
+	}
+	.total-value__element:before {
+		width: 80px;
+		height: 74px;
+		right: -5px;
+		top: 54px;
+	}
+	h2 {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.total-value .subtitle {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.announcements-twitter {
+		width: 285px;
+		height: 208px;
+	}
+
+
+
+}
