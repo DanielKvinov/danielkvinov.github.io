@@ -194,7 +194,7 @@ header .container {
 /*STARKY SWAP*/
 .starky-swap {
     padding-top: 110px;
-	padding-bottom: 39px;
+	padding-bottom: 110px;
 }
 #sky-blue {
 	position: absolute;
@@ -233,7 +233,6 @@ header .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 20px;
 	width: 490px;
 }
 .farms-staking__element {
@@ -289,7 +288,6 @@ header .container {
 	height: 69px;
 	background-color: #7ac143;
 	font-size: 18px;
-	margin-bottom: 40px;
 	margin-top: 10px;
 }
 /*STARKY SWAP END*/
