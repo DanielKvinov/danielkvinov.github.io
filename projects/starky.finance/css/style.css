@@ -78,7 +78,8 @@ h2 {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: -18px;
+	right: 4px;
+	/*right: -18px;*/
 	width: 8px;
 	height: 4px;
 	background: url("../img/list-arrow-icon.svg") no-repeat 100% 100%/100%;
@@ -174,6 +175,8 @@ header .container {
 }
 .language-select__selected {
 	position: relative;
+	padding-right: 20px;
+	display: inline-block;
 }
 .language-select__selected:before {
 	content: ' ';
@@ -555,6 +558,7 @@ header .container {
 /*DECORATIONS*/
 .trade__decoration img {
 	position: absolute;
+	z-index: -1;
 }
 #sky-blue2 {
 	width: 975px;
@@ -662,12 +666,12 @@ header .container {
 	color: #7ac143;
 }
 .token-field input {
-	padding: 33px 121px 33px 31px;
+	padding: 33px 151px 33px 31px;
 }
 .token-select {
 	cursor: pointer;
 	position: absolute;
-	right: 50px;
+	right: 28px;
 	display: flex;
 	align-items: center;
 }
@@ -680,16 +684,18 @@ header .container {
 	position: relative;
 	font-size: 18px;
 	line-height: 25px;
+	padding-right: 20px;
 }
 .currency-field input {
-	padding: 33px 200px 33px 31px;
+	padding: 33px 220px 33px 31px;
 }
 .currency-select {
 	cursor: pointer;
 	position: absolute;
-	right: 50px;
+	right: 28px;
 	font-size: 18px;
 	font-weight: 700;
+	padding-right: 20px;
 }
 .swap-arrow {
 	width: 25px;

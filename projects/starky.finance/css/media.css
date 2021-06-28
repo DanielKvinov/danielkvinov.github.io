@@ -639,9 +639,6 @@
 }
 
 @media (max-width: 500px){
-	.list-arrow-icon:after {
-		right: -13px;
-	}
 	h1 {
 		font-size: 50px;
 		line-height: 72px;
@@ -846,6 +843,12 @@
 		width: 255px;
 		height: 59px;
 	}
+	.token-field input {
+		padding: 33px 141px 33px 31px;
+	}
+	.currency-field input {
+		padding: 33px 200px 33px 31px;
+	}
 }
 
 @media (max-width: 1024px){
@@ -891,6 +894,20 @@
 	.currency-select {
 		font-size: 14px;
 	}
+
+	.token-select {
+		right: 20px;
+	}
+	.currency-select {
+		right: 20px;
+	}
+	.token-field input {
+		padding: 33px 121px 33px 31px;
+	}
+	.currency-field input {
+		padding: 33px 170px 33px 31px;
+	}
+
 }
 
 @media (max-width: 768px){
@@ -951,30 +968,30 @@
 		height: 17px;
 	}
 	.token-select {
-		right: 30px;
+		right: 10px;
+	}
+	.currency-select {
+		right: 10px;
+		font-size: 12px;
 	}
 	.token-select__button {
 		font-size: 12px;
 	}
-	.currency-select {
-		right: 30px;
-		font-size: 12px;
+	.currency-field input {
+		padding: 17px 140px 13px 21px;
 	}
-.currency-field input {
-	padding: 17px 140px 13px 21px;
-}
-.token-field input {
-	padding: 17px 91px 13px 21px;
-}
+	.token-field input {
+		padding: 17px 91px 13px 21px;
+	}
 
-.exchange-form .unlock-wallet__button {
-	margin-top: 17px;
-}
-.unlock-wallet__button {
-	font-size: 14px;
-	width: 225px;
-	height: 49px;
-}
+	.exchange-form .unlock-wallet__button {
+		margin-top: 17px;
+	}
+	.unlock-wallet__button {
+		font-size: 14px;
+		width: 225px;
+		height: 49px;
+	}
 
 
 
