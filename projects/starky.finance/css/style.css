@@ -1,4 +1,4 @@
-/*DEFAULT SETTINGS*/
+/*DEFAULT SETTINGS*/ 
 * {
 	margin: 0;
 	padding: 0;
@@ -30,13 +30,27 @@ a {
 	text-decoration: none;
 	transition: 0.4s;
 }
+/*HIDE ARROWS*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+/*HIDE ARROWS END*/
+
 .container {
-    max-width: 1138px;
-    width: 100%;
-    margin: 0 auto;    
+	max-width: 1138px;
+	width: 100%;
+	margin: 0 auto;    
 }
 ul {
-    list-style: none;
+	list-style: none;
 }
 .starky-button {
 	border-radius: 0px 50px 50px 50px;
@@ -64,10 +78,10 @@ h2 {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-    right: -10px;
-	width: 6px;
-	height: 3px;
-	background: url("../img/list-arrow-icon.png") no-repeat 100% 100%/100%;
+	right: -18px;
+	width: 8px;
+	height: 4px;
+	background: url("../img/list-arrow-icon.svg") no-repeat 100% 100%/100%;
 }
 /*STYLES END*/
 
@@ -88,7 +102,7 @@ header .container {
 	align-items: center;
 }
 .logo {
-    margin-right: 33px;
+	margin-right: 33px;
 }
 .logo img {
 	margin-right: 7px;
@@ -106,17 +120,17 @@ header .container {
 	color: #1ac4ff !important;
 }
 .menu ul {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .menu {
-    max-width: 597px;
+	max-width: 597px;
 	width: 100%;
-    margin-right: 89px;
+	margin-right: 89px;
 }
 .menu a {
 	font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 }
 .menu a:hover {
 	color: #7ac143;
@@ -172,28 +186,28 @@ header .container {
 	background: url("../img/language-icon.png") no-repeat 100% 100%/100%;
 }
 .language-select__list {
-    position: absolute;
+	position: absolute;
 	top: 33px;
-    left: 8px;
-    display: none;
+	left: 8px;
+	display: none;
 }
 .language-select__list li {
-    padding: 11px 20px;
-    background: #464a70;
-    border-bottom: 1px solid black;
+	padding: 11px 20px;
+	background: #464a70;
+	border-bottom: 1px solid black;
 }
 .language-select__list li:first-child {
-    border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
 }
 .language-select__list li:last-child {
-    border-radius: 0 0 15px 15px;
-    border-bottom: none;
+	border-radius: 0 0 15px 15px;
+	border-bottom: none;
 }
 /*HEADER END*/
 
 /*STARKY SWAP*/
 .starky-swap {
-    padding-top: 110px;
+	padding-top: 110px;
 	padding-bottom: 110px;
 }
 #sky-blue {
@@ -217,15 +231,15 @@ header .container {
 	flex-direction: column;
 }
 .starky-swap h1 {
-    padding-bottom: 16px;
+	padding-bottom: 16px;
 }
 .starky-swap p {
 	font-size: 22px;
 	font-weight: 700;
-    padding-bottom: 43px;
+	padding-bottom: 43px;
 }
 .starky-swap h3 {
-    font-size: 32px;
+	font-size: 32px;
 	font-weight: 900;
 	padding-bottom: 24px;
 }
@@ -263,8 +277,8 @@ header .container {
 	font-family: "Nunito Sans", sans-serif;
 }
 .farms-staking__element__species {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 .farms-staking__element__balance {
 	display: flex;
@@ -281,7 +295,7 @@ header .container {
 }
 .farms-staking__element__balance__status {
 	font-size: 16px;
-    padding-top: 4px;
+	padding-top: 4px;
 }
 .farms-staking__button {
 	width: 285px;
@@ -297,7 +311,7 @@ header .container {
 	padding-bottom: 15px;
 }
 .starky-stats h2 {
-    padding-bottom: 55px;
+	padding-bottom: 55px;
 }
 .starky-stats__block {
 	display: flex;
@@ -311,7 +325,7 @@ header .container {
 	max-width: 200px;
 }
 .starky-stats__element img {
-    margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 .starky-stats__element__title {
 	font-family: "Nunito Sans", sans-serif;
@@ -327,25 +341,25 @@ header .container {
 	font-weight: 700;
 }
 #market-cap {
-    margin-left: 60px;
+	margin-left: 60px;
 }
 #total-minted {
-    margin-left: 111px;
+	margin-left: 111px;
 }
 #total-burned {
-    margin-left: 101px;
+	margin-left: 101px;
 }
 #circulating-supply {
-    margin-left: 83px;
+	margin-left: 83px;
 }
 #new-starky-block {
-    margin-left: 62px;
+	margin-left: 62px;
 }
 #market-cap:before {
 	content: ' ';
 	position: absolute;
-    left: -23px;
-    top: -15px;
+	left: -23px;
+	top: -15px;
 	width: 149px;
 	height: 121px;
 	z-index: -1;
@@ -402,10 +416,10 @@ header .container {
 .total-value {
 	position: relative;
 	padding-top: 153px;
-    padding-bottom: 183px;
+	padding-bottom: 183px;
 }
 .total-value__block {
-    padding-right: 67px;
+	padding-right: 67px;
 }
 #sky-yellow {
 	position: absolute;
@@ -476,7 +490,7 @@ header .container {
 .announcements {
 	padding-top: 75px;
 	position: relative;
-    padding-bottom: 128px;
+	padding-bottom: 128px;
 }
 #sky-green {
 	position: absolute;
@@ -498,7 +512,7 @@ header .container {
 	padding-bottom: 21px;
 }
 .announcements-twitter {
-    width: 485px;
+	width: 485px;
 	height: 408px;
 	border-radius: 20px;
 	background-color: #464a70;
@@ -518,7 +532,7 @@ header .container {
 }
 .social-media {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 	margin: 0 auto;
 }
 .social-media__element {
@@ -528,10 +542,173 @@ header .container {
 	background-color: #7ac143;
 	border-radius: 100%;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 .social-media__element:last-child {
 	margin-right: 0px;
 }
 /*SOCIAL MEDIA END*/
+
+/*TRADE PAGE*/
+
+/*DECORATIONS*/
+.trade__decoration img {
+	position: absolute;
+}
+#sky-blue2 {
+	width: 975px;
+	height: auto;
+	top: 0px;
+	right: -88px;
+	/*left: 1035px;*/
+}
+#kitty-saturn {
+	width: 623px;
+	height: auto;
+	top: 159px;
+	right: 396px;
+	/*left: 899px;*/
+}
+#sky-green2, 
+#kitty-donut {
+	display: none;
+}
+/*DECORATIONS END*/
+
+/*SWAP*/
+.trade {
+	padding-top: 141px;
+	padding-bottom: 164px;
+}
+.trade-select {
+	display: flex;
+	align-items: center;
+}
+.trade-select span {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 3.52px;
+	padding: 0px 18px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.trade-select__active {
+	border: 2px solid #7ac143;
+	border-radius: 0 15px 15px 17px;
+}
+.trade-title {
+	font-weight: 900;
+	font-size: 85px;
+	line-height: 86px;
+	padding-bottom: 6px;
+	margin-right: 14px;
+}
+.trade-head {
+	display: flex;
+	align-items: center;
+	padding-top: 7px;
+}
+.trade-head button {
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+}
+.trade-settings__button {
+	background: url("../img/trade-settings.png") no-repeat 100% 100%/100%;
+	margin-right: 10px;
+}
+.trade-transactions__button {
+	background: url("../img/trade-transactions.png") no-repeat 100% 100%/100%;
+}
+.trade-subtitle {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 27px;
+	display: inline-block;
+}
+.exchange-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 490px;
+}
+.exchange-field {
+	width: 100%;
+	height: 85px;
+	box-shadow: inset 2px 2px 5px #111328;
+	border-radius: 20px;
+	background-color: #464a70;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.exchange-field input {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	color: #7ac143;
+}
+.exchange-field input::placeholder {
+	font-size: 26px;
+	font-weight: 700;
+	color: #7ac143;
+}
+.token-field input {
+	padding: 33px 121px 33px 31px;
+}
+.token-select {
+	cursor: pointer;
+	position: absolute;
+	right: 50px;
+	display: flex;
+	align-items: center;
+}
+.token-image {
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+}
+.token-select__button {
+	position: relative;
+	font-size: 18px;
+	line-height: 25px;
+}
+.currency-field input {
+	padding: 33px 200px 33px 31px;
+}
+.currency-select {
+	cursor: pointer;
+	position: absolute;
+	right: 50px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.swap-arrow {
+	width: 25px;
+	height: 26px;
+	margin: 10px 0;
+}
+.unlock-wallet__button {
+	font-family: "Nunito Sans", sans-serif;
+	line-height: 39px;
+	font-size: 18px;
+	font-weight: 700;
+	width: 285px;
+	height: 69px;
+	background-color: #7ac143;
+}
+.exchange-form .unlock-wallet__button {
+	margin-top: 27px;
+}
+
+/*SWAP END*/
+
+/*TRADE PAGE END*/

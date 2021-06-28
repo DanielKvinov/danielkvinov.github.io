@@ -631,7 +631,7 @@
 	}
 	.total-value {
 		padding-top: 30px;
-			padding-bottom: 70px;
+		padding-bottom: 70px;
 	}
 	.announcements {
 		padding-bottom: 70px;
@@ -639,7 +639,9 @@
 }
 
 @media (max-width: 500px){
-
+	.list-arrow-icon:after {
+		right: -13px;
+	}
 	h1 {
 		font-size: 50px;
 		line-height: 72px;
@@ -767,6 +769,214 @@
 		height: 208px;
 	}
 
+}
+
+/*TRADE PAGE*/
+@media (max-width: 1920px){
+	#sky-blue2 {
+		right: auto;
+		left: 1035px;
+	}
+	#kitty-saturn {
+		right: auto;
+		left: 899px;
+	}
+
+}
+
+@media (max-width: 1600px){
+	#sky-blue2 {
+		left: 885px;
+	}
+	#kitty-saturn {
+		left: 749px;
+	}
+}
+
+@media (max-width: 1450px){
+	#sky-blue2 {
+		left: 795px;
+		width: 865px;
+	}
+	#kitty-saturn {
+		left: 679px;
+		width: 463px;
+		top: 209px;
+	}
+}
+
+@media (max-width: 1280px){
+	#sky-blue2 {
+		left: 685px;
+		width: 805px;
+		top: 20px;
+	}
+	#kitty-saturn {
+		left: 549px;
+		width: 383px;
+		top: 279px;
+	}
+	.trade-title {
+		font-size: 75px;
+	}
+	.trade-subtitle {
+		font-size: 19px;
+	}
+	.exchange-form {
+		width: 440px;
+	}
+	.exchange-field {
+		height: 75px;
+	}
+	.exchange-field input {
+		font-size: 22px;
+	}
+	.exchange-field input::placeholder {
+		font-size: 22px;
+	}
+	.token-select__button {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.currency-select {
+		font-size: 16px;
+	}
+	.unlock-wallet__button {
+		font-size: 16px;
+		width: 255px;
+		height: 59px;
+	}
+}
+
+@media (max-width: 1024px){
+	#kitty-saturn {
+		left: 439px;
+		width: 310px;
+		top: 299px;
+	}
+	#sky-blue2 {
+		left: 565px;
+		width: 705px;
+		top: 70px;
+	}
+	.trade-select span {
+		font-size: 14px;
+		line-height: 23px;
+	}
+	.trade-head {
+		padding-top: 17px;
+	}
+	.trade-title {
+		font-size: 65px;
+		line-height: 66px;
+	}
+	.trade-subtitle {
+		font-size: 17px;
+	}
+	.exchange-form {
+		width: 390px;
+	}
+	.exchange-field {
+		height: 65px;
+	}
+	.token-select {
+		right: 40px;
+	}
+	.currency-select {
+		right: 40px;
+	}
+	.token-select__button {
+		font-size: 14px;
+	}
+	.currency-select {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 768px){
+	.trade {
+		padding-top: 101px;
+		padding-bottom: 124px;
+	}
+	.trade__decoration {
+		display: none
+	}
+
+	.trade .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.trade-swap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (max-width: 500px){
+	.trade-select span {
+		font-size: 12px;
+		line-height: 21px;
+		padding: 0px 11px;
+	}
+	.trade-title {
+		font-size: 45px;
+		line-height: 56px;
+		margin-right: 0;
+		padding: 0;
+	}
+	.trade-head {
+		flex-direction: column-reverse;
+	}
+	.trade-head button {
+		width: 34px;
+		height: 34px;
+	}
+	.exchange-form {
+		width: 290px;
+	}
+	.exchange-field {
+		height: 55px;
+	}
+	.swap-arrow {
+		width: 15px;
+		height: 16px;
+		margin: 5px 0;
+	}
+	.token-image {
+		margin-right: 5px;
+		width: 17px;
+		height: 17px;
+	}
+	.token-select {
+		right: 30px;
+	}
+	.token-select__button {
+		font-size: 12px;
+	}
+	.currency-select {
+		right: 30px;
+		font-size: 12px;
+	}
+.currency-field input {
+	padding: 17px 140px 13px 21px;
+}
+.token-field input {
+	padding: 17px 91px 13px 21px;
+}
+
+.exchange-form .unlock-wallet__button {
+	margin-top: 17px;
+}
+.unlock-wallet__button {
+	font-size: 14px;
+	width: 225px;
+	height: 49px;
+}
+
 
 
 }
+/*TRADE PAGE END*/
