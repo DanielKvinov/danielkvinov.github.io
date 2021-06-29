@@ -1050,6 +1050,7 @@ header .container {
 .slippage-tolerance__procent {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .slippage-tolerance__procent__value {
 	padding: 2px 16px;
@@ -1088,6 +1089,7 @@ header .container {
 	color: #7ac143;
 }
 .slippage-tolerance__procent .popup-input {
+		margin-right: 30px;
 	margin-left: 20px;
 }
 .popup-close {

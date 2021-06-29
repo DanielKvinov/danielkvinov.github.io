@@ -678,6 +678,40 @@
 }
 
 @media (max-width: 600px){
+.popup-window {
+	width: 90%;
+}
+.slippage-tolerance__procent__value,
+.slippage-tolerance__procent .popup-input {
+	margin-bottom: 10px;
+}
+.slippage-tolerance__procent .popup-input {
+	margin-left: 0;
+}
+.popup-text {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.popup-input {
+	font-size: 16px;
+}
+.popup-title {
+	font-size: 32px;
+	line-height: 40px;
+}
+.popup-head {
+	padding: 35px 30px 15px 30px;
+	}
+	.popup-transactions .popup-text {
+	font-size: 16px;
+	line-height: 22px;
+}
+.popup-transactions .popup-button {
+	margin-top: 10px;
+}
+
+
+
 	header .container {
 		justify-content: space-between;
 		flex-direction: column;
