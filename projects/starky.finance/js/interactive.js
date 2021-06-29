@@ -49,6 +49,9 @@ $(".popup-background").click(function(){
 
 
 $("#trade-select__swap").click(function(){
+    $(".trade-swap-images").addClass("flex-active");
+    $(".trade-liquidity-images").removeClass("flex-active");
+
     $(".trade-swap").addClass("flex-active");
     $(".trade-liquidity").removeClass("flex-active");
     $(".trade-liquidity-add").removeClass("flex-active");
@@ -59,6 +62,9 @@ $("#trade-select__swap").click(function(){
 
 
 $("#trade-select__liquidity").click(function(){
+    $(".trade-liquidity-images").addClass("flex-active");
+    $(".trade-swap-images").removeClass("flex-active");
+
     $(".trade-liquidity").addClass("flex-active");
     $(".trade-swap").removeClass("flex-active");
     $(".trade-liquidity-add").removeClass("flex-active");

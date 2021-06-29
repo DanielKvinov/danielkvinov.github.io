@@ -111,6 +111,12 @@ h2 {
 	height: 4px;
 	background: url("../img/list-arrow-icon.svg") no-repeat 100% 100%/100%;
 }
+.trade-swap-images {
+	display: none;
+}
+.trade-liquidity-images {
+	display: none;
+}
 /*STYLES END*/
 
 /*HEADER*/
