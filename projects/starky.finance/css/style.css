@@ -25,11 +25,32 @@ body {
 	color: #fffefe;
 	background-color: #202342;
 }
+.flex-active {
+	display: flex !important;
+}
 a {
 	color: #fff;
 	text-decoration: none;
 	transition: 0.4s;
 }
+.popup-token__list {
+	scrollbar-width: none; /* firefox */
+}
+.popup-token__list::-webkit-scrollbar { /* webkit */
+	width: 0;
+	height: 0;
+}
+/*SCROLLBAR*/
+.mCSB_dragger_bar {
+	background: #7ac143 !important;
+	width: 2px !important;
+}
+.mCSB_draggerRail {
+	background: #464a70 !important;
+	width: 2px !important;
+}
+/*SCROLLBAR END*/
+
 /*HIDE ARROWS*/
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -579,7 +600,7 @@ header .container {
 /*SWAP*/
 #sky-blue2, 
 #kitty-saturn {
-	display: none;
+	/*display: none;*/
 }
 .trade {
 	padding-top: 141px;
@@ -595,6 +616,7 @@ header .container {
 	align-items: center;
 }
 .trade-select span {
+	cursor: pointer;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 26px;
@@ -724,7 +746,7 @@ header .container {
 /*LIQUIDITY*/
 #sky-green2, 
 #kitty-donut {
-	/*display: none;*/
+	display: none;
 }
 #sky-green2 {
 	width: 975px;
@@ -771,15 +793,14 @@ header .container {
 	letter-spacing: 0.72px;
 	position: relative;
 }
-.prompt-button::before {
+.prompt-button {
 	cursor: pointer;
-	content: '?';
 	position: absolute;
 	right: -25px;
 	top: 46%;
 	transform: translateY(-50%);
-	width: 16px;
-	height: 16px;
+	width: 16px !important;
+	height: 16px !important;
 	background: url(../img/promptIcon.svg) no-repeat 100% 100%/100%;
 	text-align: center;
 	font-family: 'Nunito Sans', sans-serif;
@@ -798,7 +819,13 @@ header .container {
 /*LIQUIDITY END*/
 
 /*LIQUIDITY ADD*/
+.trade-liquidity-add {
+	display: none;
+	/*display: flex;*/
+	flex-direction: column;
+}
 .trade-liquidity-add .trade-title {
+	margin-right: 0;
 	font-size: 68px;
 	padding-left: 40px;
 	padding-bottom: 23px;
@@ -814,11 +841,207 @@ header .container {
 	width: 26px;
 	height: 25px;
 }
+.trade-liquidity-add .trade-title .prompt-button {
+	right: -35px;
+	top: 38%;
+}
 .liquidity-plus {
 	width: 21px;
 	height: 21px;
 	margin: 12px 0;
 }
 /*LIQUIDITY ADD END*/
+
+/*POPUP SETTINGS*/
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.popup-background {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: #030104;
+	opacity: 0.5;
+}
+.popup-window {
+	position: fixed;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 490px;
+	box-shadow: 0 0 38px rgba(21, 23, 25, 0.73);
+	border-radius: 20px;
+	background-color: #202342;
+}
+.popup-title {
+	font-size: 42px;
+	color: #1ac4ff;
+	font-weight: 900;
+	position: relative;
+}
+.popup-text {
+	font-size: 22px;
+	font-weight: 700;
+}
+.popup-settings__option {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-bottom: 36px;
+}
+.popup-settings__option:last-child {
+	padding-bottom: 0px;
+}
+.popup-head {
+	padding: 45px 30px 15px 30px;
+	border-bottom: 1px solid #282b4b;
+}
+.popup-body {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px;
+}
+.popup-settings .popup-text {
+	margin-bottom: 25px;
+	position: relative;
+}
+.slippage-tolerance__procent {
+	display: flex;
+	align-items: center;
+}
+.slippage-tolerance__procent__value {
+	padding: 2px 16px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.active-value {
+	border: 2px solid #7ac143;
+	border-radius: 0 15px 15px 17px;
+}
+.popup-input {
+	display: flex;
+	align-items: center;
+	width: 100px;
+	height: 34px;
+	background-color: #464a70;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 4px #111328;
+}
+.popup-input input {
+	width: 100px;
+	height: 100%;
+	padding: 0 12px;
+	margin-right: 10px;
+	color: #7ac143;
+	font-size: 16px;
+	font-family: "Nunito Sans", sans-serif;
+	line-height: 39px;
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+}
+.popup-input input::placeholder {
+	color: #7ac143;
+}
+.slippage-tolerance__procent .popup-input {
+	margin-left: 20px;
+}
+.popup-close {
+	position: absolute;
+	top: 21px;
+	right: 21px;
+	width: 17px;
+	height: 17px;
+	background: url("../img/popup-closeIcon.png") no-repeat 100% 100%/100%;
+}
+.popup-button {
+	width: 207px;
+	height: 50px;
+	background-color: #7ac143;
+	font-size: 16px;
+	line-height: 39px;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+}
+.popup-transactions .popup-text {
+	font-size: 20px;
+	line-height: 32px;
+}
+.popup-transactions .popup-body {
+	align-items: center;
+}
+.popup-transactions .popup-button {
+	margin-top: 30px;
+}
+
+.popup-token .popup-body {
+	padding: 35px 30px;
+}
+.popup-token .popup-input {
+	width: 100%;
+	height: 60px;
+}
+.popup-token .popup-input input {
+	width: 100%;
+	padding: 10px 22px;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.popup-token .popup-input input::placeholder {
+	color: #7b7fa0;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 17px;
+	font-weight: 800;
+	text-transform: none;
+}
+.popup-token__sort {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 22px 0px;
+}
+.popup-token__sort__button {
+	background: url("../img/token-sortIcon.png") no-repeat 100% 100%/100%;
+	width: 14px;
+	height: 15px;
+	margin-right: 10px;
+}
+.popup-token__list {
+	display: flex;
+	flex-direction: column;
+	max-height: 256px;
+	overflow-y: scroll;
+}
+.popup-token__list li {
+	text-transform: uppercase;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.popup-token__list img {
+	margin-right: 17px;
+}
+
+.popup-settings,
+.popup-transactions,
+.popup-token {
+	display: none;
+}
+.popup-active {
+	display: flex;
+}
+/*POPUP SETTINGS END*/
 
 /*TRADE PAGE END*/

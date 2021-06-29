@@ -14,6 +14,7 @@
 	<!-- LINKS -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800;900&family=Nunito:wght@300;400;700;800;900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
 		</div>
 		<div class="container">
 			<div class="logo">
-				<a href="#">
+				<a href="index.html">
 					<img src="img/logo.png" alt="#">
 					<span>St<span class="text__blue">a</span>rky</span>
 				</a>
@@ -66,12 +67,12 @@
 		</div>
 		<div class="container">
 			<div class="trade-select">
-				<span class="trade-select__active">Swap</span>
-				<span>Liquidity</span>
-				<span>Bridge</span>
+				<span class="trade-select__active" id="trade-select__swap">Swap</span>
+				<span id="trade-select__liquidity">Liquidity</span>
+				<span id="trade-select__bridge">Bridge</span>
 			</div>
 
-			<div class="trade-swap">
+			<div class="trade-swap flex-active">
 				<div class="trade-head">
 					<span class="trade-title"><span class="text__blue">Exchange</span></span>
 					<div class="trade-head__buttons">
@@ -106,9 +107,9 @@
 					</div>
 				</div>
 				<span class="trade-subtitle">Add liquidity to receive LP tokens</span>
-				<button class="trade-liquidity__button unlock-wallet__button starky-button">Add liquidity</button>
+				<button class="trade-liquidity__button unlock-wallet__button starky-button" id="add-liquidity__button">Add liquidity</button>
 				<div class="liquidity-info">
-					<span class="liquidity-info__your prompt-button">Your Liquidity</span>
+					<span class="liquidity-info__your">Your Liquidity<button class="prompt-button">?</button></span>
 					<span class="liquidity-info__prompt">Connect to a wallet to view your liquidity</span>
 				</div>
 				<span class="liquidity-prompt">Or, if you staked your LP tokens in a farm, unstake them to see them here.</span>
@@ -116,7 +117,7 @@
 
 			<div class="trade-liquidity-add">
 				<div class="trade-head">
-					<span class="trade-title"><span class="text__blue">Add Liquidity</span></span>
+					<span class="trade-title"><span class="text__blue">Add Liquidity</span><button class="prompt-button">?</button></span>
 				</div>
 				<div class="exchange-form">
 					<div class="token-field exchange-field">
@@ -148,11 +149,79 @@
 		</div>
 	</section>
 
+	<div class="popup-settings popup">
+		<div class="popup-background"></div>
+		<div class="popup-window">
+			<div class="popup-head">
+				<span class="popup-title">Settings</span>
+				<button class="popup-close"></button>
+			</div>
+			<div class="popup-body">
+				<div class="slippage-tolerance popup-settings__option">
+					<span class="popup-text">Slippage tolerance <button class="prompt-button">?</button></span>
+					<div class="slippage-tolerance__procent">
+						<span class="slippage-tolerance__procent__value active-value">0.1%</span>
+						<span class="slippage-tolerance__procent__value">0.5%</span>
+						<span class="slippage-tolerance__procent__value">1%</span>
+						<label class="popup-input"><input type="number" placeholder="0.8">%</label>
+					</div>
+				</div>
+				<div class="transaction-deadline popup-settings__option">
+					<span class="popup-text">Transaction deadline <button class="prompt-button">?</button></span>
+					<label class="transaction-deadline__time popup-input"><input type="number" placeholder="20">minutes</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-transactions popup">
+		<div class="popup-background"></div>
+		<div class="popup-window">
+			<div class="popup-head">
+				<span class="popup-title">Recent Transactions</span>
+				<button class="popup-close"></button>
+			</div>
+			<div class="popup-body">
+				<span class="popup-text">Please connect your wallet to view your recent transactions</span>
+				<button class="popup-button starky-button close-button">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-token popup">
+		<div class="popup-background"></div>
+		<div class="popup-window">
+			<div class="popup-head">
+				<span class="popup-title">Select a token <button class="prompt-button">?</button></span>
+				<button class="popup-close"></button>
+			</div>
+			<div class="popup-body">
+				<label class="popup-input"><input type="text" placeholder="Search name or paste adress"></label>
+				<div class="popup-token__sort">
+					<span class="popup-text">Token name</span>
+					<button class="popup-token__sort__button"></button>
+				</div>
+				<ul class="popup-token__list">
+					<li><img src="img/bnbToken.png" alt="image">BNB</li>
+					<li><img src="img/adaToken.png" alt="image">ADA</li>
+					<li><img src="img/alphaToken.png" alt="image">ALPHA</li>
+					<li><img src="img/ankrToken.png" alt="image">ANKR</li>
+					<li><img src="img/asrToken.png" alt="image">ASR</li>
+					<li><img src="img/bnbToken.png" alt="image">BNB</li>
+					<li><img src="img/bnbToken.png" alt="image">BNB</li>
+					<li><img src="img/bnbToken.png" alt="image">BNB</li>
+					<li><img src="img/bnbToken.png" alt="image">BNB</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<script
 	  src="https://code.jquery.com/jquery-3.4.1.min.js"
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
 	<script src="js/interactive.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -827,6 +827,7 @@
 }
 
 @media (max-width: 1280px){
+
 	#sky-blue2 {
 		left: 685px;
 		width: 805px;
@@ -880,6 +881,9 @@
 		left: 673px;
 		width: 298px;
 		top: 249px;
+	}
+	.trade-liquidity-add .trade-title {
+		font-size: 58px;
 	}
 }
 
@@ -952,6 +956,7 @@
 }
 
 @media (max-width: 768px){
+
 	.trade {
 		padding-top: 71px;
 		padding-bottom: 71px;
@@ -986,6 +991,11 @@
 	}
 	.trade-liquidity__button {
 		margin-bottom: 57px;
+	}
+	.trade-liquidity-add {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -1046,8 +1056,28 @@
 		width: 225px;
 		height: 49px;
 	}
-
-
+	.trade-liquidity-add .trade-title {
+		font-size: 48px;
+	}
+	.liquidity-plus {
+		width: 11px;
+		height: 11px;
+		margin: 5px 0;
+	}
+	.trade-liquidity-add .trade-title {
+		font-size: 35px;
+		padding-left: 21px;
+		padding-bottom: 3px;
+	}
+	.trade-liquidity-add .trade-title:before {
+		top: 45%;
+		width: 16px;
+		height: 15px;
+	}
+	.trade-liquidity-add .trade-title .prompt-button {
+		right: -25px;
+		top: 14%;
+	}
 
 }
 /*TRADE PAGE END*/
