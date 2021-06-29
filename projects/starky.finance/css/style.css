@@ -28,6 +28,12 @@ body {
 .flex-active {
 	display: flex !important;
 }
+.overflow-hidden {
+	overflow-y: hidden;
+}
+.menu-hamburger {
+	display: none;
+}
 a {
 	color: #fff;
 	text-decoration: none;
@@ -122,6 +128,12 @@ header {
 header .container {
 	display: flex;
 	align-items: center;
+		justify-content: space-between;
+}
+.header-left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .logo {
 	margin-right: 33px;
@@ -141,21 +153,122 @@ header .container {
 .text__blue {
 	color: #1ac4ff !important;
 }
+.menu {
+	width: 597px;
+	margin-right: 89px;
+}
+.menu ul li:hover .submenu {
+	display: flex !important;
+}
+
+.menu .submenu {
+	display: none;
+}
+.menu .submenu {
+	left: -18px;
+}
 .menu ul {
 	display: flex;
 	justify-content: space-between;
 }
-.menu {
-	max-width: 597px;
-	width: 100%;
-	margin-right: 89px;
+.menu li {
+	position: relative;
+}
+.menu li:after {
+	right: 0px;
+	cursor: pointer;
+}
+.menu .submenu li:hover a {
+	color: #7ac143;
 }
 .menu a {
+	padding-right: 10px;
+	padding-bottom: 10px;
 	font-size: 16px;
 	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 600;
 }
 .menu a:hover {
 	color: #7ac143;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	background: white !important;
+}
+.menu-hamburger__container {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu-hamburger__list {
+	position: absolute;
+	z-index: 2;
+	border-radius: 0px 20px 20px 0px;
+	background-color: #202342;
+	width: 300px;
+	top: 0;
+	left: 0;
+	overflow-y: scroll;
+	padding: 40px 30px;
+	height: 100%;
+	max-height: 100vh;
+}
+.menu-hamburger li {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.menu-hamburger li a {
+	width: 100%;
+	padding: 10px 0;
+}
+.menu-hamburger li:after {
+	display: none;
+}
+.menu-hamburger li .submenu {
+	display: none;
+}
+.menu-hamburger__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.submenu-button {
+	width: 20px;
+	height: 20px;
+	background: url("../img/list-arrow-icon.svg") no-repeat 60% 50%/50%;
+}
+.menu-hamburger__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #030104;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.submenuActive {
+	display: flex !important;
+}
+.hamburger-submenu {
+	display: none;
+	flex-direction: column;
+	padding: 0 0 0 20px !important;
+}
+.menu-open {
+	display: flex;
+}
+
+
+
+
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 .balance {
 	margin-right: 15px;
@@ -177,14 +290,16 @@ header .container {
 }
 .connect-button {
 	font-size: 14px;
-	margin-right: 20px;
-	width: 125px;
+	margin-right: 12px;
+	min-width: 125px;
+	max-width: 125px;
 	height: 48px;
 	line-height: 48px;
 	background-color: #1ac4ff;
 	font-family: 'Nunito Sans', sans-serif;
 }
-.language-select * {
+.language-select *,
+.submenu * {
 	font-size: 14px;
 	font-weight: 500;
 	font-family: "Montserrat", sans-serif;
@@ -193,6 +308,21 @@ header .container {
 .language-select {
 	padding-left: 28px;
 	position: relative;
+	padding-bottom: 12px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.language-select__list.submenu {
+	display: none;
+}
+.language-select__list li {
+	transition: 0.4s;
+}
+.language-select__list li:hover {
+	color: #7ac143;
+}
+.language-select:hover .language-select__list {
+	display: flex;
 }
 .language-select__selected {
 	position: relative;
@@ -209,21 +339,22 @@ header .container {
 	background-color: #7ac143;
 	background: url("../img/language-icon.png") no-repeat 100% 100%/100%;
 }
-.language-select__list {
+.submenu {
 	position: absolute;
 	top: 33px;
 	left: 8px;
-	display: none;
+	display: flex;
+	flex-direction: column;
 }
-.language-select__list li {
+.submenu li {
 	padding: 11px 20px;
 	background: #464a70;
 	border-bottom: 1px solid black;
 }
-.language-select__list li:first-child {
+.submenu li:first-child {
 	border-radius: 15px 15px 0 0;
 }
-.language-select__list li:last-child {
+.submenu li:last-child {
 	border-radius: 0 0 15px 15px;
 	border-bottom: none;
 }

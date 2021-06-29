@@ -10,6 +10,26 @@
     });
 })(jQuery);
 
+// MENU
+let $hamburger = $(".hamburger");
+$hamburger.on("click", function(e) {
+$hamburger.toggleClass("is-active");
+$(".menu-hamburger__container").addClass("menu-open");
+$("body").addClass("overflow-hidden");
+});
+
+$(".menu-hamburger__background").click(function(){
+    $(".menu-hamburger__container").removeClass("menu-open")
+    $(".hamburger").removeClass("is-active")
+    $("body").removeClass("overflow-hidden")
+});
+
+$(".submenu-button").click(function(){
+    $(this).parent().parent().find(".hamburger-submenu").toggleClass("submenuActive");
+});
+
+// MENU END
+
 // POPUPS
 $(".token-select").click(function(){
     $(".popup-token").addClass("popup-active");
