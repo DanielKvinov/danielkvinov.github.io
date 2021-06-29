@@ -24,36 +24,147 @@
 	<!-- Здесь пишем код -->
 	<header>
 		<div class="header__decoration">
-			<img src="img/background-decor.png" alt="#" id="header-background">
+			<img src="img/background-decor.png" alt="image" id="header-background">
 		</div>
 		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="img/logo.png" alt="#">
-					<span>St<span class="text__blue">a</span>rky</span>
-				</a>
+
+			<div class="header-left">
+				<div class="menu-hamburger">
+					<button class="hamburger hamburger--collapse" type="button">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					  </span>
+					</button>
+					<div class="menu-hamburger__container">
+						<div class="menu-hamburger__background"></div>
+						<ul class="menu-hamburger__list">
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">Trade</a>
+									<button class="submenu-button"></button>
+								</div>
+								<ul class="hamburger-submenu">
+									<li><a href="#">Swap</a></li>
+									<li><a href="#">Liquidity</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">Farms</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">Nests</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">Info</a>
+									<button class="submenu-button"></button>
+								</div>
+								<ul class="hamburger-submenu">
+									<li><a href="#">Swap</a></li>
+									<li><a href="#">Liquidity</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">More</a>
+									<button class="submenu-button"></button>
+								</div>
+								<ul class="hamburger-submenu">
+									<li><a href="#">Swap</a></li>
+									<li><a href="#">Liquidity</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">Partnerhip/IFO</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="menu-hamburger__box">
+									<a href="trade.html">Audit</a>
+									<button class="submenu-button"></button>
+								</div>
+								<ul class="hamburger-submenu">
+									<li><a href="#">Swap</a></li>
+									<li><a href="#">Liquidity</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="image">
+						<span>St<span class="text__blue">a</span>rky</span>
+					</a>
+				</div>
+				
+				<nav class="menu">
+					<ul>
+						<li class="list-arrow-icon">
+							<a href="trade.html">Trade</a>
+							<ul class="submenu">
+								<li><a href="#">Swap</a></li>
+								<li><a href="#">Liquidity</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Farms</a>
+						</li>
+						<li>
+							<a href="#">Nests</a>
+						</li>
+						<li class="list-arrow-icon">
+							<a href="#">Info</a>
+							<ul class="submenu">
+								<li><a href="#">Swap</a></li>
+								<li><a href="#">Liquidity</a></li>
+							</ul>
+						</li>
+						<li class="list-arrow-icon">
+							<a href="#">More</a>
+							<ul class="submenu">
+								<li><a href="#">Swap</a></li>
+								<li><a href="#">Liquidity</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Partnership/IFO</a>
+						</li>
+						<li class="list-arrow-icon">
+							<a href="#">Audit</a>
+							<ul class="submenu">
+								<li><a href="#">Swap</a></li>
+								<li><a href="#">Liquidity</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="menu">
-				<ul>
-					<li><a href="#">Trade</a></li>
-					<li><a href="#">Farms</a></li>
-					<li><a href="#">Nests</a></li>
-					<li><a href="#">Info</a></li>
-					<li><a href="#">More</a></li>
-					<li><a href="#">Partnership/IFO</a></li>
-					<li><a href="#">Audit</a></li>
-				</ul>
-			</nav>
-			<div class="balance">
-				<span class="balance-number">$0.000</span>
-			</div>
-			<button class="connect-button starky-button">Connect</button>
-			<div class="language-select">
-				<span class="language-select__selected list-arrow-icon">En</span>
-				<ul class="language-select__list">
-					<li>English</li>
-					<li>Japanise</li>
-				</ul>
+
+			<div class="header-right">
+				<div class="balance">
+					<span class="balance-number">$0.000</span>
+				</div>
+				<button class="connect-button starky-button">Connect</button>
+				<div class="language-select">
+					<span class="language-select__selected list-arrow-icon">En</span>
+					<ul class="language-select__list submenu">
+						<li>English</li>
+						<li>Japanise</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
