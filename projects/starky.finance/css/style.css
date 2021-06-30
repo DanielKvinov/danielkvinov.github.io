@@ -99,12 +99,17 @@ h2 {
 	background-color: #464a70;
 	border-radius: 20px;
 }
+.menu .list-arrow-icon:after,
+.language-select .list-arrow-icon:after {
+	width: 6px;
+	height: 3px;
+}
 .list-arrow-icon:after {
 	content: ' ';
 	position: absolute;
-	top: 50%;
+	top: 54%;
 	transform: translateY(-50%);
-	right: 4px;
+	right: 0;
 	/*right: -18px;*/
 	width: 8px;
 	height: 4px;
