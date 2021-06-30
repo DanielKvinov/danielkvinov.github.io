@@ -176,7 +176,7 @@
 	h1 {
 		font-size: 65px;
 	}
-	.starky-swap p {
+	p {
 		font-size: 17px;
 	}
 	.starky-swap h3 {
@@ -273,7 +273,7 @@
 	.starky-swap h1 {
 		padding-bottom: 0px;
 	}
-	.starky-swap p {
+	p {
 		padding-bottom: 33px;
 	}
 	.farms-staking__block {
@@ -619,7 +619,7 @@
 	.starky-swap {
 		padding-bottom: 70px;
 	}
-	.starky-swap p {
+	p {
 		font-size: 19px;
 		text-align: center;
 	}
@@ -678,37 +678,37 @@
 }
 
 @media (max-width: 600px){
-.popup-window {
-	width: 90%;
-}
-.slippage-tolerance__procent__value,
-.slippage-tolerance__procent .popup-input {
-	margin-bottom: 10px;
-}
-.slippage-tolerance__procent .popup-input {
-	margin-left: 0;
-}
-.popup-text {
-	font-size: 20px;
-	margin-bottom: 15px;
-}
-.popup-input {
-	font-size: 16px;
-}
-.popup-title {
-	font-size: 32px;
-	line-height: 40px;
-}
-.popup-head {
-	padding: 35px 30px 15px 30px;
+	.popup-window {
+		width: 90%;
+	}
+	.slippage-tolerance__procent__value,
+	.slippage-tolerance__procent .popup-input {
+		margin-bottom: 10px;
+	}
+	.slippage-tolerance__procent .popup-input {
+		margin-left: 0;
+	}
+	.popup-text {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.popup-input {
+		font-size: 16px;
+	}
+	.popup-title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.popup-head {
+		padding: 35px 30px 15px 30px;
 	}
 	.popup-transactions .popup-text {
-	font-size: 16px;
-	line-height: 22px;
-}
-.popup-transactions .popup-button {
-	margin-top: 10px;
-}
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.popup-transactions .popup-button {
+		margin-top: 10px;
+	}
 
 
 
@@ -791,7 +791,7 @@
 		font-size: 40px;
 		line-height: 62px;
 	}
-	.starky-swap p {
+	p {
 		font-size: 14px;
 		text-align: center;
 	}
@@ -1178,3 +1178,177 @@
 
 }
 /*TRADE PAGE END*/
+
+/*TOKEN PAGE*/
+@media (max-width: 1280px){
+	.starky-tokens__unit {
+		width: 347px;
+		margin: 10px 10px;
+	}
+	.starky-tokens .container {
+		justify-content: center;
+	}
+	.starky-farms h1 {
+		width: 500px;
+		font-size: 55px;
+		margin-bottom: 9px;
+	}
+	.starky-farms p.subtitle {
+		font-size: 18px;
+		margin-bottom: 0px;
+		padding-bottom: 23px;
+	}
+	.staked-only {
+		font-size: 14px;
+	}
+	.stake-state__button {
+		font-size: 14px;
+		padding: 0px 13px;
+	}
+	.starky-farms {
+		padding-top: 71px;
+	}
+	.starky-tokens__unit__head {
+		padding: 18px 15px 10px 15px;
+	}
+	.starky-tokens__unit__body {
+		padding: 18px 15px 20px 15px;
+	}
+	.starky-tokens__unit__details-container {
+		padding: 20px 15px 20px 15px;
+	}
+	.starky-tokens__unit-title {
+		font-size: 19px;
+	}
+
+	.starky-tokens__unit-features span {
+		margin-right: 10px;
+	}
+	.starky-tokens__unit-features__first {
+		font-size: 14px;
+	}
+	.starky-tokens__unit-info__part span {
+		font-size: 16px;
+	}
+	.starky-tokens__unit-info__value__deposit-fee {
+		font-size: 20px !important;
+	}
+	.starky-tokens__unit-harvest__info span, .starky-tokens__unit-staked span {
+		font-size: 18px;
+	}
+	.starky-tokens__unit-harvest button, .starky-tokens__unit-staked button {
+		width: 255px;
+		height: 51px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 768px){
+	.starky-farms h1 {
+		line-height: 57px;
+	}
+	.starky-tokens__unit {
+		width: 297px;
+	}
+	.starky-farms h1 {
+		text-align: center;
+	}
+	.starky-farms .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.starky-tokens .container {
+		align-items: center;
+	}
+	.starky-tokens .container {
+		flex-direction: row;
+	}
+
+}
+
+@media (max-width: 500px){
+	.starky-farms h1 {
+		width: 100%;
+		font-size: 35px;
+		line-height: 37px;
+	}
+	.starky-farms p.subtitle {
+		font-size: 14px;
+		padding-bottom: 13px;
+	}
+	.staked-only {
+		width: 100%;
+		margin-right: 10px;
+	}
+	.stake-state {
+		display: flex;
+		align-items: center;
+	}
+	.stake-options {
+		display: flex;
+		justify-content: space-between;
+	}
+	.stake-state__button {
+		font-size: 10px;
+		padding: 0px 6px;
+		line-height: 16px;
+	}
+	.onoffswitch-inner:before, .onoffswitch-inner:after {
+		height: 22px;
+		line-height: 22px;
+		font-size: 12px;
+	}
+	.onoffswitch {
+		width: 42px;
+	}
+	.staked-only .onoffswitch {
+		margin-right: 5px;
+	}
+	.onoffswitch-switch {
+		width: 16px;
+		right: 20px;
+	}
+	.starky-tokens__unit-info__part span {
+		font-size: 14px;
+	}
+	.starky-tokens__unit-info__part {
+		margin-bottom: 3px;
+	}
+	.starky-tokens__unit-harvest {
+		padding-top: 9px;
+	}
+	.starky-tokens__unit-harvest__info {
+		margin-bottom: 10px;
+	}
+	.starky-tokens__unit-staked {
+		padding-top: 19px;
+	}
+	.starky-tokens__unit-harvest__info span, .starky-tokens__unit-staked span {
+		font-size: 16px;
+	}
+	.starky-tokens__unit-staked__text {
+		margin-bottom: 6px;
+	}
+	.starky-tokens__unit__details__status {
+		font-size: 14px;
+	}
+	.starky-tokens__unit__details__element span {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.starky-tokens__unit__details__link {
+		font-size: 14px;
+	}
+	.details-block__close {
+		padding-bottom: 20px;
+	}
+	.starky-tokens__unit__details-container {
+		padding: 10px 15px 10px 15px;
+	}
+	.starky-tokens__unit-harvest button, .starky-tokens__unit-staked button {
+		height: 41px;
+		font-size: 14px;
+	}
+}
+/*TOKEN PAGE END*/

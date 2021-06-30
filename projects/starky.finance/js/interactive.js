@@ -83,6 +83,16 @@ $("#add-liquidity__button").click(function(){
 $(".close-button").click(function(){
     $(".popup").removeClass("popup-active");
 });
-
-
 // POPUPS END
+
+// DETAILS
+$(".starky-tokens__unit__details__status").click(function(){
+    $(this).parent().find(".starky-tokens__unit__details__block").toggleClass("details-block__close");
+    $(this).parent().parent().find(".starky-tokens__unit__details__status").toggleClass("unit__details__status__open");
+    $(this).parent().parent().find(".starky-tokens__unit__details__status").toggle();
+});
+// $(".unit__details__status-hide").click(function(){
+//     $(".starky-tokens__unit__details__block").toggleClass("details-block__close");
+//     $(".starky-tokens__unit__details__status").toggleClass("unit__details__status__open");
+// });
+// DETAILS END
