@@ -1189,7 +1189,7 @@ header .container {
 
 /*FARMS*/
 .starky-farms {
-	padding-top: 116px;
+	padding-top: 138px;
 }
 .starky-farms h1 {
 	width: 520px;
@@ -1546,5 +1546,22 @@ header .container {
 	display: none;
 }
 
-
+#sky-farms {
+	position: absolute;
+	width: 975px;
+	height: auto;
+	top: 0;
+	right: -88px;
+	/*left: 1035px;*/
+	z-index: -1;
+}
+#kitty-farms {
+	position: absolute;
+	width: 604px;
+	height: auto;
+	top: 111px;
+	right: 380px;
+	/*left: 938px;*/
+	z-index: -1;
+}
 /*FARMS END*/
