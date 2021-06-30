@@ -1401,6 +1401,7 @@ header .container {
 	width: 15px;
 	height: 15px;
 	left: -20px;
+	top: 1px;
 }
 .starky-tokens__unit-harvest__title,
 .starky-tokens__unit-staked__text {
@@ -1565,3 +1566,19 @@ header .container {
 	z-index: -1;
 }
 /*FARMS END*/
+
+/*NESTS PAGE*/
+.starky-nests .starky-tokens__unit__head {
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.starky-nests .starky-tokens__unit-image {
+	height: 100%;
+	width: auto;
+}
+.starky-tokens__starky .starky-tokens__unit-image {
+	width: 61px;
+	height: auto;
+}
+/*NESTS PAGE*/
