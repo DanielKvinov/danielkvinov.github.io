@@ -734,6 +734,57 @@
 }
 
 @media (max-width: 500px){
+	.starky-stats__element {
+		width: 100px;
+	}
+	#market-cap:before {
+		left: -10px;
+		top: -20px;
+		width: 119px;
+		height: 104px;
+	}
+	#total-minted:before {
+		left: -9px;
+		top: -21px;
+		width: 109px;
+		height: 105px;
+	}
+	#total-burned:before {
+		left: 0px;
+		top: -17px;
+		width: 89px;
+		height: 119px;
+	}
+	#circulating-supply:before {
+		top: -10px;
+		left: -19px;
+		width: 140px;
+		height: 115px;
+	}
+	#new-starky-block:before {
+		left: -5px;
+		top: -19px;
+		width: 145px;
+		height: 121px;
+	}
+	.starky-stats__element__title {
+		font-size: 12px;
+		text-align: center;
+		width: 100%;
+		line-height: 15px;
+	}
+	.starky-stats__block {
+		align-items: flex-start;
+	}
+	.starky-stats__element {
+		margin-bottom: 20px;
+	}
+	.starky-swap {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+
 	.menu-hamburger__list {
 		width: 260px;
 	}
@@ -780,13 +831,25 @@
 		right: -15px;
 		top: 34px;
 	}
-
+	.starky-swap p {
+		max-width: 200px;
+		font-size: 18px;
+		line-height: 25px;
+		padding-bottom: 30px;
+	}
+	.total-value {
+		padding-bottom: 30px;
+	}
+	.announcements {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.contacts {
+		padding-bottom: 18px;
+	}
 }
 
 @media (max-width: 420px){
-	.starky-swap {
-		padding-top: 70px;
-	}
 	h1 {
 		font-size: 40px;
 		line-height: 62px;
@@ -1097,6 +1160,16 @@
 }
 
 @media (max-width: 500px){
+	.trade {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+	.trade-subtitle {
+		margin-bottom: 17px;
+	}
+	.trade-liquidity__button {
+		margin-bottom: 37px;
+	}
 	.trade-select span {
 		font-size: 12px;
 		line-height: 21px;
@@ -1212,6 +1285,9 @@
 }
 
 @media (max-width: 1280px){
+	.starky-nests .starky-tokens__unit-image {
+		max-width: 50px;
+	}
 	#sky-farms {
 		left: 705px;
 		width: 845px;
