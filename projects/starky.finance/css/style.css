@@ -336,7 +336,7 @@ header .container {
 }
 .language-select__selected {
 	position: relative;
-	padding-right: 20px;
+	padding-right: 10px;
 	display: inline-block;
 }
 .language-select__selected:before {
