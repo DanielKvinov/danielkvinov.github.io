@@ -1262,6 +1262,14 @@
 		right: auto;
 		left: 938px;
 	}
+	#sky-nests {
+		right: auto;
+		left: 1035px;
+	}
+	#kitty-nests {
+		right: auto;
+		left: 939px;
+	}
 }
 
 @media (max-width: 1600px){
@@ -1270,6 +1278,13 @@
 	}
 	#kitty-farms {
 		left: 778px;
+	}
+
+	#sky-nests {
+		left: 875px;
+	}
+	#kitty-nests {
+		left: 769px;
 	}
 }
 
@@ -1281,6 +1296,15 @@
 		left: 678px;
 		width: 514px;
 		top: 170px;
+	}
+
+	#sky-nests {
+		left: 795px;
+	}
+	#kitty-nests {
+		left: 709px;
+		width: 378px;
+		top: 150px;
 	}
 }
 
@@ -1296,6 +1320,16 @@
 		left: 618px;
 		width: 424px;
 		top: 160px;
+	}
+
+	#sky-nests {
+		left: 625px;
+		width: 835px;
+	}
+	#kitty-nests {
+		left: 579px;
+		width: 298px;
+		top: 120px;
 	}
 	.starky-tokens__unit {
 		width: 347px;
@@ -1370,6 +1404,15 @@
 		width: 374px;
 		top: 140px;
 	}
+
+	#sky-nests {
+		left: 525px;
+		width: 735px;
+		top: 40px;
+	}
+	#kitty-nests {
+		left: 479px;
+	}
 }
 @media (max-width: 930px){
 	#sky-farms {
@@ -1381,6 +1424,16 @@
 		left: 468px;
 		width: 274px;
 		top: 160px;
+	}
+	
+	#sky-nests {
+		left: 515px;
+		width: 595px;
+		top: 40px;
+	}
+	#kitty-nests {
+		left: 469px;
+		width: 238px;
 	}
 }
 
