@@ -214,14 +214,40 @@ a {
 		padding: 0 20px;
 		margin-bottom: 20px;
 	}
+}
 
+@media (max-width: 420px){
 
+	.flexe-pricing__select {
+	flex-direction: column;
+	align-items: center;
+}
+.flexe-pricing__select__element {
+	width: 100%;
+}
+.flexe-pricing__logo img {
+	margin-top: 10px;
+	max-width: 165px;
+}
+.flexe-pricing__select__text {
+	font-size: 18px;
+}
+.flexe-pricing__select__image {
+	height: 156px;
+}
 
+.flexe-pricing__select__button {
+	font-size: 12px;
+	margin-top: 10px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 30px;
+	margin-bottom: 40px;
+}
 
-
-
-
-
+.flexe-pricing__title {
+	margin-bottom: 10px;
+}
 
 
 
