@@ -691,6 +691,7 @@ header .container {
 }
 .announcements-text {
 	color: black;
+	font-weight: bold;
 }
 .announcements-twitter__app {
 	display: flex;
