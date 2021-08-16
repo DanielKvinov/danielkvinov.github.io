@@ -689,6 +689,14 @@ header .container {
 	height: 100%;
 	background-color: #ffffff;
 }
+.announcements-text {
+	color: black;
+}
+.announcements-twitter__app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 /*ANNOUNCEMENTS END*/
 
 /*SOCIAL MEDIA*/
