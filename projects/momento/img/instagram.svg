@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>header</title>
+	<defs>
+		<image  width="30" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAAXNSR0IB2cksfwAAAKJQTFRFAAAAfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADsfADssGb0+fT+////9/D+7+D99On9fADskCjvfgPsjCDufADs/v7/pE3yfADs+vb+sGXzgQntfADs/Pr/59D7+/f+fADs8eT98uX98+j92bX5nkPxgAjtvHz1fADsfADsfADsfADsfADsiDKc5QAAADZ0Uk5TAAVMkcbo+BCA6v/rWAOWrZOUV+n///////8G////kv//xP///8X////5/////////03sgcf6ikMwIwAAASpJREFUeJyN0+t2gjAMAOCIIjTzAlYq4AUn4GUDdKjv/2qjFEpBjlt+9eTjkrQpQB0DbTjSx2N9NNQG0A3DJCjjwzTaOtGxFfpEwekMX2I2lTp/VcR57VafItpCF/2KuChrpny5dJgSzpLnKK/fLJ9UdOV6zCmTJoAv+lVeXePGY2WS+KBhl7eIrmDUYNfiIGBsv12vKrbgU+FDGEXhoVyKbAzVVrPj6cxCvgrZ+XSsmMClYhe/goivouBb/vuicFJzojCRnNYfTyUTiCVnRWnXa1FaJjmWjbmIN9HYrenbkttSMGZpkqQZNvwDfi7Y2zRHpWyqPBLPlaEcyZsDJcbbcajG0e5X+3+j+Mcg82tA20jVa8Drv+cN5vfOJSqv4O5Bn0/62Gm+TP4CfrIuKNy2uTAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="header">
+		<g id="social">
+			<use id="Vector Smart Object" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>header</title>
+	<defs>
+		<image  width="30" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAAXNSR0IB2cksfwAAAT5QTFRFAAAAJNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+JNX+L9f+eeX+zPX/9v3/JNX+JdX+XOD+r/D/////7fz/QNr+kur/4/r/wvP/JNX+Ldf+duX+yfX/+P7/wfP//P7/luv/JNX+Wd/+rO//9f3/xvT/fub+9/7/aeL+JNX+Otn+jun+4vn/7/z/d+X+aOL++/7/Odn+JNX+tfH//P//s/D/N9n+cuT+5vr/Z+L+1/f/Y+H+euX+/f//tvH/T93+nez/2vj/MNf+gOf+huj+S93+3fj/fOb+Vd7+2fj/UN3++v7/Ktb+kOr+oO3/z/b/JNX+JNX+S9z+9P3/4Pn/Td3+pO7/nuz/0fb/Ntj+Wt/+buP+Sdz+ONn+JNX+JNX+JNX+NfMj8gAAAGp0Uk5TAAVMkcbo+BCA6v/rWAOWrZOUV+n/////Bv///////////5L/////////xP/////////F///////////5//////////////////////////////////////9N7P///////////////4HH+g7/W6QAAAFaSURBVHicjZPnQsIwEIBDobQ9WaVqq8ZVHDhwoOLAvTfugaI4gfd/AUmaxi7H/eg19+Uud8kdQraEhHBEjEbFSFgIIa9IsgJcWmTJTWMiuESMOWA8AT5JxDlN+ilA0uapIAqgWjQdTAHSNGftJ6yR/GW/vbWtXSdaRshQPKyjs0vHuJv8KgYS3LCntw8T6acrAZkOlhkYbJKh4SzGI9SQQqM86Nh4jvhNTE41v9PUlkfs6JnZORq0ML+wSPQStSqoSPXyCoV4dW09S/SG5VRkeHOLGrdhZ5du27OxXdf+QeHwCI6tIPgEWPA8z/u0BGeM4nNgqTkKu7jMMXp1Dawwx7Xc3NrOd8xyj4wyxw+PuPL0THCVHW24nqT08grwVsH43VrL7gf9yNCrreqflrP0azuwdlSDqfq/VvyjkckYeBpOc44Byb/2XT+Ua54hoiNo1rVGQ6ubgsGNX4PKOhuXgfQwAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="header">
+		<g id="social">
+			<use id="Vector Smart Object" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

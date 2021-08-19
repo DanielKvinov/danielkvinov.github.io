@@ -1,0 +1,321 @@
+@media (max-width: 1540px){
+	.container {
+		padding: 0 30px;
+	}
+	.welcome .button-group {
+		padding-top: 39px;
+		padding-bottom: 304px;
+	}
+	.how-to-buy__instruction p {
+		max-width: 635px;
+	}
+	.how-to-buy__instruction div {
+		margin-right: 50px;
+	}
+	#coin3 {
+		top: 380px;
+	}
+	.about .text__group p {
+		max-width: 570px;
+		margin-right: 70px;
+	}
+	.tokenomics .text__block {
+		margin-right: 38px;
+	}
+	.roadmap:before {
+		background: url(../img/roadmapBG.png) no-repeat 50% 100%/cover;
+	}
+	.roadmap:after {
+		left: 657px;
+		top: 226px;
+	}
+	.nft:after {
+		width: 894px;
+		height: 628px;
+		left: 285px;
+	}
+}
+
+@media (max-width: 1200px){
+	.nft:after {
+		width: 734px;
+		left: 285px;
+	}
+}
+
+@media (max-width: 1080px){
+	h2 {
+		font-size: 28px;
+	}
+	h1 {
+		font-size: 75px;
+	}
+	.text {
+		font-size: 22px;
+	}
+	.button {
+		font-size: 16px;
+	}
+	.about .text__group p {
+		max-width: 440px;
+		margin-right: 40px;
+	}
+	#aboutBG {
+		top: -140px;
+		left: 292px;
+		width: 379px;
+		height: auto;
+	}
+	#elipsePink {
+		right: 120px;
+		width: 48px;
+		height: auto;
+	}
+	#elipseYellow {
+		right: 185px;
+		width: 96px;
+		height: auto;
+	}
+	.tokenomics .text__block {
+		display: flex;
+		flex-direction: column;
+		min-width: 383px;
+	}
+	.tokenomics .notice {
+		margin-top: 44px;
+		margin-bottom: 70px;
+	}
+	.number__big {
+		font-size: 26px;
+	}
+	.number__huge {
+		font-size: 36px;
+	}
+	span.title {
+		font-size: 30px;
+	}
+	.roadmap:after {
+		content: ' ';
+		position: absolute;
+		width: 239px;
+		height: 232px;
+		left: auto;
+		top: 226px;
+		right: 50px;
+	}
+	.roadmap:before {
+		background: url(../img/roadmapBG.png) no-repeat 50% 100%/cover;
+	}
+	.nft {
+		padding-left: 70px;
+	}
+	.nft:after {
+		width: 634px;
+		left: auto;
+		right: 100px;
+	}
+}
+
+@media (max-width: 960px){
+	.menu-desktop {
+		display: none;
+	}
+	.menu-mobile {
+		display: block;
+	}
+	.desktop {
+		display: none
+	}
+	.about .text {
+		font-size: 20px;
+	}
+	.tokenomics .text__group {
+		flex-direction: column;
+	}
+	.tokenomics .text__block {
+		margin-right: 0;
+		margin-bottom: 70px
+	}
+	.tokenomics .text__block:last-child {
+		margin-bottom: 0px
+	}
+	.tokenomics .notice {
+		margin-top: 114px;
+	}
+	.tokenomics .text__block {
+		min-width: 100%;
+	}
+
+
+}
+
+@media (max-width: 700px){
+	h1 {
+		font-size: 65px;
+	}
+	.welcome .text {
+		max-width: 376px;
+	}
+	.text {
+		font-size: 18px;
+	}
+	.button {
+		font-size: 14px;
+		padding: 12px 10px;
+		width: 180px;
+	}
+	.welcome .button-group {
+		padding-bottom: 70px;
+	}
+	.how-to-buy__instruction div {
+		margin-right: 40px;
+	}
+	.how-to-buy {
+		padding-top: 55px;
+	}
+	.about .text__group {
+		flex-direction: column;
+	}
+	.about .text__group p {
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}	
+	.about .text__group p:last-child {
+		margin-bottom: 0px;
+	}	
+	.about {
+		padding-top: 55px;
+		padding-bottom: 70px;
+	}
+	#aboutBG {
+		top: -30px;
+		left: 242px;
+		width: 189px;
+	}
+	.number__big {
+		font-size: 20px;
+	}
+	.number__huge {
+		font-size: 26px;
+	}
+	.notice {
+		font-size: 16px;
+	}
+	.tokenomics .notice {
+		margin-top: 94px;
+	}
+	.roadmap__part__container {
+		flex-direction: column;
+	}
+	.q4 {
+		padding-top: 57px;
+		max-width: 100%;
+	}
+	.roadmap:before {
+		background: none;
+	}
+	.nft {
+		padding-left: 70px;
+		padding-top: 115px; 
+		padding-bottom: 150px;
+	}
+	.nft:after {
+		width: 434px;
+		height: 350px;
+		right: 100px;
+			top: 320px;
+	}
+}
+
+@media (max-width: 500px){
+	.container {
+		padding: 0 15px;
+	}
+	.logo {
+		height: auto;
+		width: 80%;
+	}
+	.menu-mobile__sidebar {
+		width: 230px;
+	}
+	.menu-mobile__sidebar__nav a {
+		padding: 5px 20px;
+	}
+	.button {
+		font-size: 12px;
+		width: 130px;
+	}
+	.text {
+		font-size: 16px;
+	}
+
+	.welcome .text {
+		padding-top: 16px;
+	}
+	.welcome .button-group {
+		padding-top: 19px;
+	}
+	.how-to-buy__instruction {
+		flex-direction: column;
+	}
+	.how-to-buy__instruction p {
+		max-width: 100%;
+	}
+	.how-to-buy__instruction p {
+		margin-bottom: 48px;
+		min-height: auto;
+	}
+	#coin1 {
+		top: -70px;
+		right: 84px;
+		width: 97px;
+	}
+	#coin2 {
+		width: 127px;
+		height: auto;
+	}
+	#coin3 {
+		top: 530px;
+		width: 199px;
+		height: auto;
+		left: -76px;
+	}
+	#coin4 {
+		left: 254px;
+		width: 155px;
+		height: auto;
+	}
+	#aboutBG {
+		top: -20px;
+		left: auto;
+		width: 149px;
+		right: 30px;
+	}
+	#aboutBG {
+		top: 60px;
+	}
+	h1 {
+		font-size: 45px;
+	}
+	.notice {
+		font-size: 14px;
+	}
+	span.title {
+		font-size: 27px;
+	}
+	.roadmap:after {
+		width: 189px;
+		height: 202px;
+		right: 20px;
+	}
+	.nft:after {
+		width: 334px;
+		height: 250px;
+		right: 0px;
+		top: 320px;
+	}
+	.nft {
+		padding-left: 0;
+	}
+}
