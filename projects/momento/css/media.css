@@ -117,7 +117,11 @@
 }
 
 @media (max-width: 960px){
-	.menu-desktop {
+	.logo {
+		width: 169px;
+		height: auto;
+	}
+/*	.menu-desktop {
 		display: none;
 	}
 	.menu-mobile {
@@ -125,7 +129,7 @@
 	}
 	.desktop {
 		display: none
-	}
+	}*/
 	.about .text {
 		font-size: 20px;
 	}
@@ -147,6 +151,21 @@
 	}
 
 
+}
+
+@media (max-width: 800px){
+	.menu-bar {
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 15px;
+	}
+	.social-media {
+		margin-top: 10px;
+	}
+	header .container {
+		align-items: normal;
+	}
+	/*MENU TIME END*/
 }
 
 @media (max-width: 700px){
@@ -231,6 +250,23 @@
 	}
 	.roadmap {
 		padding-top: 80px;
+	}
+}
+
+@media (max-width: 600px) {
+	header .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.social-media {
+		margin-left: 0;
+	}
+	.menu-bar {
+		flex-direction: column;
+		align-items: center;
+	}
+	.welcome {
+		padding-top: 76px;
 	}
 }
 
@@ -323,5 +359,8 @@
 	}
 	.nft {
 		padding-left: 0;
+	}
+	.menu li {
+		margin-right: 15px;
 	}
 }
