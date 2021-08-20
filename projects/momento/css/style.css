@@ -400,7 +400,7 @@ span.title {
 	padding-left: 364px;
 	padding-bottom: 410px;
 }
-.nft:before {
+/*.nft:before {
 	content: ' ';
 	position: absolute;
 	width: 100%;
@@ -419,7 +419,7 @@ span.title {
 	top: 240px;
 	z-index: -1;
 	background: url("../img/nftPlain.png") no-repeat 100% 100%/100%;
-}
+}*/
 .nft h1 {
 	padding-bottom: 41px;
 }
