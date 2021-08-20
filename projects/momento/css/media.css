@@ -117,7 +117,7 @@
 }
 
 @media (max-width: 960px){
-	.logo {
+	.logo img {
 		width: 169px;
 		height: auto;
 	}
@@ -272,13 +272,17 @@
 		width: 25px;
 		height: auto;
 	}
+	.logo {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 @media (max-width: 500px){
 	.container {
 		padding: 0 15px;
 	}
-	.logo {
+	.logo img {
 		height: auto;
 		width: 80%;
 	}
