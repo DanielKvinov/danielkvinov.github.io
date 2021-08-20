@@ -101,7 +101,7 @@ header .container {
 	padding-top: 156px;
 }
 .welcome:before {
-	content: ' ';
+	/*content: ' ';*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -144,7 +144,7 @@ h1 {
 }
 .welcome .button-group {
 	padding-top: 39px;
-	padding-bottom: 424px;
+	padding-bottom: 39px;
 }
 .welcome .button {
 	margin-right: 20px;
@@ -152,6 +152,19 @@ h1 {
 .welcome .button:last-child {
 	margin-right: 0px;
 }
+
+/*WELCOME VIDEO BG*/
+.welcome__decorations video {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: auto;
+}
+/*WELCOME VIDEO BG END*/
+
 /*WELCOME END*/
 
 /*HOW TO BUY*/

@@ -4,7 +4,7 @@
 	}
 	.welcome .button-group {
 		padding-top: 39px;
-		padding-bottom: 304px;
+		/*padding-bottom: 304px;*/
 	}
 	.how-to-buy__instruction p {
 		max-width: 635px;
@@ -33,6 +33,37 @@
 		width: 894px;
 		height: 628px;
 		left: 285px;
+	}
+}
+
+@media (max-width: 1300px){
+	.welcome__decorations video {
+		width: auto;
+		height: 100%;
+	}
+}
+
+@media (max-height: 800px) and (max-width: 1400px){
+	.welcome__decorations video {
+		top: -60px;
+	}
+	.welcome {
+		padding-top: 126px;
+	}
+	.how-to-buy {
+		padding-top: 126px;
+	}
+	.about {
+		padding-top: 125px;
+	}
+	#aboutBG {
+		top: -130px;
+		left: 352px;
+	}
+	.nft {
+		padding-top: 125px;
+		padding-left: 204px;
+		padding-bottom: 125px;
 	}
 }
 
@@ -184,7 +215,7 @@
 		width: 180px;
 	}
 	.welcome .button-group {
-		padding-bottom: 70px;
+		/*padding-bottom: 70px;*/
 	}
 	.how-to-buy__instruction div {
 		margin-right: 40px;
