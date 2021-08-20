@@ -36,17 +36,14 @@
 	}
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1350px){
 	.welcome__decorations video {
 		width: auto;
 		height: 100%;
 	}
 }
 
-@media (max-height: 800px) and (max-width: 1400px){
-	.welcome__decorations video {
-		top: -60px;
-	}
+@media (max-height: 800px) and (max-width: 1500px){
 	.welcome {
 		padding-top: 126px;
 	}

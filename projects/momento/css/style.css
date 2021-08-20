@@ -154,6 +154,7 @@ h1 {
 }
 
 /*WELCOME VIDEO BG*/
+
 .welcome__decorations video {
 	position: absolute;
 	z-index: -1;
