@@ -36,8 +36,15 @@
 	}
 }
 
+@media (max-width: 1460px){
+	.welcome {
+		padding-bottom: 270px;
+	}
+
+}
+
 @media (max-width: 1350px){
-	.welcome__decorations video {
+	.welcome__decoration {
 		width: auto;
 		height: 100%;
 	}
@@ -58,9 +65,12 @@
 		left: 352px;
 	}
 	.nft {
-		padding-top: 125px;
-		padding-left: 204px;
-		padding-bottom: 125px;
+		padding-top: 155px;
+		padding-left: 164px;
+		padding-bottom: 390px;
+	}
+	.nft:after {
+		top: 90px;
 	}
 }
 
@@ -68,6 +78,12 @@
 	.nft:after {
 		width: 734px;
 		left: 285px;
+		top: -30px;
+	}
+	.nft {
+		padding-top: 125px;
+		padding-left: 104px;
+		padding-bottom: 330px;
 	}
 }
 
@@ -89,7 +105,7 @@
 		margin-right: 40px;
 	}
 	#aboutBG {
-		top: -140px;
+		top: -40px;
 		left: 292px;
 		width: 379px;
 		height: auto;
@@ -111,7 +127,7 @@
 	}
 	.tokenomics .notice {
 		margin-top: 44px;
-		margin-bottom: 70px;
+		margin-bottom: 120px;
 	}
 	.number__big {
 		font-size: 26px;
@@ -136,11 +152,15 @@
 	}
 	.nft {
 		padding-left: 70px;
+		padding-bottom: 370px;
 	}
 	.nft:after {
 		width: 634px;
 		left: auto;
 		right: 100px;
+	}
+	.welcome__decoration {
+		top: 0px;
 	}
 }
 
@@ -181,7 +201,7 @@
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
 	.menu-bar {
 		flex-direction: column;
 		align-items: flex-end;
@@ -190,15 +210,17 @@
 	.social-media {
 		margin-top: 10px;
 	}
-	header .container {
+	.header-box {
 		align-items: normal;
 	}
-	/*MENU TIME END*/
+	.roadmap .text {
+		font-size: 21px;
+	}
 }
 
 @media (max-width: 700px){
 	h1 {
-		font-size: 65px;
+		font-size: 55px;
 	}
 	.welcome .text {
 		max-width: 376px;
@@ -264,14 +286,14 @@
 	}
 	.nft {
 		padding-left: 70px;
-		padding-top: 80px;
-		padding-bottom: 150px;
+		padding-top: 90px;
+		padding-bottom: 190px;
 	}
 	.nft:after {
 		width: 434px;
 		height: 350px;
-		right: 100px;
-		top: 320px;
+		right: 0px;
+		top: 50px;
 	}
 	.tokenomics {
 		padding-top: 80px;
@@ -279,10 +301,7 @@
 	.roadmap {
 		padding-top: 80px;
 	}
-}
-
-@media (max-width: 600px) {
-	header .container {
+	.header-box {
 		flex-direction: column;
 		align-items: center;
 	}
@@ -292,6 +311,21 @@
 	.menu-bar {
 		flex-direction: column;
 		align-items: center;
+	}
+	.welcome__decoration {
+		top: -40px;
+	}
+	.welcome {
+		padding-bottom: 170px;
+	}
+	.tokenomics .notice {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 600px) {
+	.about .text {
+		font-size: 18px;
 	}
 	.welcome {
 		padding-top: 76px;
@@ -303,6 +337,14 @@
 	.logo {
 		display: flex;
 		justify-content: center;
+	}
+	.nft {
+		padding-left: 0;
+		padding-top: 70px;
+		padding-bottom: 270px;
+	}
+	.nft h1 {
+		padding-bottom: 21px;
 	}
 }
 
@@ -365,13 +407,10 @@
 		height: auto;
 	}
 	#aboutBG {
-		top: -20px;
+		top: -40px;
 		left: auto;
 		width: 149px;
 		right: 30px;
-	}
-	#aboutBG {
-		top: 60px;
 	}
 	h1 {
 		font-size: 45px;
@@ -387,16 +426,22 @@
 		height: 202px;
 		right: 20px;
 	}
-	.nft:after {
-		width: 334px;
-		height: 250px;
-		right: 0px;
-		top: 320px;
-	}
-	.nft {
-		padding-left: 0;
-	}
 	.menu li {
 		margin-right: 15px;
+	}
+	.roadmap .text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 380px){
+	.menu a {
+		font-size: 14px;
+	}
+	.nft:after {
+		width: 334px;
+		height: 300px;
+		right: 0px;
+		top: 120px;
 	}
 }

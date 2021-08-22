@@ -4,6 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 button {
 	cursor: pointer;
 	background: transparent;
@@ -53,17 +56,21 @@ a:hover {
 	color: #24d5fe !important;
 }
 .page {
-	min-height: 100vh;
 	position: relative;
-	overflow: hidden;
 }
 /*STYLES*/
 
 /*HEADER*/
 header {
-	padding-top: 30px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #341283;
 }
-header .container {
+.header-box {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -101,6 +108,10 @@ header .container {
 /*WELCOME*/
 .welcome {
 	padding-top: 156px;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 470px;
+	z-index: 2;
 }
 .welcome:before {
 	/*content: ' ';*/
@@ -157,14 +168,14 @@ h1 {
 
 /*WELCOME VIDEO BG*/
 
-.welcome__decorations video {
+.welcome__decoration {
 	position: absolute;
 	z-index: -1;
-	top: 0;
+	top: -90px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 /*WELCOME VIDEO BG END*/
 
@@ -289,6 +300,7 @@ span.title {
 }
 .tokenomics {
 	padding-top: 150px;
+	position: relative;
 }
 .tokenomics:before {
 	content: ' ';
@@ -330,6 +342,9 @@ span.title {
 /*TOKENOMICS END*/
 
 /*ROADMAP*/
+.roadmap {
+	position: relative;
+}
 .roadmap:before {
 	content: ' ';
 	position: absolute;
@@ -389,7 +404,7 @@ span.title {
 }
 .q4 {
 	padding-top: 167px;
-	max-width: 723px;
+	max-width: 753px;
 	margin-left: auto;
 }
 /*ROADMAP END*/
@@ -398,9 +413,11 @@ span.title {
 .nft {
 	padding-top: 255px;
 	padding-left: 364px;
-	padding-bottom: 410px;
+	padding-bottom: 490px;
+	position: relative;
+	overflow: hidden;
 }
-/*.nft:before {
+.nft:before {
 	content: ' ';
 	position: absolute;
 	width: 100%;
@@ -419,7 +436,7 @@ span.title {
 	top: 240px;
 	z-index: -1;
 	background: url("../img/nftPlain.png") no-repeat 100% 100%/100%;
-}*/
+}
 .nft h1 {
 	padding-bottom: 41px;
 }
