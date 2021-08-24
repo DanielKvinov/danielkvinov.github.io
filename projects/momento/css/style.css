@@ -288,11 +288,6 @@ span.title {
 	font-family: "CircularStdBold", sans-serif;
 }
 .number__big {
-	font-size: 36px;
-	font-family: "CircularStdBold", sans-serif;
-}
-.number__huge {
-	font-size: 46px;
 	font-family: "CircularStdBold", sans-serif;
 }
 .notice {

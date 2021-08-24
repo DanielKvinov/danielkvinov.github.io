@@ -129,12 +129,6 @@
 		margin-top: 44px;
 		margin-bottom: 120px;
 	}
-	.number__big {
-		font-size: 26px;
-	}
-	.number__huge {
-		font-size: 36px;
-	}
 	span.title {
 		font-size: 30px;
 	}
@@ -261,12 +255,6 @@
 		top: -30px;
 		left: 242px;
 		width: 189px;
-	}
-	.number__big {
-		font-size: 20px;
-	}
-	.number__huge {
-		font-size: 26px;
 	}
 	.notice {
 		font-size: 16px;
