@@ -1,21 +1,98 @@
-/* Экстрабольшие девайсы (большие десктопы) */
-
-/* Большие девайсы (большие десктопы, < 1200px) */
-@media (max-width: 1200px) {
-	
+@media (max-width: 1080px){
+	header .logo span {
+		font-size: 22px;
+	}
+	header .logo img {
+		width: 61px;
+	}
+	.menu a {
+		margin-right: 13px;
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	.text-middle {
+		font-size: 18px;
+	}
+	.welcome p {
+		max-width: 653px;
+		margin-bottom: 24px;
+	}
+	.button-main {
+		font-size: 16px;
+		padding: 17px 40px;
+	}
 }
 
-/* Средние девайсы («таблетки», < 992px) */
-@media (max-width: 992px) {
-	
+@media (max-width: 992px){
+	header .menu {
+		display: none
+	}
+	.menu-mobile {
+		display: block;
+	}
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+		background-color: white !important;
+	}
+	.menu-mobile__nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 10;
+		padding: 40px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		background: #292b30;
+		transition: 0.4s;
+		transform: translateX(-100%);
+	}
+	.menu-mobile__nav-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu-mobile__nav-container a {
+		padding: 10px 100px 10px 30px;
+		font-size: 22px;
+		letter-spacing: 1px;
+	}
+	.mobile-menu__visible {
+		transform: translateX(0%);
+	}
+	.overflow-hidden {
+		overflow: hidden;
+	}
+	.menu-mobile__nav .social-media {
+		display: none;
+		padding: 10px 30px;
+	}
 }
 
-/* Малые девайсы («ландшафтные», < 768px) */
-@media (max-width: 768px) {
-	
+@media (max-width: 600px){
+	header .logo span {
+		font-size: 18px;
+	}
+	header .logo img {
+		width: 52px;
+		margin-right: 10px;
+	}
 }
 
-/* Экстрамалые девайсы («телефоны», < 576px) */
-@media (max-width: 576px) {
-
+@media (max-width: 500px){
+	header .social-media {
+		display: none;
+	}
+	.menu-mobile__nav .social-media {
+		display: block !important;
+	}
+	.menu-mobile__nav-container a {
+		padding: 10px 100px 10px 30px;
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
 }

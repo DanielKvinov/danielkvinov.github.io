@@ -54,6 +54,9 @@ h2 {
 p {
 	line-height: 1.4;
 }
+.menu-mobile {
+	display: none;
+}
 /*MAIN SETTINGS END*/
 
 /*STYLES*/
