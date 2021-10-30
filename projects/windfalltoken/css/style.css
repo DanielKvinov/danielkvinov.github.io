@@ -230,6 +230,7 @@ header .menu {
 	width: 924px;
 	height: auto;
 	z-index: -1;
+	transition: 0.4s;
 }
 .services__decoration-decor {
 	bottom: 0;
