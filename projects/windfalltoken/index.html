@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Web-site by Daniel Kvinov</title>
@@ -16,6 +16,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/hamburgers.min.css">
@@ -24,16 +25,16 @@
 <body>
 	<!-- CODE -->
 	<div class="windfall-background">
-		<header>
+		<header class="wow fadeInDown" data-wow-duration="1s">
 			<div class="container">
 				<div class="logo">
 					<img src="img/logo.png" alt="logo">
 					<span>Windfalltoken</span>
 				</div>
 				<nav class="menu">
-					<a href="#">About</a>
+					<a href="#about">About</a>
 					<a href="#">Marketplace</a>
-					<a href="#">Our services</a>
+					<a href="#services">Our services</a>
 					<a href="#">Events</a>
 					<a href="#">Stats</a>
 					<a href="#">Team</a>
@@ -52,9 +53,9 @@
 					</button> 
 					<div class="menu-mobile__nav">
 						<div class="menu-mobile__nav-container">
-							<a href="#">About</a>
+							<a href="#about">About</a>
 							<a href="#">Marketplace</a>
-							<a href="#">Our services</a>
+							<a href="#services">Our services</a>
 							<a href="#">Events</a>
 							<a href="#">Stats</a>
 							<a href="#">Team</a>
@@ -71,20 +72,20 @@
 		</header>
 		<section class="welcome">
 			<div class="container">
-				<h1>Welcome to Windfalltoken</h1>
-				<h2>The virtual real estate banger</h2>
-				<p class="text-middle">One of the leading real estate platforms that give customers a virtual real estate experience through a virtual real estate portal</p>
-				<a href="#" class="button-main">
+				<h1 class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="1s">Welcome to Windfalltoken</h1>
+				<h2 class="wow fadeInDown" data-wow-duration="3s" data-wow-delay="3s">The virtual real estate banger</h2>
+				<p class="text-middle wow fadeInDown" data-wow-duration="3s" data-wow-delay="5s">One of the leading real estate platforms that give customers a virtual real estate experience through a virtual real estate portal</p>
+				<a href="#" class="button-main wow fadeInDown" data-wow-duration="3s" data-wow-delay="7s">
 					<span><img src="img/eyeIcon.png" alt="eyeIcon" class="eye-icon">GET STARTED</span>
 				</a>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
-				<div class="about__content">
-					<span class="section-title">About</span>
-					<h2>Decentralized Real Estate<br> is a blockchain-based virtual reality platform</h2>
-					<p>
+				<div class="about__content wow slideInLeft" data-wow-duration="2s" data-wow-offset="300">
+					<span class="section-title wow fadeInRight" data-wow-duration="4s" data-wow-delay="0s" data-wow-offset="300">ABOUT</span>
+					<h2 class="wow fadeInRight" data-wow-duration="4s" data-wow-delay="1s" data-wow-offset="300">Decentralized Real Estate<br> is a blockchain-based virtual reality platform</h2>
+					<p class="wow fadeInRight" data-wow-duration="3s" data-wow-delay="1.5s" data-wow-offset="300">
 						It ensures that blockchain industry leaders provide comprehensive
 						and personalized end-to-end services.<br><br>
 
@@ -100,92 +101,94 @@
 						having a physical office. Our NFT on sol blockchain soon.
 					</p>
 				</div>
-				<img class="about__image" src="img/aboutImg.png" alt="Beautiful House">
+				<img class="about__image wow slideInRight" data-wow-duration="4s" data-wow-offset="300" src="img/aboutImg.png" alt="Beautiful House">
 			</div>
 		</section>
 	</div>
-	<section class="services">
-		<img class="services__decoration" src="img/servicesBackground.png" alt="Background">
+	<section class="services" id="services">
+		<img class="services__decoration services__decoration-decor wow bounceIn" data-wow-duration="3s" data-wow-delay="2s" data-wow-offset="400" src="img/servicesDecorBackground.png" alt="Cool decor">
+		<img class="services__decoration services__decoration-man wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="2s" data-wow-offset="400" src="img/servicesManBackground.png" alt="Cool man">
 		<div class="container">
 			<div class="services__header">
-				<span class="section-title">OUR SERVICES</span>
-				<h2>Windfall enables individual property owners to enjoy the following services</h2>
+				<span class="section-title wow fadeIn" data-wow-duration="3s" data-wow-offset="400">OUR SERVICES</span>
+				<h2 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="400">Windfall enables individual property owners to enjoy the following services</h2>
 			</div>
+
 			<div class="services__list">
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/buildingIcon.png" alt="Building">
 					</div>
-					<span class="text-middle">Asset management</span>
+					<span class="text-middle hyphenate">Asset management</span>
 					<p class="hyphenate">The platform also caters to providing end-to-end real estate management provided it is based on the windfall ecosystem.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/keyIcon.png" alt="Key">
 					</div>
-					<span class="text-middle">General services</span>
-					<p>The platform offers renting opportunities on virtual real estate to customers if they want to engage in advertising or marketing. Moreover, the platform can also help in the technical and visual maintenance of the assets. It can also fuel the collection of incentives from all the participants.</p>
+					<span class="text-middle hyphenate">General services</span>
+					<p class="hyphenate">The platform offers renting opportunities on virtual real estate to customers if they want to engage in advertising or marketing. Moreover, the platform can also help in the technical and visual maintenance of the assets. It can also fuel the collection of incentives from all the participants.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/developmentIcon.png" alt="Development">
 					</div>
-					<span class="text-middle">Project development</span>
-					<p>Windfall builds and provides comprehensiveasset development services. This does not limit one to the type of engagement they choose.</p>
+					<span class="text-middle hyphenate">Project development</span>
+					<p class="hyphenate">Windfall builds and provides comprehensiveasset development services. This does not limit one to the type of engagement they choose.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/interiordesignIcon.png" alt="Interior">
 					</div>
-					<span class="text-middle">Extra Services</span>
-					<p>Windfall provides general services such as architecting, design, property development, and setting the product on a map. The best part about the platform is that you can tap yourself into the unlimited market of growing a network that exists in the virtual world.</p>
+					<span class="text-middle hyphenate">Extra Services</span>
+					<p class="hyphenate">Windfall provides general services such as architecting, design, property development, and setting the product on a map. The best part about the platform is that you can tap yourself into the unlimited market of growing a network that exists in the virtual world.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/rocketIcon.png" alt="Rocket">
 					</div>
-					<span class="text-middle">The rise of virtual real estate</span>
-					<p>Virtual reality is no longer only used in gaming, as it is getting applications in different industries. Real estate is one of the primary beneficiaries of technology. There is no doubt that the real estate industry will always increase in demand. Basically, it can do anything from building art galleries, renting or selling, tourism, and advertisements, among many other things.</p>
+					<span class="text-middle hyphenate">The rise of virtual real estate</span>
+					<p class="hyphenate">Virtual reality is no longer only used in gaming, as it is getting applications in different industries. Real estate is one of the primary beneficiaries of technology. There is no doubt that the real estate industry will always increase in demand. Basically, it can do anything from building art galleries, renting or selling, tourism, and advertisements, among many other things.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/vrIcon.png" alt="VR">
 					</div>
-					<span class="text-middle">Virtual property showcase</span>
-					<p>Users can get to experience different plans and have 360 views of the properties. They can also be able to create anything they want and envision it in the future. With VR technology, you can virtually visit any property in the comfort of your home.</p>
+					<span class="text-middle hyphenate">Virtual property showcase</span>
+					<p class="hyphenate">Users can get to experience different plans and have 360 views of the properties. They can also be able to create anything they want and envision it in the future. With VR technology, you can virtually visit any property in the comfort of your home.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/planIcon.png" alt="Plan">
 					</div>
-					<span class="text-middle">Virtual staging</span>
-					<p>Those in the real estate industry understand the importance of staging. Many customers want to visualize what their home would look like in that property or how it would look with their furniture.</p>
+					<span class="text-middle hyphenate">Virtual staging</span>
+					<p class="hyphenate">Those in the real estate industry understand the importance of staging. Many customers want to visualize what their home would look like in that property or how it would look with their furniture.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/designIcon.png" alt="Design">
 					</div>
-					<span class="text-middle">Architectural visualization</span>
-					<p>It is almost impossible to market a property that has not yet been constructed. Through the 3D drawings made possible by the technology, potential buyers can easily imagine the architecture of their new property.</p>
+					<span class="text-middle hyphenate">Architectural visualization</span>
+					<p class="hyphenate">It is almost impossible to market a property that has not yet been constructed. Through the 3D drawings made possible by the technology, potential buyers can easily imagine the architecture of their new property.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/speechIcon.png" alt="SpeechBubble">
 					</div>
-					<span class="text-middle">Communication with tenants</span>
-					<p>It is undeniable that real estate agents will have to communicate with tenants at one point or another. With virtual reality, Landlords can efficiently communicate with their tenants through 3D virtual tours.</p>
+					<span class="text-middle hyphenate">Communication with tenants</span>
+					<p class="hyphenate">It is undeniable that real estate agents will have to communicate with tenants at one point or another. With virtual reality, Landlords can efficiently communicate with their tenants through 3D virtual tours.</p>
 				</div>
-				<div class="services__serv">
+				<div class="services__serv wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
 					<div class="services__image">
 						<img src="img/moneyIcon.png" alt="Money">
 					</div>
-					<span class="text-middle">Virtual commerce</span>
-					<p>With virtual reality, buyers can imagine making any interior changesor transforming their space to something else. They can also imagine how they can sell different aspects of the property according to their style.</p>
+					<span class="text-middle hyphenate">Virtual commerce</span>
+					<p class="hyphenate">With virtual reality, buyers can imagine making any interior changesor transforming their space to something else. They can also imagine how they can sell different aspects of the property according to their style.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer class="wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
 		<div class="container">
 			<div class="footer__head">
 				<div class="logo">
@@ -193,9 +196,9 @@
 					<span>Windfalltoken</span>
 				</div>
 				<nav class="menu">
-					<a href="#">About</a>
+					<a href="#about">About</a>
 					<a href="#">Marketplace</a>
-					<a href="#">Our services</a>
+					<a href="#services">Our services</a>
 					<a href="#">Events</a>
 					<a href="#">Stats</a>
 					<a href="#">Team</a>
@@ -222,6 +225,10 @@
 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	crossorigin="anonymous"></script>
 	<script src="js/hyphenator.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<script src="js/interactive.js"></script>
 </body>
 </html>

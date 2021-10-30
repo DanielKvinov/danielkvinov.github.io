@@ -4,6 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
 	font-size: 18px;
 	min-width: 320px;
@@ -131,6 +134,13 @@ header .menu {
 	position: relative;
 	border-radius: 50px;
 	letter-spacing: 1px;
+	transition: 0.5s;
+}
+.button-main:hover {
+	opacity: 1;
+}
+.button-main span:hover {
+	background: #292b30;
 }
 .button-main:before {
 	content: ' ';
@@ -211,16 +221,29 @@ header .menu {
 	position: relative;
 	background: #342d5e;
 	z-index: 1;
+	overflow: hidden;
 }
 .services__decoration {
 	position: absolute;
-	background: url("../img/servicesBackground.png") no-repeat 100% 100%/100%;
 	bottom: 0;
 	right: 0;
 	width: 924px;
 	height: auto;
 	z-index: -1;
 }
+.services__decoration-decor {
+	bottom: 0;
+	right: 0;
+	width: 634px;
+	height: auto;
+}
+.services__decoration-man {
+	bottom: 0;
+	right: 362px;
+	width: 561px;
+	height: auto;
+}
+
 .services__header {
 	display: flex;
 	flex-direction: column;
@@ -259,17 +282,18 @@ header .menu {
 }
 .services__serv .text-middle {
 	font-weight: 600;
-	word-break: break-all;
 	height: 60px;
 }
 .services p {
 	line-height: 1.6;
-	word-break: break-all;
 }
 /*SERVICES END*/
 /*FOOTER*/
 footer {
 	padding: 90px 0;
+}
+footer .container {
+	padding-right: 125px;
 }
 footer .logo img {
 	width: 57px;
@@ -296,7 +320,7 @@ footer .logo span {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	opacity: 0.4;
+	opacity: 0.3;
 	font-weight: 100;
 	font-size: 14px;
 }
