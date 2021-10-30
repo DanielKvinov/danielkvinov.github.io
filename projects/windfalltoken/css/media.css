@@ -81,7 +81,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 100vh;
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		background: #292b30;
 		transition: 0.4s;
 		transform: translateX(-100%);
