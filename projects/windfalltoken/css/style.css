@@ -17,6 +17,18 @@ body {
 	background: #292b30;
 	font-family: "Catamaran", sans-serif;
 	font-weight: 400;
+	animation: siteVisible 4s ease 0s 1 normal forwards;
+}
+@keyframes siteVisible {
+  0% {
+    opacity: 0;
+  },
+  25%,
+  50%,
+  75%,
+  100% {
+	opacity: 1;
+  }
 }
 p, span, h3 {
 	/*margin-bottom: 0;*/
