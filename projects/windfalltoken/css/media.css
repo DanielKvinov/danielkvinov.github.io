@@ -171,8 +171,8 @@
 		margin-top: 150px;
 	}
 	.button-main span {
-		font-size: 14px;
-		padding: 12px 30px;
+		font-size: 16px;
+		padding: 17px 30px;
 	}
 	.button-main img {
 		height: 14px;
@@ -252,7 +252,7 @@
 	.services__serv {
 		align-items: center;
 		text-align: center;
-		margin-top: 28px;
+		margin-top: 48px;
 	}
 	.services__image img {
 		width: 80%;
@@ -286,8 +286,5 @@
 	}
 	.footer__head {
 		margin-bottom: 20px;
-	}
-	footer .logo {
-		margin-bottom: 10px;
 	}
 }
