@@ -75,13 +75,12 @@
 	.menu-mobile__nav {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 		z-index: 10;
-		/*padding: 40px 0;*/
+		padding: 40px 0;
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: 100vh;
 		background: #292b30;
 		transition: 0.4s;
 		transform: translateX(-100%);
@@ -89,7 +88,6 @@
 	.menu-mobile__nav-container {
 		display: flex;
 		flex-direction: column;
-		margin-top: 40px;
 	}
 	.menu-mobile__nav-container a {
 		padding: 10px 100px 10px 30px;
@@ -104,7 +102,7 @@
 	}
 	.menu-mobile__nav .social-media {
 		display: none;
-		padding: 10px 30px;
+		padding: 40px 30px;
 	}
 	.services__serv {
 		width: 214px;
