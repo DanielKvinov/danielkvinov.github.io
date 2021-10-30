@@ -37,10 +37,10 @@ a:hover {
 	opacity: 0.6;
 }
 .container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 h1 {
 	font-size: 70px;
@@ -50,9 +50,11 @@ h2 {
 	font-size: 41px;
 	font-weight: 600;
 	line-height: 1.1;
+	letter-spacing: 0.4px;
 }
 p {
 	line-height: 1.4;
+	letter-spacing: -0.2px;
 }
 .menu-mobile {
 	display: none;
@@ -74,6 +76,7 @@ header {
 }
 header .logo {
 	margin-right: auto;
+	margin-left: 15px;
 }
 header .logo img {
 	width: 81px;
@@ -93,23 +96,20 @@ header .logo span {
 	font-family: "Gilroy", sans-serif;
 
 	/*clarify*/
-	letter-spacing: 2px;
+	letter-spacing: 1.4px;
 }
 header .menu {
-	margin-right: 44px;
+	margin-right: 40px;
 }
 .menu a {
-	margin-right: 23px;
+	margin-right: 17px;
 	font-size: 16px;
 }
 .menu a:last-child {
 	margin-right: 0;
 }
 .social-media a {
-	padding: 0 6.5px;
-}
-.social-media a:last-child {
-	margin-right: 0px;
+	padding: 0 4px;
 }
 /*HEADER END*/
 /*WELCOME*/
@@ -117,46 +117,51 @@ header .menu {
 	font-size: 26px;
 }
 .button-main {
+	position: relative;
+}
+.button-main span {
 	font-weight: 600;
 	font-size: 18px;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	padding: 24px 60px;
 	background: #43c1a8;
 	position: relative;
 	border-radius: 50px;
+	letter-spacing: 1px;
 }
 .button-main:before {
 	content: ' ';
 	position: absolute;
-	width: 110%;
-	height: 140%;
+	width: 107%;
+	height: 130%;
 	background: black;
-	opacity: 0.1;
+	opacity: 0.2;
 	border-radius: 50px;
-	z-index: -1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 .button-main img {
 	margin-right: 9px;
 }
 .welcome h1 {
-	margin-top: 180px;
-	margin-bottom: 10px;
+	margin-top: 175px;
+	margin-bottom: 9px;
 }
 .welcome h2 {
-	margin-bottom: 14px;
-	letter-spacing: 3px;
+	margin-bottom: 16px;
+	letter-spacing: 0.4px;
 }
 .welcome p {
-	/*clarify*/
 	line-height: 1.5;
-	margin-bottom: 44px;
+	margin-bottom: 40px;
 	max-width: 853px;
 }
 .welcome .button-main {
-	margin-bottom: 180px;
+	margin-bottom: 150px;
 }
 .welcome .container {
 	display: flex;
@@ -177,18 +182,20 @@ header .menu {
 .about__content {
 	display: flex;
 	flex-direction: column;
-	margin-right: 57px;
+	margin-right: 67px;
+	margin-left: 20px;
 }
 .section-title {
 	text-transform: uppercase;
 	font-size: 18px;
 	display: inline-block;
+	letter-spacing: 1px;
 }
 .about .section-title {
 	margin-bottom: 14px;
 }
 .about h2 {
-	margin-bottom: 27px;
+	margin-bottom: 18px;
 }
 .about__image {
 	width: 555px;
@@ -203,14 +210,16 @@ header .menu {
 .services {
 	position: relative;
 	background: #342d5e;
+	z-index: 1;
 }
-.services__decoration img {
+.services__decoration {
 	position: absolute;
 	background: url("../img/servicesBackground.png") no-repeat 100% 100%/100%;
 	bottom: 0;
 	right: 0;
 	width: 924px;
 	height: auto;
+	z-index: -1;
 }
 .services__header {
 	display: flex;
@@ -220,10 +229,11 @@ header .menu {
 }
 .services__header .section-title {
 	margin-top: 111px;
-	margin-bottom: 19px;
+	margin-bottom: 13px;
 }
 .services__header h2 {
 	max-width: 785px;
+	margin-bottom: 32px;
 }
 .services__list {
 	display: flex;
@@ -234,9 +244,9 @@ header .menu {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 264px;
-	margin-right: 28px;
-	margin-top: 80px;
+	width: 254px;
+	margin-right: 38px;
+	margin-top: 48px;
 }
 .services__serv:nth-child(4n) {
 	margin-right: 0;
@@ -248,11 +258,13 @@ header .menu {
 	margin-bottom: 30px;
 }
 .services__serv .text-middle {
-	margin-bottom: 30px;
-	height: 50px;
+	font-weight: 600;
+	word-break: break-all;
+	height: 60px;
 }
 .services p {
-	line-height: 1.7;
+	line-height: 1.6;
+	word-break: break-all;
 }
 /*SERVICES END*/
 /*FOOTER*/
