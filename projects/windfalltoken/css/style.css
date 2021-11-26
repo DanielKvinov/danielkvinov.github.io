@@ -173,14 +173,21 @@ header .menu {
 	margin-top: 175px;
 	margin-bottom: 9px;
 }
+
 .welcome h2 {
 	margin-bottom: 16px;
 	letter-spacing: 0.4px;
+	line-height: 1.1;
 }
-.welcome p {
+/*.welcome p {
 	line-height: 1.5;
 	margin-bottom: 40px;
 	max-width: 853px;
+}*/
+.welcome p {
+	line-height: 1.3;
+	margin-bottom: 40px;
+	max-width: 833px;
 }
 .welcome .button-main {
 	margin-bottom: 150px;
@@ -257,17 +264,17 @@ header .menu {
 	height: auto;
 }
 
-.services__header {
+.section__header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
-.services__header .section-title {
+.section__header .section-title {
 	margin-top: 111px;
 	margin-bottom: 13px;
 }
-.services__header h2 {
+.section__header h2 {
 	max-width: 785px;
 	margin-bottom: 32px;
 }
@@ -301,6 +308,12 @@ header .menu {
 	line-height: 1.6;
 }
 /*SERVICES END*/
+/*COMING SOON*/
+.section__comingsoon {
+	padding: 50px 0;
+	background: #342d5e;
+}
+/*COMING SOON END*/
 /*FOOTER*/
 footer {
 	padding: 90px 0;

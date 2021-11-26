@@ -37,9 +37,16 @@
 	.text-middle {
 		font-size: 18px;
 	}
-	.welcome p {
+/*	.welcome p {
 		max-width: 653px;
 		margin-bottom: 24px;
+	}*/
+	.welcome p {
+		max-width: 503px;
+		margin-bottom: 24px;
+	}
+	.welcome h2 {
+		margin-bottom: 11px;
 	}
 	.button-main span {
 		font-size: 16px;
@@ -141,7 +148,7 @@
 	.about .container {
 		flex-direction: column;
 	}
-	.services__header .section-title {
+	.section__header .section-title {
 		margin-top: 70px;
 	}
 }
@@ -280,7 +287,7 @@
 		height: 47px;
 		margin-bottom: 10px;
 	}
-	.services__header h2 {
+	.section__header h2 {
 		max-width: 385px;
 		margin-bottom: 20px;
 	}
@@ -308,5 +315,20 @@
 	}
 	.footer__head {
 		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 400px){
+	.welcome h1 {
+		font-size: 22px;
+	}
+	.welcome h2 {
+		font-size: 16px;
+	}
+	.welcome .text-middle {
+		font-size: 12px;
+	}
+	.welcome h2 br {
+		display: none;
 	}
 }
