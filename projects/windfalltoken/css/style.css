@@ -308,6 +308,60 @@ header .menu {
 	line-height: 1.6;
 }
 /*SERVICES END*/
+/*STATS*/
+.stats {
+	position: relative;
+	z-index: 1;
+	background: #3b2758;
+}
+.stats__list {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.stats__image {
+	height: 107px;
+	display: flex;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.stats__unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 60px;
+}
+.stats .text-middle {
+	font-weight: 600;
+}
+.stats .button-main {
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.stats .button-main {
+	width: 300px;
+	display: inline-block;
+}
+.stats__additionally {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+.stats__additionally-unit {
+	text-align: center;
+}
+.stats__decoration {
+	bottom: 0;
+	right: 0;
+	width: 512px;
+	height: auto;
+	position: absolute;
+	z-index: -1;
+	transition: 0.4s;
+}
+/*STATS END*/
 /*COMING SOON*/
 .section__comingsoon {
 	padding: 50px 0;

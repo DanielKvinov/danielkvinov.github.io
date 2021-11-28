@@ -64,6 +64,12 @@
 	.services__serv .text-middle {
 		height: 30px;
 	}
+	.stats__list {
+		margin-top: 30px;
+	}
+	.stats__additionally {
+		margin-top: 70px;
+	}
 }
 
 @media (max-width: 992px){
@@ -316,6 +322,18 @@
 	.footer__head {
 		margin-bottom: 20px;
 	}
+	.stats .button-main {
+		margin-bottom: 70px;
+	}
+	.stats__list {
+		flex-direction: column;
+	}
+	.stats__unit {
+		margin-bottom: 30px;
+	}
+	.stats__unit:last-child {
+		margin-bottom: 0px;
+	}
 }
 
 @media (max-width: 400px){
@@ -330,5 +348,8 @@
 	}
 	.welcome h2 br {
 		display: none;
+	}
+	.stats .button-main {
+		width: 250px;
 	}
 }
