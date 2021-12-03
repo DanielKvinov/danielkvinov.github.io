@@ -14,7 +14,7 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	color: white;
-	background: #292b30;
+	background: #342d5e;
 	font-family: "Catamaran", sans-serif;
 	font-weight: 400;
 	animation: siteVisible 3s ease 0s 1 normal forwards;
@@ -74,6 +74,9 @@ p {
 .menu-mobile {
 	display: none;
 }
+.text__lightblue {
+	color: #43C1A8;
+}
 /*MAIN SETTINGS END*/
 
 /*STYLES*/
@@ -123,8 +126,15 @@ header .menu {
 .menu a:last-child {
 	margin-right: 0;
 }
+.social-media {
+	display: flex;
+	align-items: center;
+}
 .social-media a {
 	padding: 0 4px;
+}
+.link-telegram img {
+	max-height: 17px;
 }
 /*HEADER END*/
 /*WELCOME*/
@@ -312,12 +322,13 @@ header .menu {
 .stats {
 	position: relative;
 	z-index: 1;
-	background: #3b2758;
+	/*background: #3b2758;*/
 }
 .stats__list {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
+	flex-wrap: wrap;
 }
 .stats__image {
 	height: 107px;
@@ -362,6 +373,137 @@ header .menu {
 	transition: 0.4s;
 }
 /*STATS END*/
+/*MARKETPLACE*/
+.marketplace__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+.marketplace__list-unit {
+	display: flex;
+	flex-direction: column;
+	max-width: 360px;
+	margin: 0 10px 70px 10px;
+	overflow: hidden;
+}
+.marketplace__list-unit__link {
+	width: 100%;
+	min-height: 240px;
+	display: flex;
+	background: white;
+	justify-content: center;
+	align-items: center;
+}
+.marketplace__list-unit__title {
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 0.5px;
+}
+.marketplace__list-unit__description {
+	font-size: 16px;
+	margin-bottom: auto;
+	letter-spacing: 0.5px;
+	line-height: 1.3;
+}
+.marketplace__list-unit__group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #281E59;
+	padding: 15px;
+	height: 100%;
+}
+.marketplace__list-unit__button {
+	background: #43C1A8;
+	text-transform: uppercase;
+	padding: 10px 40px;
+	border-radius: 50px;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	margin-top: 15px;
+	font-size: 16px;
+}
+.marketplace__list-unit__button:hover {
+	background: #292b30;
+}
+/*MARKETPLACE END*/
+/*EVENTS*/
+.events__list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.events__list-unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 360px;
+	margin: 0 10px 70px 10px;
+	overflow: hidden;
+}
+.events__list-unit__group {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.events__list-unit__content {
+	display: flex;
+	flex-direction: column;
+	background: #281E59;
+	padding: 15px;
+}
+.events__list-unit__avatar {
+	width: 100%;
+	height: 240px;
+	display: flex;
+	overflow: hidden;
+	background: white;
+	justify-content: center;
+	align-items: center;
+}
+.events__list-unit__avatar img {
+	max-width: 360px;
+	max-height: 240px;
+}
+.events__list-unit__title {
+	font-weight: 600;
+	margin-bottom: auto;
+	padding-bottom: 7px;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+.events__list-unit__description {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+.events__list-unit__content-link {
+	padding: 2px 0;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+}
+.events__reminder {
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+}
+.events__reminder span {
+	margin-bottom: 15px;
+	line-height: 1.3;
+}
+.events__reminder span:last-child {
+	margin-bottom: 0px;
+}
+.events__reminder a {
+	color: #43C1A8;
+}
+/*EVENTS END*/
 /*COMING SOON*/
 .section__comingsoon {
 	padding: 50px 0;
@@ -370,6 +512,7 @@ header .menu {
 /*COMING SOON END*/
 /*FOOTER*/
 footer {
+	background: #292b30;
 	padding: 90px 0;
 }
 footer .container {
