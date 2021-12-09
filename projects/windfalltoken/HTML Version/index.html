@@ -1,63 +1,3 @@
-<?php
-// CoinMarketCap API
-$url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest';
-$parameters = [
-  'id' => '14871',
-];
-
-$headers = [
-  'Accepts: application/json',
-  'X-CMC_PRO_API_KEY: 14c86d58-7038-4b0e-8977-5fe3531fc55a'
-];
-$qs = http_build_query($parameters); // query string encode the parameters
-$request = "{$url}?{$qs}"; // create the request URL
-
-
-$curl = curl_init(); // Get cURL resource
-// Set cURL options
-curl_setopt_array($curl, array(
-  CURLOPT_URL => $request,            // set the request URL
-  CURLOPT_HTTPHEADER => $headers,     // set the headers 
-  CURLOPT_RETURNTRANSFER => 1         // ask for raw response instead of bool
-));
-
-$response = curl_exec($curl); // Send the request, save the response
-$responseDecode = json_decode($response, true); // Decode response
-
-
-curl_close($curl); // Close request
-
-?>
-
-<?php
-// TronScan API
-$urlTron = 'https://apilist.tronscan.org/api/account?address=TUBLy6ASP9faQAQXHquSM6KgaxyJLRintu';
-
-$requestTron = "{$urlTron}"; // create the request URL
-
-
-$curlTron = curl_init(); // Get cURL resource
-// Set cURL options
-curl_setopt_array($curlTron, array(
-  CURLOPT_URL => $requestTron,            // set the request URL
-  CURLOPT_RETURNTRANSFER => 1         // ask for raw response instead of bool
-));
-
-$responseTron = curl_exec($curlTron); // Send the request, save the response
-$responseDecodeTron = json_decode($responseTron, true); // Decode response
-
-// echo "<pre>";
-// print_r($responseDecodeTron);
-// echo "</pre>";
-
-curl_close($curlTron); // Close request
-
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +39,6 @@ curl_close($curlTron); // Close request
 					<a href="#stats">Stats</a>
 					<a href="#team">Team</a>
 					<a href="#blog">Blog</a>
-					<a href="https://windfalltoken.io/uploads/wft_whitepaper.pdf" target="_blank">Lite paper</a>
 				</nav>
 				<div class="social-media">
 					<a href="https://twitter.com/windfalltoken" class="link-twitter" target="_blank"><img src="img/twitterIcon.png" alt=""></a>
@@ -121,7 +60,6 @@ curl_close($curlTron); // Close request
 							<a href="#stats">Stats</a>
 							<a href="#team">Team</a>
 							<a href="#blog">Blog</a>
-							<a href="https://windfalltoken.io/uploads/wft_whitepaper.pdf" target="_blank">Lite paper</a>
 						</div>
 						<div class="social-media">
 							<a href="https://twitter.com/windfalltoken" class="link-twitter" target="_blank"><img src="img/twitterIcon.png" alt=""></a>
@@ -256,31 +194,29 @@ curl_close($curlTron); // Close request
 		<div class="container">
 			<div class="section__header">
 				<span class="section-title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">OUR STATS</span>
-				<h2 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="200">
-					24 hours volume <span id="volume_24h">(<?php echo round($responseDecode[data][14871][quote][USD][volume_24h], 2) ?><span class="dollar">$</span>)</span>
-				</h2>
+				<h2 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="200">24 hours volume API</h2>
 			</div>
 			<div class="stats__list">
-				<div class="stats__unit wow fadeInLeftBig" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="100">
+				<div class="stats__unit wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="100">
 					<div class="stats__image">
 						<img src="img/transactionsIcon.png" alt="Transactions">
 					</div>
 					<span class="text-middle hyphenate">Transactions</span>
-					<p class="text__lightblue"><?php echo $responseDecodeTron[transactions]; ?></p>
+					<p>API</p>
 				</div>
 				<div class="stats__unit wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="100">
 					<div class="stats__image">
 						<img src="img/totalholdersIcon.png" alt="Total Holders">
 					</div>
 					<span class="text-middle hyphenate">Total Holders</span>
-					<p class="text__lightblue"><?php echo $responseDecodeTron[tokens][6][nrOfTokenHolders]; ?></p>
+					<p>API</p>
 				</div>
-				<div class="stats__unit wow fadeInRightBig" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="100">
+				<div class="stats__unit wow fadeIn" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="100">
 					<div class="stats__image">
 						<img src="img/dollarIcon.png" alt="Value">
 					</div>
 					<span class="text-middle hyphenate">Value</span>
-					<p class="text__lightblue"><?php echo round($responseDecode[data][14871][quote][USD][price], 4) ?><span class="dollar">$</span></p>
+					<p>API</p>
 				</div>
 			</div>
 			<div class="stats__additionally">
@@ -298,6 +234,7 @@ curl_close($curlTron); // Close request
 		<div class="container">
 			<div class="section__header">
 				<span class="section-title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">MARKETPLACE</span>
+				<h2 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="200">Section description</h2>
 			</div>
 			<div class="marketplace__list">
 				<div class="marketplace__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
@@ -307,10 +244,29 @@ curl_close($curlTron); // Close request
 					<div class="marketplace__list-unit__group">
 						<span class="marketplace__list-unit__title">Windfall Token NFT</span>
 						<span class="marketplace__list-unit__description">Windfall Token creates its 1st NFT of its own Logo</span>
-						<a href="https://ghostmarket.io/asset/bsc/0xF41db445D7eaF45536985cE185ce131FA4b42E68/549/" target="_blank" class="marketplace__list-unit__button button__main">BUY</a>
+						<a href="https://ghostmarket.io/asset/bsc/0xF41db445D7eaF45536985cE185ce131FA4b42E68/549/" target="_blank" class="marketplace__list-unit__button">BUY</a>
 					</div>
 				</div>
-
+				<div class="marketplace__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
+					<a class="marketplace__list-unit__link" href="https://ghostmarket.io/asset/bsc/0xF41db445D7eaF45536985cE185ce131FA4b42E68/549/" target="_blank">
+						<img src="img/logoNFT.jpg" alt="Logo NFT">
+					</a>
+					<div class="marketplace__list-unit__group">
+						<span class="marketplace__list-unit__title">Windfall Token NFT</span>
+						<span class="marketplace__list-unit__description">Windfall Token creates its 1st NFT of its own Logo Windfall Token creates its 1st NFT of its own Logo</span>
+						<a href="https://ghostmarket.io/asset/bsc/0xF41db445D7eaF45536985cE185ce131FA4b42E68/549/" target="_blank" class="marketplace__list-unit__button">BUY</a>
+					</div>
+				</div>
+				<div class="marketplace__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
+					<a class="marketplace__list-unit__link" href="https://ghostmarket.io/asset/bsc/0xF41db445D7eaF45536985cE185ce131FA4b42E68/549/" target="_blank">
+						<img src="img/buildingIcon.png" alt="Logo NFT">
+					</a>
+					<div class="marketplace__list-unit__group">
+						<span class="marketplace__list-unit__title">Windfall Token NFT</span>
+						<span class="marketplace__list-unit__description">Windfall Token creates its 1st NFT of its own Logo</span>
+						<a href="https://ghostmarket.io/asset/bsc/0xF41db445D7eaF45536985cE185ce131FA4b42E68/549/" target="_blank" class="marketplace__list-unit__button">BUY</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -318,81 +274,64 @@ curl_close($curlTron); // Close request
 		<div class="container">
 			<div class="section__header">
 				<span class="section-title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">EVENTS</span>
+				<h2 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="200">Section description</h2>
 			</div>
 
 			<div class="events__list">
 				<div class="events__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
+					<span class="events__list-unit__title">Test</span>
+					<div class="events__list-unit__group">
+						<div class="events__list-unit__avatar">
+							<img src="img/aboutImg.png" alt="Test">
+						</div>
+						<div class="events__list-unit__content">
+							<span class="events__list-unit__description">Featured in:</span>
+							<a class="events__list-unit__content-link" href="https://www.bloomberg.com/press-releases/2021-08-12/windfall-announces-its-listing-in-august">Bloomberg</a>
+							<a class="events__list-unit__content-link" href="https://finance.yahoo.com/news/windfall-announces-listing-august-135900948.html">Yahoo finance</a>
+							<a class="events__list-unit__content-link" href="https://www.newsbtc.com/press-releases/windfall-announces-its-listing-in-august/">News BTC</a>
+						</div>
+					</div>
+				</div>
+				<div class="events__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
 					<span class="events__list-unit__title">Our listing date in Dubai, August 12, 2021</span>
-					<span class="events__list-unit__subtitle">Featured in:</span>
-					<div class="events__list-unit__links">
-						<a href="https://www.bloomberg.com/press-releases/2021-08-12/windfall-announces-its-listing-in-august" target="_blank" class="events__button button__main">Bloomberg</a>
-						<a href="https://finance.yahoo.com/news/windfall-announces-listing-august-135900948.html" target="_blank" class="events__button button__main">Yahoo finance</a>
-						<a href="https://www.newsbtc.com/press-releases/windfall-announces-its-listing-in-august" target="_blank" class="events__button button__main">News BTC</a>
+					<div class="events__list-unit__group">
+						<div class="events__list-unit__avatar">
+							<img src="img/dubaiPicture.jpg" alt="Dubai">
+						</div>
+						<div class="events__list-unit__content">
+							<span class="events__list-unit__description">Featured in:</span>
+							<a class="events__list-unit__content-link" href="https://www.bloomberg.com/press-releases/2021-08-12/windfall-announces-its-listing-in-august">Bloomberg</a>
+							<a class="events__list-unit__content-link" href="https://finance.yahoo.com/news/windfall-announces-listing-august-135900948.html">Yahoo finance</a>
+							<a class="events__list-unit__content-link" href="https://www.newsbtc.com/press-releases/windfall-announces-its-listing-in-august/">News BTC</a>
+						</div>
+					</div>
+				</div>
+				<div class="events__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
+					<span class="events__list-unit__title">Our listing date in Dubai, August 12, 2021</span>
+					<div class="events__list-unit__group">
+						<div class="events__list-unit__avatar">
+							<img src="img/logo.png" alt="Dubai">
+						</div>
+						<div class="events__list-unit__content">
+							<span class="events__list-unit__description">Featured in:</span>
+							<a class="events__list-unit__content-link" href="https://www.bloomberg.com/press-releases/2021-08-12/windfall-announces-its-listing-in-august">Bloomberg</a>
+							<a class="events__list-unit__content-link" href="https://finance.yahoo.com/news/windfall-announces-listing-august-135900948.html">Yahoo finance</a>
+							<a class="events__list-unit__content-link" href="https://www.newsbtc.com/press-releases/windfall-announces-its-listing-in-august/">News BTC</a>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="events__reminder wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-				<span>Upcoming events - listing on</span>
-				<div class="events__reminder__links">
-					<a target="_blank" href="https://www.kucoin.com" class="events__button button__main">kucoin.com</a>
-					<a target="_blank" href="https://www.okex.com/" class="events__button button__main">okex.com</a>
-					<a target="_blank" href="https://www.binance.com/" class="events__button button__main">Binance.com</a>
-				</div>
-				<span class="events__reminder-important text__lightblue wow fadeIn" data-wow-duration="3s" data-wow-offset="200">Windfall is supported by trust wallet</span>
+			<div class="events__reminder">
+				<span>Upcoming events - listing on <a target="_blank" href="https://www.kucoin.com/">kucoin.com</a> , <a target="_blank" href="https://www.okex.com/">okex.com</a> and <a target="_blank" href="https://www.binance.com/">Binance.com</a></span>
+				<span class="text__lightblue">Windfall is supported by trust wallet</span>
 			</div>
 		</div>
 	</section>
 	<section class="team section__comingsoon" id="team">
 		<div class="container">
 			<div class="section__header">
-				<span class="section-title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">OUR TEAM</span>
-			</div>
-			<div class="team__section">
-				<span class="team__section__title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">Core Members</span>
-				<div class="team__section__list">
-					<div class="team__section__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-						<img src="img/teamAvatar.png" alt="Member photo" class="team__unit-image">
-						<span class="team__unit-name">Moh Junayd</span>
-						<span class="team__unit-post">CTO (Co-founder)</span>
-						<a target="_blank" href="https://www.linkedin.com/in/ijunaidgulzar" class="team__unit-link button__main">LinkedIn</a>
-					</div>
-					<div class="team__section__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-						<img src="img/teamAvatar.png" alt="Member photo" class="team__unit-image">
-						<span class="team__unit-name">Sa Hu</span>
-						<span class="team__unit-post">CEO (Co-founder)</span>
-						<a target="_blank" href="https://www.linkedin.com/in/sajad-hussain-3685a5153" class="team__unit-link button__main">LinkedIn</a>
-					</div>
-					<div class="team__section__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-						<img src="img/teamAvatar.png" alt="Member photo" class="team__unit-image">
-						<span class="team__unit-name">Jo Ka</span>
-						<span class="team__unit-post">Growth and Marketing Head</span>
-						<a target="_blank" href="#" class="team__unit-link button__main">LinkedIn</a>
-					</div>
-				</div>
-			</div>
-			<div class="team__section">
-				<span class="team__section__title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">Advisors</span>
-				<div class="team__section__list">
-					<div class="team__section__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-						<img src="img/teamAvatar.png" alt="Member photo" class="team__unit-image">
-						<span class="team__unit-name">ZAK</span>
-						<span class="team__unit-post">Advisory Board Member</span>
-						<a target="_blank" href="https://www.linkedin.com/in/zak-goodson-137390228" class="team__unit-link button__main">LinkedIn</a>
-					</div>
-					<div class="team__section__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-						<img src="img/teamAvatar.png" alt="Member photo" class="team__unit-image">
-						<span class="team__unit-name">Ma Hu</span>
-						<span class="team__unit-post">Advisory Board Member</span>
-						<a target="_blank" href="https://www.linkedin.com/in/ma-hu-956aa2173" class="team__unit-link button__main">LinkedIn</a>
-					</div>
-					<div class="team__section__list-unit wow fadeIn" data-wow-duration="3s" data-wow-offset="200">
-						<img src="img/teamAvatar.png" alt="Member photo" class="team__unit-image">
-						<span class="team__unit-name">Nor Al</span>
-						<span class="team__unit-post">Advisory Board Member</span>
-						<a target="_blank" href="https://www.linkedin.com/in/nor-al-38b45a228" class="team__unit-link button__main">LinkedIn</a>
-					</div>
-				</div>
+				<span class="section-title wow fadeIn" data-wow-duration="3s" data-wow-offset="200">TEAM</span>
+				<h2 class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.5s" data-wow-offset="200">Coming Soon</h2>
 			</div>
 		</div>
 	</section>
@@ -419,7 +358,6 @@ curl_close($curlTron); // Close request
 					<a href="#stats">Stats</a>
 					<a href="#team">Team</a>
 					<a href="#blog">Blog</a>
-					<a href="https://windfalltoken.io/uploads/wft_whitepaper.pdf" target="_blank">Lite paper</a>
 				</nav>
 			</div>
 			<div class="footer__bottom">
