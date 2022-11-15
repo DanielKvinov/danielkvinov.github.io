@@ -157,6 +157,9 @@ header .container {
 	max-width: 100%;
 	opacity: 1;
 }
+.contact-box__unit:hover .social-media__icon {
+	transform: rotate(360deg);
+}
 .contact-box__unit-info {
 	max-width: 0%;
 	overflow: hidden;
@@ -168,6 +171,7 @@ header .container {
 
 .contact-box__unit img {
 	margin-right: 10px;
+	transition: 0.7s;
 }
 .contact-box__unit-info__title {
 	font-size: 18px;
