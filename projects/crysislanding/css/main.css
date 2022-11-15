@@ -32,6 +32,7 @@ button::-moz-focus-inner {
 
 /*POPUP START*/
 .popup {
+    cursor: pointer;
     background: rgba(50, 50, 50, 0.9);
     width: 100%;
     height: 100%;
@@ -245,7 +246,8 @@ header {
 }
 
 .top-header .advantages .advantage p#flag:before {
-    content: url("../img/russia.svg");
+    content: " ";
+    background: url("../img/rec.png") no-repeat 100% 100%/100%;
     position: absolute;
     height: 26px;
     width: 26px;
@@ -1305,9 +1307,12 @@ footer .footer-block {
     padding: 50px 0;
 }
 
-footer .footer-block p {
+footer .footer-block p,
+footer .footer-block a {
     font-size: 15px;
     font-family: Gotham Pro Regular, sans-serif;
+    color: white;
+    text-decoration: none;
 }
 
 /*FOOTER END*/
@@ -2775,7 +2780,7 @@ footer .footer-block p {
 
     .info .info-first .info-left {
         grid-template-rows: 10% 40% 50%;
-        margin: 101px auto 0 auto;
+        margin: 71px auto 0 auto;
     }
 
     .info .info-first .info-left p.under-stat {
@@ -3029,8 +3034,8 @@ footer .footer-block p {
     /*QUESTIONS BLOCK END*/
     /*TRUST BLOCK START*/
     .trust-block {
-        padding-bottom: 0px;
-        padding-top: 0px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         grid-template-rows: 25% 40% 25%;
     }
 
@@ -3104,6 +3109,7 @@ footer .footer-block p {
 
     .feedback-title h2 {
         font-size: 16px;
+        margin-bottom: 20px;
     }
 
     p#feedback-number {

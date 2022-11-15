@@ -1,0 +1,12 @@
+
+              $popup.on('click', this.selectors.button_closeDelayed, function(e) {
+                  setTimeout(() => {
+
+                    var $this = $(this),
+                        name = $this.parents('[data-js-popup-name]').attr('data-js-popup-name');
+                    _.closeByName(name, $this);
+                    e.preventDefault();
+                    return false;
+
+                  }, 2000);
+              });
