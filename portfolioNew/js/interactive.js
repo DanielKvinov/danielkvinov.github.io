@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-		scrollingSpeed: 100,
-        scrollBar: true,
-        // fitToSectionDelay: 100,
-	});
+	// $('#fullpage').fullpage({
+	// 	scrollingSpeed: 100,
+    //     scrollBar: true,
+    //     // fitToSectionDelay: 100,
+	// });
 	
 	$('.skills-box').appear();
 	// Когда класс class появляется в области видимости экрана срабатывает нужный нам код.

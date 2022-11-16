@@ -112,6 +112,12 @@ a {
     align-items: center;
     max-width: 932px;
 }
+.button-to-top {
+    width: 50px;
+    height: 50px;
+    background: white;
+    display: block;
+}
 /*DEFAULT SETTINGS END*/
 
 /*HEADER*/
@@ -331,6 +337,23 @@ header .container {
 	margin-bottom: 30px;
 	margin: 0 10px 30px 10px;
 }
+.portfolio__unit-title {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background: black;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transform: translateY(-100%);
+	transition: 0.4s;
+	z-index: 1;
+	overflow: hidden;
+}
+.portfolio__unit:hover .portfolio__unit-title {
+	transform: translateY(0%);
+}
 .portfolio__unit::after {
 	content: "click to view";
 	position: absolute;
@@ -348,7 +371,7 @@ header .container {
 	transform: translateY(0%);
 }
 .portfolio__unit:hover img {
-    transform: translateY(-50%);
+    transform: translateY(calc(-100% + 175px));
 }
 .portfolio__unit img {
     width: 100%;
